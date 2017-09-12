@@ -1,0 +1,11 @@
+{
+  "name": "cucumber-json-formatter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mattwynne/cucumber-json-formatter.git",
+  "author": "Matt Wynne <matt@mattwynne.net>",
+  "license": "MIT",
+  "dependencies": {
+    "cucumber": "^3.0.1"
+  }
+}

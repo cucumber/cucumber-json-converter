@@ -1,0 +1,35 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "",
+    "line": 1,
+    "id": "",
+    "tags": [],
+    "uri": "features/test.feature",
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "this step passes",
+            "match": {
+              "location": "../../support/js/env.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
