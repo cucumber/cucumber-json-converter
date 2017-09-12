@@ -5,10 +5,10 @@ cucumber-js := $(addsuffix cucumber-js.json,$(examples))
 all: $(cucumber-ruby) $(cucumber-js)
 
 $(cucumber-ruby):
-	cd $(dir $@) && bundle exec cucumber -f json -o cucumber-ruby.json -r support/ruby
+	-cd $(dir $@) && bundle exec cucumber -f json -o cucumber-ruby.json -f progress -r ../../support/ruby
 
 $(cucumber-js):
-	cd $(dir $@) && ../../node_modules/.bin/cucumberjs -f json:cucumber-js.json -r ../../support/js/env.js
+	-cd $(dir $@) && ../../node_modules/.bin/cucumberjs -f json:cucumber-js.json -r ../../support/js/env.js
 
 clean:
 	rm -rf $(addsuffix *.json,$(examples))
