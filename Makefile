@@ -1,3 +1,8 @@
-examples/001-one-passing-scenario/cucumber-ruby.json:
+examples=$(wildcard examples/*)
 
-	cd examples/001-one-passing-scenario && bundle exec cucumber -f json -o cucumber-ruby.json -r ruby
+$(examples)/cucumber-ruby.json:
+
+	cd $(dir $@) && bundle exec cucumber -f json -o cucumber-ruby.json -r ruby
+
+clean:
+	rm -rf $(examples)/cucumber-ruby.json
