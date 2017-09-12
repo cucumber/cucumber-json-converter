@@ -1,8 +1,10 @@
-examples=$(wildcard examples/*)
+examples := $(dir $(wildcard examples/*/))
+cucumber-ruby := $(addsuffix cucumber-ruby.json,$(examples))
 
-$(examples)/cucumber-ruby.json:
+all: $(cucumber-ruby)
 
+$(cucumber-ruby):
 	cd $(dir $@) && bundle exec cucumber -f json -o cucumber-ruby.json -r ruby
 
 clean:
-	rm -rf $(examples)/cucumber-ruby.json
+	rm -rf $(addsuffix *.json,$(examples))
