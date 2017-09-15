@@ -57,8 +57,7 @@
               "location": "../../support/js/env.js:3"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
