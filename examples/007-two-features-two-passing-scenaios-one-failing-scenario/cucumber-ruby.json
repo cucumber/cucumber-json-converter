@@ -1,0 +1,101 @@
+[
+  {
+    "uri": "features/bar.feature",
+    "id": "",
+    "keyword": "Feature",
+    "name": "",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "name": "",
+        "description": "",
+        "line": 2,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "this step passes",
+            "line": 3,
+            "match": {
+              "location": "/usr/local/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/foo.feature",
+    "id": "",
+    "keyword": "Feature",
+    "name": "",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "name": "",
+        "description": "",
+        "line": 2,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "this step passes",
+            "line": 3,
+            "match": {
+              "location": "/usr/local/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000
+            }
+          }
+        ]
+      },
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "name": "",
+        "description": "",
+        "line": 5,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "this step passes",
+            "line": 6,
+            "match": {
+              "location": "/usr/local/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "this step fails",
+            "line": 7,
+            "match": {
+              "location": "/usr/local/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:18"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure (Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure)\n/usr/local/bin/bundle:23:in `load'\n/usr/local/bin/bundle:23:in `<main>'\nfeatures/foo.feature:7:in `When this step fails'",
+              "duration": 11000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
