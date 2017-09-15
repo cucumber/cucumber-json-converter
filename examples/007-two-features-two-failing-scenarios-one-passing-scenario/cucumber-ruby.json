@@ -17,14 +17,15 @@
         "steps": [
           {
             "keyword": "Given ",
-            "name": "this step passes",
+            "name": "this step fails",
             "line": 3,
             "match": {
-              "location": "/usr/local/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
+              "location": "/usr/local/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000
+              "status": "failed",
+              "error_message": "Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure (Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure)\n/usr/local/bin/bundle:23:in `load'\n/usr/local/bin/bundle:23:in `<main>'\nfeatures/bar.feature:3:in `Given this step fails'",
+              "duration": 9000
             }
           }
         ]
@@ -56,7 +57,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000
+              "duration": 2000
             }
           }
         ]
@@ -78,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 2000
             }
           },
           {
@@ -91,7 +92,7 @@
             "result": {
               "status": "failed",
               "error_message": "Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure (Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure)\n/usr/local/bin/bundle:23:in `load'\n/usr/local/bin/bundle:23:in `<main>'\nfeatures/foo.feature:7:in `When this step fails'",
-              "duration": 9000
+              "duration": 14000
             }
           }
         ]

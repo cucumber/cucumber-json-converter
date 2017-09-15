@@ -19,13 +19,14 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 3,
-            "name": "this step passes",
+            "name": "this step fails",
             "match": {
-              "location": "../../support/js/env.js:3"
+              "location": "../../support/js/env.js:7"
             },
             "result": {
-              "status": "passed",
-              "duration": 3
+              "status": "failed",
+              "duration": 2,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/jbpros/Projects/cucumber-json-formatter/support/js/env.js:8:12)"
             }
           }
         ]
@@ -57,7 +58,8 @@
               "location": "../../support/js/env.js:3"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           }
         ]
@@ -92,7 +94,6 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1,
               "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/jbpros/Projects/cucumber-json-formatter/support/js/env.js:8:12)"
             }
           }
