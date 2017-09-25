@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 18339,
+              "duration": 23594,
               "error_message": "Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure (Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure)\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `load'\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'\nfeatures/006-three-failing-scenarios.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -40,7 +40,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 2262,
+              "duration": 2679,
               "status": "passed"
             }
           },
@@ -52,7 +52,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 20272,
+              "duration": 46261,
               "error_message": "Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure (Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure)\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `load'\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'\nfeatures/006-three-failing-scenarios.feature:7:in `When this step fails'",
               "status": "failed"
             }
@@ -75,7 +75,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 1319,
+              "duration": 1826,
               "status": "passed"
             }
           },
@@ -87,7 +87,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 901,
+              "duration": 942,
               "status": "passed"
             }
           },
@@ -99,7 +99,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 9170,
+              "duration": 15431,
               "error_message": "Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure (Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure)\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `load'\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'\nfeatures/006-three-failing-scenarios.feature:12:in `Then this step fails'",
               "status": "failed"
             }

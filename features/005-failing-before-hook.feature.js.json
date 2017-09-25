@@ -14,7 +14,7 @@
               "location": "support/js/env.js:11"
             },
             "result": {
-              "duration": 9,
+              "duration": 7,
               "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:12:12)",
               "status": "failed"
             }
