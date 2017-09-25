@@ -1,0 +1,33 @@
+[
+  {
+    "uri": "features/test.feature",
+    "id": "",
+    "keyword": "Feature",
+    "name": "",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "name": "",
+        "description": "",
+        "line": 2,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "this scenario is skipped",
+            "line": 3,
+            "match": {
+              "location": "features/test.feature:3"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
