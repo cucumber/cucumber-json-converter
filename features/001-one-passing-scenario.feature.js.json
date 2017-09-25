@@ -1,35 +1,35 @@
 [
   {
-    "keyword": "Feature",
-    "name": "",
-    "line": 1,
-    "id": "",
-    "tags": [],
-    "uri": "features/001-one-passing-scenario.feature",
     "elements": [
       {
         "id": ";",
         "keyword": "Scenario",
         "line": 2,
         "name": "",
-        "tags": [],
-        "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 3,
-            "name": "this step passes",
             "match": {
               "location": "support/js/env.js:3"
             },
+            "name": "this step passes",
             "result": {
-              "status": "passed",
-              "duration": 2
+              "duration": 2,
+              "status": "passed"
             }
           }
-        ]
+        ],
+        "tags": [],
+        "type": "scenario"
       }
-    ]
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "features/001-one-passing-scenario.feature"
   }
 ]

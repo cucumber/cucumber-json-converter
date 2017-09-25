@@ -1,117 +1,117 @@
 [
   {
-    "uri": "features/006-three-failing-scenarios.feature",
-    "id": "",
-    "keyword": "Feature",
-    "name": "",
     "description": "",
-    "line": 1,
     "elements": [
       {
+        "description": "",
         "id": ";",
         "keyword": "Scenario",
-        "name": "",
-        "description": "",
         "line": 2,
-        "type": "scenario",
+        "name": "",
         "steps": [
           {
             "keyword": "Given ",
-            "name": "this step fails",
             "line": 3,
             "match": {
               "location": "/Users/aslakhellesoy/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:18"
             },
+            "name": "this step fails",
             "result": {
-              "status": "failed",
+              "duration": 18339,
               "error_message": "Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure (Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure)\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `load'\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'\nfeatures/006-three-failing-scenarios.feature:3:in `Given this step fails'",
-              "duration": 21145
+              "status": "failed"
             }
           }
-        ]
+        ],
+        "type": "scenario"
       },
       {
+        "description": "",
         "id": ";",
         "keyword": "Scenario",
-        "name": "",
-        "description": "",
         "line": 5,
-        "type": "scenario",
+        "name": "",
         "steps": [
           {
             "keyword": "Given ",
-            "name": "this step passes",
             "line": 6,
             "match": {
               "location": "/Users/aslakhellesoy/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
             },
+            "name": "this step passes",
             "result": {
-              "status": "passed",
-              "duration": 2074
+              "duration": 2262,
+              "status": "passed"
             }
           },
           {
             "keyword": "When ",
-            "name": "this step fails",
             "line": 7,
             "match": {
               "location": "/Users/aslakhellesoy/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:18"
             },
+            "name": "this step fails",
             "result": {
-              "status": "failed",
+              "duration": 20272,
               "error_message": "Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure (Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure)\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `load'\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'\nfeatures/006-three-failing-scenarios.feature:7:in `When this step fails'",
-              "duration": 105388
+              "status": "failed"
             }
           }
-        ]
+        ],
+        "type": "scenario"
       },
       {
+        "description": "",
         "id": ";",
         "keyword": "Scenario",
-        "name": "",
-        "description": "",
         "line": 9,
-        "type": "scenario",
+        "name": "",
         "steps": [
           {
             "keyword": "Given ",
-            "name": "this step passes",
             "line": 10,
             "match": {
               "location": "/Users/aslakhellesoy/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
             },
+            "name": "this step passes",
             "result": {
-              "status": "passed",
-              "duration": 2253
+              "duration": 1319,
+              "status": "passed"
             }
           },
           {
             "keyword": "When ",
-            "name": "this step passes",
             "line": 11,
             "match": {
               "location": "/Users/aslakhellesoy/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
             },
+            "name": "this step passes",
             "result": {
-              "status": "passed",
-              "duration": 2972
+              "duration": 901,
+              "status": "passed"
             }
           },
           {
             "keyword": "Then ",
-            "name": "this step fails",
             "line": 12,
             "match": {
               "location": "/Users/aslakhellesoy/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:18"
             },
+            "name": "this step fails",
             "result": {
-              "status": "failed",
+              "duration": 9170,
               "error_message": "Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure (Cucumber::Core::Test::Filters::ActivateStepsForSelfTest::Failure)\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `load'\n/Users/aslakhellesoy/.rbenv/versions/2.4.0/bin/bundle:22:in `<main>'\nfeatures/006-three-failing-scenarios.feature:12:in `Then this step fails'",
-              "duration": 24691
+              "status": "failed"
             }
           }
-        ]
+        ],
+        "type": "scenario"
       }
-    ]
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "features/006-three-failing-scenarios.feature"
   }
 ]

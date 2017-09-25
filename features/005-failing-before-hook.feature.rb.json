@@ -1,51 +1,51 @@
 [
   {
-    "uri": "features/005-failing-before-hook.feature",
-    "id": "",
-    "keyword": "Feature",
-    "name": "",
     "description": "",
-    "line": 1,
     "elements": [
       {
-        "id": ";",
-        "keyword": "Scenario",
-        "name": "",
-        "description": "",
-        "line": 3,
-        "type": "scenario",
-        "tags": [
-          {
-            "name": "@failing-before",
-            "line": 2
-          }
-        ],
         "before": [
           {
             "match": {
               "location": "support/ruby/env.rb:7"
             },
             "result": {
-              "status": "failed",
+              "duration": 315945,
               "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:8:in `Before'",
-              "duration": 322748
+              "status": "failed"
             }
           }
         ],
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
         "steps": [
           {
             "keyword": "Given ",
-            "name": "this step passes",
             "line": 4,
             "match": {
               "location": "/Users/aslakhellesoy/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
             },
+            "name": "this step passes",
             "result": {
               "status": "skipped"
             }
           }
-        ]
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing-before"
+          }
+        ],
+        "type": "scenario"
       }
-    ]
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "features/005-failing-before-hook.feature"
   }
 ]
