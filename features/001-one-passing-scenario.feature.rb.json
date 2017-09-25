@@ -1,6 +1,6 @@
 [
   {
-    "uri": "features/test.feature",
+    "uri": "features/001-one-passing-scenario.feature",
     "id": "",
     "keyword": "Feature",
     "name": "",
@@ -20,11 +20,11 @@
             "name": "this step passes",
             "line": 3,
             "match": {
-              "location": "/Users/matt/.gem/ruby/2.3.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
+              "location": "/Users/aslakhellesoy/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
             },
             "result": {
               "status": "passed",
-              "duration": 1000
+              "duration": 2147
             }
           }
         ]

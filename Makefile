@@ -1,14 +1,24 @@
-examples := $(dir $(wildcard examples/*/))
-cucumber-ruby := $(addsuffix cucumber-ruby.json,$(examples))
-cucumber-js := $(addsuffix cucumber-js.json,$(examples))
+SHELL := /usr/bin/env bash
+FEATURE_FILES = $(shell find features -name "*.feature")
 
-all: $(cucumber-ruby) $(cucumber-js)
+CUCUMBER_RB_JSON   = $(patsubst features/%.feature,features/%.feature.rb.json,$(FEATURE_FILES))
+CUCUMBER_JS_JSON   = $(patsubst features/%.feature,features/%.feature.js.json,$(FEATURE_FILES))
+CUCUMBER_JAVA_JSON = $(patsubst features/%.feature,features/%.feature.java.json,$(FEATURE_FILES))
 
-$(cucumber-ruby):
-	-cd $(dir $@) && bundle exec cucumber -f json -o cucumber-ruby.json -f progress -r ../../support/ruby
+all: cucumber-rb cucumber-js cucumber-java
 
-$(cucumber-js):
-	-cd $(dir $@) && ../../node_modules/.bin/cucumberjs -f json:cucumber-js.json -r ../../support/js/env.js
+cucumber-rb:   $(CUCUMBER_RB_JSON)
+cucumber-js:   $(CUCUMBER_JS_JSON)
+cucumber-java: $(CUCUMBER_JAVA_JSON)
+
+features/%.feature.rb.json: features/%.feature
+	-bundle exec cucumber --format json --out $@ --require support/ruby $<
+
+features/%.feature.js.json: features/%.feature
+	-./node_modules/.bin/cucumberjs --format json:$@ --require support/js $<
+
+features/%.feature.java.json: features/%.feature
+	-mvn test -Dcucumber.options="--format json:$@ $<"
 
 clean:
-	rm -rf $(addsuffix *.json,$(examples))
+	rm -rf $(CUCUMBER_RB_JSON) $(CUCUMBER_JS_JSON) $(CUCUMBER_JAVA_JSON)

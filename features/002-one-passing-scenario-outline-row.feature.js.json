@@ -5,7 +5,7 @@
     "line": 1,
     "id": "",
     "tags": [],
-    "uri": "features/test.feature",
+    "uri": "features/002-one-passing-scenario-outline-row.feature",
     "elements": [
       {
         "id": ";",
@@ -21,11 +21,11 @@
             "line": 3,
             "name": "this step passes",
             "match": {
-              "location": "../../support/js/env.js:3"
+              "location": "support/js/env.js:3"
             },
             "result": {
               "status": "passed",
-              "duration": 1
+              "duration": 2
             }
           }
         ]

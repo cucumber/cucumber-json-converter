@@ -5,37 +5,40 @@
     "line": 1,
     "id": "",
     "tags": [],
-    "uri": "features/test.feature",
+    "uri": "features/005-failing-before-hook.feature",
     "elements": [
       {
         "id": ";",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 3,
         "name": "",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@failing-before",
+            "line": 2
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 3,
-            "name": "this step fails",
+            "keyword": "Before",
+            "hidden": true,
             "match": {
-              "location": "../../support/js/env.js:7"
+              "location": "support/js/env.js:11"
             },
             "result": {
               "status": "failed",
-              "duration": 1,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/matt/projects/cucumber-json-formatter/support/js/env.js:8:12)"
+              "duration": 4,
+              "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:12:12)"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 4,
             "name": "this step passes",
             "match": {
-              "location": "../../support/js/env.js:3"
+              "location": "support/js/env.js:3"
             },
             "result": {
               "status": "skipped"
