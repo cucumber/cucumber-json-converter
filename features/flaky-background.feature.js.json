@@ -3,29 +3,31 @@
     "description": "  Here is a description",
     "elements": [
       {
-        "description": "",
-        "keyword": "Background",
-        "line": 4,
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 7,
         "name": "",
         "steps": [
           {
+            "arguments": [],
             "keyword": "Given ",
             "line": 5,
             "match": {
-              "location": "support/ruby/env.rb:12"
+              "location": "support/js/env.js:23"
             },
-            "name": "this step fails",
+            "name": "this step is flaky",
             "result": {
-              "duration": 258106,
-              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:13:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
+              "duration": 2,
+              "error_message": "Error: Flaky\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:26:21)",
               "status": "failed"
             }
           },
           {
+            "arguments": [],
             "keyword": "Given ",
             "line": 8,
             "match": {
-              "location": "support/ruby/env.rb:9"
+              "location": "support/js/env.js:11"
             },
             "name": "this step passes",
             "result": {
@@ -33,46 +35,50 @@
             }
           }
         ],
-        "type": "background"
+        "tags": [],
+        "type": "scenario"
       },
       {
-        "description": "",
-        "keyword": "Background",
-        "line": 4,
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 10,
         "name": "",
         "steps": [
           {
+            "arguments": [],
             "keyword": "Given ",
             "line": 5,
             "match": {
-              "location": "support/ruby/env.rb:12"
+              "location": "support/js/env.js:23"
             },
-            "name": "this step fails",
+            "name": "this step is flaky",
             "result": {
-              "duration": 239766,
-              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:13:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
-              "status": "failed"
+              "duration": 1,
+              "status": "passed"
             }
           },
           {
+            "arguments": [],
             "keyword": "Given ",
             "line": 11,
             "match": {
-              "location": "support/ruby/env.rb:9"
+              "location": "support/js/env.js:11"
             },
             "name": "this step passes",
             "result": {
-              "status": "skipped"
+              "status": "passed"
             }
           }
         ],
-        "type": "background"
+        "tags": [],
+        "type": "scenario"
       }
     ],
     "id": "",
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "uri": "features/failing-background-with-two-scenarios.feature"
+    "tags": [],
+    "uri": "features/flaky-background.feature"
   }
 ]

@@ -12,12 +12,12 @@
             "keyword": "Given ",
             "line": 5,
             "match": {
-              "location": "support/ruby/env.rb:12"
+              "location": "support/ruby/env.rb:17"
             },
-            "name": "this step fails",
+            "name": "this step is flaky",
             "result": {
-              "duration": 258106,
-              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:13:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
+              "duration": 332612,
+              "error_message": "Flaky (RuntimeError)\n./support/ruby/env.rb:20:in `/flaky/'\nfeatures/flaky-background.feature:5:in `Given this step is flaky'",
               "status": "failed"
             }
           },
@@ -45,13 +45,12 @@
             "keyword": "Given ",
             "line": 5,
             "match": {
-              "location": "support/ruby/env.rb:12"
+              "location": "support/ruby/env.rb:17"
             },
-            "name": "this step fails",
+            "name": "this step is flaky",
             "result": {
-              "duration": 239766,
-              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:13:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
-              "status": "failed"
+              "duration": 82279,
+              "status": "passed"
             }
           },
           {
@@ -62,7 +61,8 @@
             },
             "name": "this step passes",
             "result": {
-              "status": "skipped"
+              "duration": 53959,
+              "status": "passed"
             }
           }
         ],
@@ -73,6 +73,6 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "uri": "features/failing-background-with-two-scenarios.feature"
+    "uri": "features/flaky-background.feature"
   }
 ]

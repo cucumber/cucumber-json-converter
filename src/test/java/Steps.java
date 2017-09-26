@@ -2,6 +2,8 @@ import cucumber.api.PendingException;
 import cucumber.api.java8.En;
 
 public class Steps implements En {
+    private static int x = 0;
+
     public Steps() {
 
         Before(new String[]{"@failing-before"}, () -> {
@@ -21,6 +23,12 @@ public class Steps implements En {
 
         Given(".*fail.*", () -> {
             throw new RuntimeException("this step failed");
+        });
+
+        Given(".*flaky*", () -> {
+            boolean failing = x == 0;
+            x++;
+            if(failing) throw new RuntimeException("Flaky");
         });
     }
 }
