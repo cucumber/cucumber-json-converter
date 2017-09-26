@@ -6,6 +6,10 @@ After('@failing-after') do
   raise "Failing after hook"
 end
 
+AfterStep('@failing-after-step') do
+  raise "Failing after step"
+end
+
 Given /pass/ do
 end
 
