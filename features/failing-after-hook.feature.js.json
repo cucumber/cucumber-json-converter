@@ -16,7 +16,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 29,
+              "duration": 3,
               "status": "passed"
             }
           },
@@ -27,7 +27,6 @@
               "location": "support/js/env.js:7"
             },
             "result": {
-              "duration": 2,
               "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:8:9)",
               "status": "failed"
             }

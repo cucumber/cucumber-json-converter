@@ -9,7 +9,7 @@
               "location": "support/ruby/env.rb:7"
             },
             "result": {
-              "duration": 167421,
+              "duration": 263939,
               "error_message": "Failing after hook (RuntimeError)\n./support/ruby/env.rb:8:in `After'",
               "status": "failed"
             }
@@ -29,47 +29,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 170890,
-              "status": "passed"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@failing-after"
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "after": [
-          {
-            "match": {
-              "location": "support/ruby/env.rb:7"
-            },
-            "result": {
-              "duration": 265453,
-              "error_message": "Failing after hook (RuntimeError)\n./support/ruby/env.rb:8:in `After'",
-              "status": "failed"
-            }
-          }
-        ],
-        "description": "",
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 4,
-            "match": {
-              "location": "support/ruby/env.rb:11"
-            },
-            "name": "this step passes",
-            "result": {
-              "duration": 223649,
+              "duration": 77566,
               "status": "passed"
             }
           }

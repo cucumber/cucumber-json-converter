@@ -17,7 +17,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 91898,
+              "duration": 68780,
               "status": "passed"
             }
           }

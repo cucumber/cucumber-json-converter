@@ -17,31 +17,9 @@
             },
             "name": "this step is flaky",
             "result": {
-              "duration": 216794,
+              "duration": 348499,
               "error_message": "Flaky fail (RuntimeError)\n./support/ruby/env.rb:26:in `/flaky/'\nfeatures/flaky-scenario.feature:3:in `Given this step is flaky'",
               "status": "failed"
-            }
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 2,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 3,
-            "match": {
-              "location": "support/ruby/env.rb:23"
-            },
-            "name": "this step is flaky",
-            "result": {
-              "duration": 50274,
-              "status": "passed"
             }
           }
         ],

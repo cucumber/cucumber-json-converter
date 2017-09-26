@@ -9,46 +9,7 @@
               "location": "support/ruby/env.rb:3"
             },
             "result": {
-              "duration": 301080,
-              "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:4:in `Before'",
-              "status": "failed"
-            }
-          }
-        ],
-        "description": "",
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 4,
-            "match": {
-              "location": "support/ruby/env.rb:11"
-            },
-            "name": "this step passes",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@failing-before"
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "before": [
-          {
-            "match": {
-              "location": "support/ruby/env.rb:3"
-            },
-            "result": {
-              "duration": 248074,
+              "duration": 814636,
               "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:4:in `Before'",
               "status": "failed"
             }
