@@ -5,7 +5,8 @@
   "repository": "git@github.com:mattwynne/cucumber-json-formatter.git",
   "author": "Matt Wynne <matt@mattwynne.net>",
   "license": "MIT",
-  "dependencies": {
-    "cucumber": "^3.0.1"
+  "dependencies": {},
+  "devDependencies": {
+    "cucumber": "^3.0.3"
   }
 }

@@ -9,7 +9,7 @@
               "location": "support/ruby/env.rb:3"
             },
             "result": {
-              "duration": 133000,
+              "duration": 389177,
               "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:4:in `Before'",
               "status": "failed"
             }

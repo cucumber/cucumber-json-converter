@@ -16,7 +16,8 @@
             },
             "name": "this scenario is skipped",
             "result": {
-              "status": "passed"
+              "duration": 5,
+              "status": "skipped"
             }
           }
         ],

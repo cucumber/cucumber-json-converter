@@ -84,9 +84,9 @@ cucumber-tag-expressions@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cucumber-tag-expressions/-/cucumber-tag-expressions-1.0.1.tgz#d6d3c43180a03f5fb4fc957fe1382ddce5cb9ac8"
 
-cucumber@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/cucumber/-/cucumber-3.0.1.tgz#2e4f49ee9d5949cb6249ae0cd1626444457be71e"
+cucumber@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/cucumber/-/cucumber-3.0.3.tgz#9e73912b5fc98d7505bf169f5c2e5702364b9f8c"
   dependencies:
     assertion-error-formatter "^2.0.0"
     babel-runtime "^6.11.6"
@@ -237,8 +237,8 @@ minimatch@^3.0.4:
     brace-expansion "^1.1.7"
 
 mz@^2.4.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/mz/-/mz-2.6.0.tgz#c8b8521d958df0a4f2768025db69c719ee4ef1ce"
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/mz/-/mz-2.7.0.tgz#95008057a56cafadc2bc63dde7f9ff6955948e32"
   dependencies:
     any-promise "^1.0.0"
     object-assign "^4.0.1"

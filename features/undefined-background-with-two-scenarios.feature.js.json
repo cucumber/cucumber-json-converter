@@ -3,77 +3,59 @@
     "description": "  Here is a description",
     "elements": [
       {
-        "description": "",
-        "keyword": "Background",
-        "line": 4,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 5,
-            "match": {},
-            "name": "this step is undefined",
-            "result": {
-              "status": "undefined"
-            }
-          }
-        ],
-        "type": "background"
-      },
-      {
-        "description": "",
         "id": ";",
         "keyword": "Scenario",
         "line": 6,
         "name": "",
         "steps": [
           {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "match": {},
             "name": "this step is also undfined",
             "result": {
               "status": "undefined"
             }
           }
         ],
+        "tags": [],
         "type": "scenario"
       },
       {
-        "description": "",
-        "keyword": "Background",
-        "line": 4,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 5,
-            "match": {},
-            "name": "this step is undefined",
-            "result": {
-              "status": "undefined"
-            }
-          }
-        ],
-        "type": "background"
-      },
-      {
-        "description": "",
         "id": ";",
         "keyword": "Scenario",
         "line": 8,
         "name": "",
         "steps": [
           {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
             "keyword": "Given ",
             "line": 9,
-            "match": {},
             "name": "even this step is undefined",
             "result": {
               "status": "undefined"
             }
           }
         ],
+        "tags": [],
         "type": "scenario"
       }
     ],
@@ -81,6 +63,7 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "uri": "features/008-undefined-background-with-two-scenarios.feature"
+    "tags": [],
+    "uri": "features/undefined-background-with-two-scenarios.feature"
   }
 ]

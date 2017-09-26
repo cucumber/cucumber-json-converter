@@ -15,7 +15,7 @@
             },
             "result": {
               "duration": 1,
-              "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/jbpros/Projects/cucumber-json-formatter/support/js/env.js:15:9)",
+              "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:15:9)",
               "status": "failed"
             }
           },

@@ -3,31 +3,29 @@
     "description": "  Here is a description",
     "elements": [
       {
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 6,
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
         "name": "",
         "steps": [
           {
-            "arguments": [],
             "keyword": "Given ",
             "line": 5,
             "match": {
-              "location": "support/js/env.js:7"
+              "location": "support/ruby/env.rb:10"
             },
             "name": "this step fails",
             "result": {
-              "duration": 3,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:8:12)",
+              "duration": 328867,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:11:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
           },
           {
-            "arguments": [],
             "keyword": "Given ",
             "line": 7,
             "match": {
-              "location": "support/js/env.js:3"
+              "location": "support/ruby/env.rb:7"
             },
             "name": "this step passes",
             "result": {
@@ -35,35 +33,32 @@
             }
           }
         ],
-        "tags": [],
-        "type": "scenario"
+        "type": "background"
       },
       {
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 8,
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
         "name": "",
         "steps": [
           {
-            "arguments": [],
             "keyword": "Given ",
             "line": 5,
             "match": {
-              "location": "support/js/env.js:7"
+              "location": "support/ruby/env.rb:10"
             },
             "name": "this step fails",
             "result": {
-              "duration": 1,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:8:12)",
+              "duration": 319517,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:11:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
           },
           {
-            "arguments": [],
             "keyword": "Given ",
             "line": 9,
             "match": {
-              "location": "support/js/env.js:3"
+              "location": "support/ruby/env.rb:7"
             },
             "name": "this step passes",
             "result": {
@@ -71,15 +66,13 @@
             }
           }
         ],
-        "tags": [],
-        "type": "scenario"
+        "type": "background"
       }
     ],
     "id": "",
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "tags": [],
-    "uri": "features/007-failing-background-with-two-scenarios.feature"
+    "uri": "features/failing-background-with-two-scenarios.feature"
   }
 ]

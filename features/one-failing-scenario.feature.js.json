@@ -16,8 +16,8 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 1,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/jbpros/Projects/cucumber-json-formatter/support/js/env.js:7:9)",
+              "duration": 3,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:7:9)",
               "status": "failed"
             }
           }

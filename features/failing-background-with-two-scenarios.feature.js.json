@@ -12,18 +12,26 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "this step is undefined",
+            "match": {
+              "location": "support/js/env.js:6"
+            },
+            "name": "this step fails",
             "result": {
-              "status": "undefined"
+              "duration": 1,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:7:9)",
+              "status": "failed"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "this step is also undfined",
+            "match": {
+              "location": "support/js/env.js:3"
+            },
+            "name": "this step passes",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           }
         ],
@@ -40,18 +48,25 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "this step is undefined",
+            "match": {
+              "location": "support/js/env.js:6"
+            },
+            "name": "this step fails",
             "result": {
-              "status": "undefined"
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:7:9)",
+              "status": "failed"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 9,
-            "name": "even this step is undefined",
+            "match": {
+              "location": "support/js/env.js:3"
+            },
+            "name": "this step passes",
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             }
           }
         ],
@@ -64,6 +79,6 @@
     "line": 1,
     "name": "",
     "tags": [],
-    "uri": "features/008-undefined-background-with-two-scenarios.feature"
+    "uri": "features/failing-background-with-two-scenarios.feature"
   }
 ]
