@@ -12,11 +12,11 @@
             "keyword": "Given ",
             "line": 5,
             "match": {
-              "location": "support/ruby/env.rb:17"
+              "location": "support/ruby/env.rb:21"
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 65022,
+              "duration": 54261,
               "status": "passed"
             }
           },
@@ -24,11 +24,11 @@
             "keyword": "Given ",
             "line": 8,
             "match": {
-              "location": "support/ruby/env.rb:9"
+              "location": "support/ruby/env.rb:13"
             },
             "name": "this step passes",
             "result": {
-              "duration": 15066,
+              "duration": 16422,
               "status": "passed"
             }
           }
@@ -45,12 +45,12 @@
             "keyword": "Given ",
             "line": 5,
             "match": {
-              "location": "support/ruby/env.rb:17"
+              "location": "support/ruby/env.rb:21"
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 193880,
-              "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:20:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
+              "duration": 187745,
+              "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:24:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
               "status": "failed"
             }
           },
@@ -58,7 +58,73 @@
             "keyword": "Given ",
             "line": 11,
             "match": {
-              "location": "support/ruby/env.rb:9"
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "support/ruby/env.rb:21"
+            },
+            "name": "this step is decaying",
+            "result": {
+              "duration": 173373,
+              "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:24:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "support/ruby/env.rb:21"
+            },
+            "name": "this step is decaying",
+            "result": {
+              "duration": 235301,
+              "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:24:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "support/ruby/env.rb:13"
             },
             "name": "this step passes",
             "result": {

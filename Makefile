@@ -15,7 +15,7 @@ cucumber-js:   $(CUCUMBER_JS_JSON)
 cucumber-java: $(CUCUMBER_JAVA_JSON)
 
 features/%.feature.rb.json: features/%.feature $(RB_FILES)
-	-bundle exec cucumber --format json --out $@ --require support/ruby $<
+	-bundle exec cucumber --retry 2 --format json --out $@ --require support/ruby $<
 	cat $@ | jq --sort-keys "." > $@.tmp
 	mv $@.tmp $@
 

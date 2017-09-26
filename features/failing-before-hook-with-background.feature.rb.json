@@ -9,7 +9,7 @@
               "location": "support/ruby/env.rb:1"
             },
             "result": {
-              "duration": 197411,
+              "duration": 312765,
               "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:2:in `Before'",
               "status": "failed"
             }
@@ -24,7 +24,7 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/ruby/env.rb:9"
+              "location": "support/ruby/env.rb:13"
             },
             "name": "this step passes",
             "result": {
@@ -35,7 +35,93 @@
             "keyword": "Given ",
             "line": 7,
             "match": {
-              "location": "support/ruby/env.rb:9"
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "before": [
+          {
+            "match": {
+              "location": "support/ruby/env.rb:1"
+            },
+            "result": {
+              "duration": 441681,
+              "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:2:in `Before'",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "before": [
+          {
+            "match": {
+              "location": "support/ruby/env.rb:1"
+            },
+            "result": {
+              "duration": 316163,
+              "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:2:in `Before'",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "support/ruby/env.rb:13"
             },
             "name": "this step passes",
             "result": {

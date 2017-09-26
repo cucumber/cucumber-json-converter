@@ -16,7 +16,7 @@
                   "location": "support/ruby/env.rb:9"
                 },
                 "result": {
-                  "duration": 179000,
+                  "duration": 173793,
                   "error_message": "Failing after step (RuntimeError)\n./support/ruby/env.rb:10:in `AfterStep'",
                   "status": "failed"
                 }
@@ -29,7 +29,87 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 54000,
+              "duration": 58819,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing-after-step"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "after": [
+              {
+                "match": {
+                  "location": "support/ruby/env.rb:9"
+                },
+                "result": {
+                  "duration": 362464,
+                  "error_message": "Failing after step (RuntimeError)\n./support/ruby/env.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 43067,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing-after-step"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "after": [
+              {
+                "match": {
+                  "location": "support/ruby/env.rb:9"
+                },
+                "result": {
+                  "duration": 173559,
+                  "error_message": "Failing after step (RuntimeError)\n./support/ruby/env.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 27193,
               "status": "passed"
             }
           }
