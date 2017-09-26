@@ -15,6 +15,13 @@ Given /pending/ do
   pending
 end
 
+$flakes = 0
+Given /flaky/ do
+  failing = $flakes == 0
+  $flakes += 1
+  raise "Flaky fail" if failing
+end
+
 Given /skip/ do
   skip_this_scenario
 end

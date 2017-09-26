@@ -1,0 +1,57 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:19"
+            },
+            "name": "this step is flaky",
+            "result": {
+              "duration": 177445,
+              "error_message": "Flaky fail (RuntimeError)\n./support/ruby/env.rb:22:in `/flaky/'\nfeatures/flaky-scenario.feature:3:in `Given this step is flaky'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:19"
+            },
+            "name": "this step is flaky",
+            "result": {
+              "duration": 16905,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "features/flaky-scenario.feature"
+  }
+]
