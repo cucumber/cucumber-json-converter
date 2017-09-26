@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 1157714,
+              "duration": 315748,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:13:in `/fail/'\nfeatures/failing-background-step.feature:3:in `Given this step fails'",
               "status": "failed"
             }

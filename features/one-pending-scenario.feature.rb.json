@@ -17,7 +17,7 @@
             },
             "name": "this step is pending",
             "result": {
-              "duration": 320366,
+              "duration": 205782,
               "error_message": "TODO (Cucumber::Pending)\n./support/ruby/env.rb:24:in `/pending/'\nfeatures/one-pending-scenario.feature:3:in `Given this step is pending'",
               "status": "pending"
             }

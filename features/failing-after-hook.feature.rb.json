@@ -9,7 +9,7 @@
               "location": "support/ruby/env.rb:5"
             },
             "result": {
-              "duration": 375275,
+              "duration": 291579,
               "error_message": "Failing after hook (RuntimeError)\n./support/ruby/env.rb:6:in `After'",
               "status": "failed"
             }
@@ -29,7 +29,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 67598,
+              "duration": 95013,
               "status": "passed"
             }
           }

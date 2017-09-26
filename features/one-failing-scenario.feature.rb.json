@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 601397,
+              "duration": 197848,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:13:in `/fail/'\nfeatures/one-failing-scenario.feature:3:in `Given this step fails'",
               "status": "failed"
             }

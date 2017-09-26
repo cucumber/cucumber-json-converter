@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 2,
+              "duration": 1,
               "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:19:9)",
               "status": "failed"
             }
@@ -53,7 +53,6 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 1,
               "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:19:9)",
               "status": "failed"
             }
