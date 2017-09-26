@@ -19,11 +19,11 @@ Given(/fail/, function () {
   throw new Error("this step failed")
 })
 
-let flakes = 0
-Given(/flaky/, function () {
-  failing = flakes == 0
-  flakes++
-  if(failing) throw new Error("Flaky")
+let decay = 0
+Given(/decaying/, function () {
+  const failing = decay > 0
+  decay++
+  if(failing) throw new Error("Decayed")
 })
 
 Given(/skip/, function () {

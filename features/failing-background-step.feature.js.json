@@ -4,7 +4,7 @@
       {
         "id": ";",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 5,
         "name": "",
         "steps": [
           {
@@ -12,19 +12,19 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/js/env.js:14"
+              "location": "support/js/env.js:18"
             },
             "name": "this step fails",
             "result": {
-              "duration": 2,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:15:9)",
+              "duration": 1,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:19:9)",
               "status": "failed"
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 6,
             "match": {
               "location": "support/js/env.js:11"
             },

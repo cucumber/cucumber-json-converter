@@ -13,11 +13,11 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/ruby/env.rb:29"
+              "location": "support/ruby/env.rb:27"
             },
             "name": "this scenario is skipped",
             "result": {
-              "duration": 565445,
+              "duration": 302460,
               "status": "skipped"
             }
           }

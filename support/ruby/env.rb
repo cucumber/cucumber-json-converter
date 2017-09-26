@@ -13,11 +13,11 @@ Given /fail/ do
   fail "Fail"
 end
 
-$flakes = 0
-Given /flaky/ do
-  failing = $flakes == 0
-  $flakes += 1
-  raise "Flaky" if failing
+$decay = 0
+Given /decaying/ do
+  failing = $decay > 0
+  $decay += 1
+  raise "Decayed" if failing
 end
 
 Given /pending/ do

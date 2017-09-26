@@ -15,11 +15,10 @@
             "match": {
               "location": "support/js/env.js:23"
             },
-            "name": "this step is flaky",
+            "name": "this step is decaying",
             "result": {
               "duration": 2,
-              "error_message": "Error: Flaky\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:26:21)",
-              "status": "failed"
+              "status": "passed"
             }
           },
           {
@@ -31,7 +30,8 @@
             },
             "name": "this step passes",
             "result": {
-              "status": "skipped"
+              "duration": 1,
+              "status": "passed"
             }
           }
         ],
@@ -51,10 +51,10 @@
             "match": {
               "location": "support/js/env.js:23"
             },
-            "name": "this step is flaky",
+            "name": "this step is decaying",
             "result": {
-              "duration": 1,
-              "status": "passed"
+              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:26:21)",
+              "status": "failed"
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "name": "this step passes",
             "result": {
-              "status": "passed"
+              "status": "skipped"
             }
           }
         ],
@@ -79,6 +79,6 @@
     "line": 1,
     "name": "",
     "tags": [],
-    "uri": "features/flaky-background.feature"
+    "uri": "features/decaying-background.feature"
   }
 ]

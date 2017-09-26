@@ -2,7 +2,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java8.En;
 
 public class Steps implements En {
-    private static int x = 0;
+    private static int decay = 0;
 
     public Steps() {
 
@@ -25,10 +25,10 @@ public class Steps implements En {
             throw new RuntimeException("this step failed");
         });
 
-        Given(".*flaky*", () -> {
-            boolean failing = x == 0;
-            x++;
-            if(failing) throw new RuntimeException("Flaky");
+        Given(".*decaying*", () -> {
+            boolean failing = decay > 0;
+            decay++;
+            if(failing) throw new RuntimeException("Decayed");
         });
     }
 }

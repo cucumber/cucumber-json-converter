@@ -14,11 +14,10 @@
             "match": {
               "location": "support/ruby/env.rb:17"
             },
-            "name": "this step is flaky",
+            "name": "this step is decaying",
             "result": {
-              "duration": 332612,
-              "error_message": "Flaky (RuntimeError)\n./support/ruby/env.rb:20:in `/flaky/'\nfeatures/flaky-background.feature:5:in `Given this step is flaky'",
-              "status": "failed"
+              "duration": 65022,
+              "status": "passed"
             }
           },
           {
@@ -29,7 +28,8 @@
             },
             "name": "this step passes",
             "result": {
-              "status": "skipped"
+              "duration": 15066,
+              "status": "passed"
             }
           }
         ],
@@ -47,10 +47,11 @@
             "match": {
               "location": "support/ruby/env.rb:17"
             },
-            "name": "this step is flaky",
+            "name": "this step is decaying",
             "result": {
-              "duration": 82279,
-              "status": "passed"
+              "duration": 193880,
+              "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:20:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
+              "status": "failed"
             }
           },
           {
@@ -61,8 +62,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 53959,
-              "status": "passed"
+              "status": "skipped"
             }
           }
         ],
@@ -73,6 +73,6 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "uri": "features/flaky-background.feature"
+    "uri": "features/decaying-background.feature"
   }
 ]

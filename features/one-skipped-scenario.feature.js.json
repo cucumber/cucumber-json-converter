@@ -12,11 +12,11 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/js/env.js:18"
+              "location": "support/js/env.js:29"
             },
             "name": "this scenario is skipped",
             "result": {
-              "duration": 3,
+              "duration": 2,
               "status": "skipped"
             }
           }

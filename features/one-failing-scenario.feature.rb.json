@@ -13,12 +13,12 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/ruby/env.rb:14"
+              "location": "support/ruby/env.rb:12"
             },
             "name": "this step fails",
             "result": {
-              "duration": 412324,
-              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:15:in `/fail/'\nfeatures/one-failing-scenario.feature:3:in `Given this step fails'",
+              "duration": 601397,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:13:in `/fail/'\nfeatures/one-failing-scenario.feature:3:in `Given this step fails'",
               "status": "failed"
             }
           }

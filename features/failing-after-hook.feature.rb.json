@@ -6,11 +6,11 @@
         "after": [
           {
             "match": {
-              "location": "support/ruby/env.rb:7"
+              "location": "support/ruby/env.rb:5"
             },
             "result": {
-              "duration": 263939,
-              "error_message": "Failing after hook (RuntimeError)\n./support/ruby/env.rb:8:in `After'",
+              "duration": 375275,
+              "error_message": "Failing after hook (RuntimeError)\n./support/ruby/env.rb:6:in `After'",
               "status": "failed"
             }
           }
@@ -25,11 +25,11 @@
             "keyword": "Given ",
             "line": 4,
             "match": {
-              "location": "support/ruby/env.rb:11"
+              "location": "support/ruby/env.rb:9"
             },
             "name": "this step passes",
             "result": {
-              "duration": 77566,
+              "duration": 67598,
               "status": "passed"
             }
           }

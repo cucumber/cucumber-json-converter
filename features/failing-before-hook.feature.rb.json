@@ -6,11 +6,11 @@
         "before": [
           {
             "match": {
-              "location": "support/ruby/env.rb:3"
+              "location": "support/ruby/env.rb:1"
             },
             "result": {
-              "duration": 814636,
-              "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:4:in `Before'",
+              "duration": 203197,
+              "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:2:in `Before'",
               "status": "failed"
             }
           }
@@ -25,7 +25,7 @@
             "keyword": "Given ",
             "line": 4,
             "match": {
-              "location": "support/ruby/env.rb:11"
+              "location": "support/ruby/env.rb:9"
             },
             "name": "this step passes",
             "result": {
