@@ -1,27 +1,24 @@
 [
   {
+    "description": "",
     "elements": [
       {
+        "description": "",
         "id": ";",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 2,
         "name": "",
         "steps": [
           {
-            "arguments": [],
             "keyword": "Given ",
             "line": 3,
-            "match": {
-              "location": "support/js/env.js:3"
-            },
-            "name": "this step passes",
+            "match": {},
+            "name": "this step is undefined",
             "result": {
-              "duration": 5,
-              "status": "passed"
+              "status": "undefined"
             }
           }
         ],
-        "tags": [],
         "type": "scenario"
       }
     ],
@@ -29,7 +26,6 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "tags": [],
-    "uri": "features/002-one-passing-scenario-outline-row.feature"
+    "uri": "features/one-undefined-scenario.feature"
   }
 ]

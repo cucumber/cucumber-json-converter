@@ -1,27 +1,26 @@
 [
   {
-    "description": "",
     "elements": [
       {
-        "description": "",
         "id": ";",
         "keyword": "Scenario",
         "line": 2,
         "name": "",
         "steps": [
           {
+            "arguments": [],
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "/Users/aslakhellesoy/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
+              "location": "support/js/env.js:10"
             },
-            "name": "this step passes",
+            "name": "this scenario is skipped",
             "result": {
-              "duration": 2990,
               "status": "passed"
             }
           }
         ],
+        "tags": [],
         "type": "scenario"
       }
     ],
@@ -29,6 +28,7 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "uri": "features/001-one-passing-scenario.feature"
+    "tags": [],
+    "uri": "features/one-skipped-scenario.feature"
   }
 ]
