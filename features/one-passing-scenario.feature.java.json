@@ -17,7 +17,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 244280571,
+              "duration": 121195882,
               "status": "passed"
             }
           }
@@ -29,6 +29,6 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "uri": "features/001-one-passing-scenario.feature"
+    "uri": "features/one-passing-scenario.feature"
   }
 ]

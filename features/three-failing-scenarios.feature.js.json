@@ -12,12 +12,12 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/js/env.js:7"
+              "location": "support/js/env.js:6"
             },
             "name": "this step fails",
             "result": {
-              "duration": 9,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:8:12)",
+              "duration": 1,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/jbpros/Projects/cucumber-json-formatter/support/js/env.js:7:9)",
               "status": "failed"
             }
           }
@@ -40,7 +40,6 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 1,
               "status": "passed"
             }
           },
@@ -49,11 +48,11 @@
             "keyword": "When ",
             "line": 7,
             "match": {
-              "location": "support/js/env.js:7"
+              "location": "support/js/env.js:6"
             },
             "name": "this step fails",
             "result": {
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:8:12)",
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/jbpros/Projects/cucumber-json-formatter/support/js/env.js:7:9)",
               "status": "failed"
             }
           }
@@ -76,7 +75,6 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 1,
               "status": "passed"
             }
           },
@@ -97,12 +95,11 @@
             "keyword": "Then ",
             "line": 12,
             "match": {
-              "location": "support/js/env.js:7"
+              "location": "support/js/env.js:6"
             },
             "name": "this step fails",
             "result": {
-              "duration": 1,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:8:12)",
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/jbpros/Projects/cucumber-json-formatter/support/js/env.js:7:9)",
               "status": "failed"
             }
           }
@@ -116,6 +113,6 @@
     "line": 1,
     "name": "",
     "tags": [],
-    "uri": "features/006-three-failing-scenarios.feature"
+    "uri": "features/three-failing-scenarios.feature"
   }
 ]

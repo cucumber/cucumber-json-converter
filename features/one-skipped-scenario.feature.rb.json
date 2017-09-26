@@ -1,27 +1,27 @@
 [
   {
+    "description": "",
     "elements": [
       {
+        "description": "",
         "id": ";",
         "keyword": "Scenario",
         "line": 2,
         "name": "",
         "steps": [
           {
-            "arguments": [],
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/js/env.js:3"
+              "location": "support/ruby/env.rb:18"
             },
-            "name": "this step passes",
+            "name": "this scenario is skipped",
             "result": {
-              "duration": 6,
-              "status": "passed"
+              "duration": 148000,
+              "status": "skipped"
             }
           }
         ],
-        "tags": [],
         "type": "scenario"
       }
     ],
@@ -29,7 +29,6 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "tags": [],
-    "uri": "features/001-one-passing-scenario.feature"
+    "uri": "features/one-skipped-scenario.feature"
   }
 ]

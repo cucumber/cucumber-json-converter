@@ -4,20 +4,20 @@
     "elements": [
       {
         "description": "",
-        "id": ";;;2",
-        "keyword": "Scenario Outline",
-        "line": 7,
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
         "name": "",
         "steps": [
           {
             "keyword": "Given ",
-            "line": 7,
+            "line": 3,
             "match": {
-              "location": "/Users/aslakhellesoy/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/cucumber-core-1.5.0/lib/cucumber/core/test/filters/activate_steps_for_self_test.rb:22"
+              "location": "support/ruby/env.rb:7"
             },
             "name": "this step passes",
             "result": {
-              "duration": 3014,
+              "duration": 39000,
               "status": "passed"
             }
           }
@@ -29,6 +29,6 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "uri": "features/002-one-passing-scenario-outline-row.feature"
+    "uri": "features/one-passing-scenario.feature"
   }
 ]
