@@ -16,7 +16,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 54261,
+              "duration": 45431,
               "status": "passed"
             }
           },
@@ -28,7 +28,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 16422,
+              "duration": 11021,
               "status": "passed"
             }
           }
@@ -49,7 +49,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 187745,
+              "duration": 162759,
               "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:24:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
               "status": "failed"
             }
@@ -82,7 +82,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 173373,
+              "duration": 178026,
               "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:24:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
               "status": "failed"
             }
@@ -115,7 +115,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 235301,
+              "duration": 203155,
               "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:24:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
               "status": "failed"
             }

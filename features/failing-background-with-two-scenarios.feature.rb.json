@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 551502,
+              "duration": 231473,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
@@ -49,7 +49,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 205498,
+              "duration": 183285,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
@@ -82,7 +82,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 181785,
+              "duration": 203434,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
@@ -115,7 +115,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 215261,
+              "duration": 174033,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
@@ -148,7 +148,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 188615,
+              "duration": 148457,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
@@ -181,7 +181,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 320925,
+              "duration": 137876,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }

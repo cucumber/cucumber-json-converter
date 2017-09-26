@@ -9,7 +9,7 @@
               "location": "support/ruby/env.rb:1"
             },
             "result": {
-              "duration": 312765,
+              "duration": 157790,
               "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:2:in `Before'",
               "status": "failed"
             }
@@ -52,7 +52,7 @@
               "location": "support/ruby/env.rb:1"
             },
             "result": {
-              "duration": 441681,
+              "duration": 170786,
               "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:2:in `Before'",
               "status": "failed"
             }
@@ -95,7 +95,7 @@
               "location": "support/ruby/env.rb:1"
             },
             "result": {
-              "duration": 316163,
+              "duration": 173894,
               "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:2:in `Before'",
               "status": "failed"
             }

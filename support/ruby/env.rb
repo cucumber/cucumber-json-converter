@@ -24,6 +24,13 @@ Given /decaying/ do
   raise "Decayed" if failing
 end
 
+$flaky = 0
+Given /flaky/ do
+  failing = $flaky == 0
+  $flaky += 1
+  raise "Flaky" if failing
+end
+
 Given /pending/ do
   pending
 end

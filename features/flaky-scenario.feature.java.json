@@ -1,24 +1,21 @@
 [
   {
-    "description": "",
+    "description": "  Here is a description",
     "elements": [
       {
         "description": "",
         "id": ";",
         "keyword": "Scenario",
-        "line": 2,
+        "line": 4,
         "name": "",
         "steps": [
           {
             "keyword": "Given ",
-            "line": 3,
-            "match": {
-              "location": "support/ruby/env.rb:38"
-            },
-            "name": "this scenario is skipped",
+            "line": 5,
+            "match": {},
+            "name": "this step is flaky",
             "result": {
-              "duration": 207008,
-              "status": "skipped"
+              "status": "undefined"
             }
           }
         ],
@@ -29,6 +26,6 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "uri": "features/one-skipped-scenario.feature"
+    "uri": "features/flaky-scenario.feature"
   }
 ]

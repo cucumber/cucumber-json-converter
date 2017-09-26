@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 334278,
+              "duration": 224586,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -40,7 +40,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 292028,
+              "duration": 160041,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -63,7 +63,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 221498,
+              "duration": 166376,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -86,7 +86,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 37868,
+              "duration": 20069,
               "status": "passed"
             }
           },
@@ -98,7 +98,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 166716,
+              "duration": 149283,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:7:in `When this step fails'",
               "status": "failed"
             }
@@ -121,7 +121,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 24236,
+              "duration": 17843,
               "status": "passed"
             }
           },
@@ -133,7 +133,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 151444,
+              "duration": 139417,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:7:in `When this step fails'",
               "status": "failed"
             }
@@ -156,7 +156,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 16184,
+              "duration": 16326,
               "status": "passed"
             }
           },
@@ -168,7 +168,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 554788,
+              "duration": 167628,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:7:in `When this step fails'",
               "status": "failed"
             }
@@ -191,7 +191,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 30057,
+              "duration": 18305,
               "status": "passed"
             }
           },
@@ -203,7 +203,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 19462,
+              "duration": 10275,
               "status": "passed"
             }
           },
@@ -215,7 +215,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 152720,
+              "duration": 125453,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:12:in `Then this step fails'",
               "status": "failed"
             }
@@ -238,7 +238,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 36594,
+              "duration": 13705,
               "status": "passed"
             }
           },
@@ -250,7 +250,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 12565,
+              "duration": 9830,
               "status": "passed"
             }
           },
@@ -262,7 +262,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 221992,
+              "duration": 151238,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:12:in `Then this step fails'",
               "status": "failed"
             }
@@ -285,7 +285,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 30349,
+              "duration": 21415,
               "status": "passed"
             }
           },
@@ -297,7 +297,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 11831,
+              "duration": 14446,
               "status": "passed"
             }
           },
@@ -309,7 +309,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 195576,
+              "duration": 202821,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:12:in `Then this step fails'",
               "status": "failed"
             }

@@ -1,27 +1,24 @@
 [
   {
-    "description": "",
+    "description": "  Here is a description",
     "elements": [
       {
-        "description": "",
         "id": ";",
         "keyword": "Scenario",
-        "line": 2,
+        "line": 4,
         "name": "",
         "steps": [
           {
+            "arguments": [],
             "keyword": "Given ",
-            "line": 3,
-            "match": {
-              "location": "support/ruby/env.rb:13"
-            },
-            "name": "this step passes",
+            "line": 5,
+            "name": "this step is flaky",
             "result": {
-              "duration": 67234,
-              "status": "passed"
+              "status": "undefined"
             }
           }
         ],
+        "tags": [],
         "type": "scenario"
       }
     ],
@@ -29,6 +26,7 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "uri": "features/one-passing-scenario.feature"
+    "tags": [],
+    "uri": "features/flaky-scenario.feature"
   }
 ]
