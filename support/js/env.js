@@ -11,6 +11,10 @@ After({ tags: "@failing-after" }, function () {
 Given(/pass/, function () {
 })
 
+Given(/pending/, function () {
+  return 'pending'
+})
+
 Given(/fail/, function () {
   throw new Error("this step failed")
 })

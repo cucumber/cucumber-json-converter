@@ -1,3 +1,4 @@
+import cucumber.api.PendingException;
 import cucumber.api.java8.En;
 
 public class Steps implements En {
@@ -11,10 +12,14 @@ public class Steps implements En {
             throw new RuntimeException("failing after hook");
         });
 
-        Given("^this step passes$", () -> {
+        Given(".*pass.*", () -> {
         });
 
-        Given("^this step fails$", () -> {
+        Given(".*pending.*", () -> {
+            throw new PendingException();
+        });
+
+        Given(".*fail.*", () -> {
             throw new RuntimeException("this step failed");
         });
     }
