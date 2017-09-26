@@ -12,11 +12,11 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/js/env.js:3"
+              "location": "support/js/env.js:11"
             },
             "name": "this step passes",
             "result": {
-              "duration": 3,
+              "duration": 2,
               "status": "passed"
             }
           }

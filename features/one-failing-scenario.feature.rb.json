@@ -13,12 +13,35 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/ruby/env.rb:10"
+              "location": "support/ruby/env.rb:14"
             },
             "name": "this step fails",
             "result": {
-              "duration": 349045,
-              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:11:in `/fail/'\nfeatures/one-failing-scenario.feature:3:in `Given this step fails'",
+              "duration": 219609,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:15:in `/fail/'\nfeatures/one-failing-scenario.feature:3:in `Given this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:14"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 225097,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:15:in `/fail/'\nfeatures/one-failing-scenario.feature:3:in `Given this step fails'",
               "status": "failed"
             }
           }

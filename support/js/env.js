@@ -1,4 +1,12 @@
-var { Given, Before } = require('cucumber')
+const { Given, Before, After } = require('cucumber')
+
+Before({ tags: "@failing-before" }, function () {
+  throw new Error("failing before hook")
+})
+
+After({ tags: "@failing-after" }, function () {
+  throw new Error("failing after hook")
+})
 
 Given(/pass/, function () {
 })
@@ -9,8 +17,4 @@ Given(/fail/, function () {
 
 Given(/skip/, function () {
   return 'skipped'
-})
-
-Before({ tags: "@failing-before" }, function () {
-  throw new Error("failing before hook")
 })

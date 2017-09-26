@@ -7,6 +7,10 @@ public class Steps implements En {
             throw new RuntimeException("failing before hook");
         });
 
+        After(new String[]{"@failing-after"}, () -> {
+            throw new RuntimeException("failing after hook");
+        });
+
         Given("^this step passes$", () -> {
         });
 

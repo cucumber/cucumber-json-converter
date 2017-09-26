@@ -4,6 +4,10 @@ Before('@failing-before') do
   raise "Failing before hook"
 end
 
+After('@failing-after') do
+  raise "Failing after hook"
+end
+
 Given /pass/ do
 end
 

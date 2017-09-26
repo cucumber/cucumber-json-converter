@@ -13,12 +13,12 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/ruby/env.rb:19"
+              "location": "support/ruby/env.rb:23"
             },
             "name": "this step is flaky",
             "result": {
-              "duration": 177445,
-              "error_message": "Flaky fail (RuntimeError)\n./support/ruby/env.rb:22:in `/flaky/'\nfeatures/flaky-scenario.feature:3:in `Given this step is flaky'",
+              "duration": 216794,
+              "error_message": "Flaky fail (RuntimeError)\n./support/ruby/env.rb:26:in `/flaky/'\nfeatures/flaky-scenario.feature:3:in `Given this step is flaky'",
               "status": "failed"
             }
           }
@@ -36,11 +36,11 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/ruby/env.rb:19"
+              "location": "support/ruby/env.rb:23"
             },
             "name": "this step is flaky",
             "result": {
-              "duration": 16905,
+              "duration": 50274,
               "status": "passed"
             }
           }

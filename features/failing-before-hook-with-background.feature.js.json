@@ -11,11 +11,11 @@
             "hidden": true,
             "keyword": "Before",
             "match": {
-              "location": "support/js/env.js:14"
+              "location": "support/js/env.js:3"
             },
             "result": {
               "duration": 1,
-              "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:15:9)",
+              "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:4:9)",
               "status": "failed"
             }
           },
@@ -24,7 +24,7 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/js/env.js:3"
+              "location": "support/js/env.js:11"
             },
             "name": "this step passes",
             "result": {
@@ -36,7 +36,7 @@
             "keyword": "Given ",
             "line": 7,
             "match": {
-              "location": "support/js/env.js:3"
+              "location": "support/js/env.js:11"
             },
             "name": "this step passes",
             "result": {

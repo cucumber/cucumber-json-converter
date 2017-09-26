@@ -3,14 +3,14 @@
     "description": "",
     "elements": [
       {
-        "before": [
+        "after": [
           {
             "match": {
-              "location": "support/ruby/env.rb:3"
+              "location": "support/ruby/env.rb:7"
             },
             "result": {
-              "duration": 301080,
-              "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:4:in `Before'",
+              "duration": 167421,
+              "error_message": "Failing after hook (RuntimeError)\n./support/ruby/env.rb:8:in `After'",
               "status": "failed"
             }
           }
@@ -29,27 +29,28 @@
             },
             "name": "this step passes",
             "result": {
-              "status": "skipped"
+              "duration": 170890,
+              "status": "passed"
             }
           }
         ],
         "tags": [
           {
             "line": 2,
-            "name": "@failing-before"
+            "name": "@failing-after"
           }
         ],
         "type": "scenario"
       },
       {
-        "before": [
+        "after": [
           {
             "match": {
-              "location": "support/ruby/env.rb:3"
+              "location": "support/ruby/env.rb:7"
             },
             "result": {
-              "duration": 248074,
-              "error_message": "Failing before hook (RuntimeError)\n./support/ruby/env.rb:4:in `Before'",
+              "duration": 265453,
+              "error_message": "Failing after hook (RuntimeError)\n./support/ruby/env.rb:8:in `After'",
               "status": "failed"
             }
           }
@@ -68,14 +69,15 @@
             },
             "name": "this step passes",
             "result": {
-              "status": "skipped"
+              "duration": 223649,
+              "status": "passed"
             }
           }
         ],
         "tags": [
           {
             "line": 2,
-            "name": "@failing-before"
+            "name": "@failing-after"
           }
         ],
         "type": "scenario"
@@ -85,6 +87,6 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
-    "uri": "features/failing-before-hook.feature"
+    "uri": "features/failing-after-hook.feature"
   }
 ]

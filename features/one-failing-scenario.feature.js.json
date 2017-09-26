@@ -12,12 +12,12 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/js/env.js:6"
+              "location": "support/js/env.js:14"
             },
             "name": "this step fails",
             "result": {
               "duration": 3,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:7:9)",
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:15:9)",
               "status": "failed"
             }
           }

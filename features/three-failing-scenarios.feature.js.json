@@ -12,12 +12,12 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "support/js/env.js:6"
+              "location": "support/js/env.js:14"
             },
             "name": "this step fails",
             "result": {
-              "duration": 2,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:7:9)",
+              "duration": 1,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:15:9)",
               "status": "failed"
             }
           }
@@ -36,7 +36,7 @@
             "keyword": "Given ",
             "line": 6,
             "match": {
-              "location": "support/js/env.js:3"
+              "location": "support/js/env.js:11"
             },
             "name": "this step passes",
             "result": {
@@ -49,12 +49,11 @@
             "keyword": "When ",
             "line": 7,
             "match": {
-              "location": "support/js/env.js:6"
+              "location": "support/js/env.js:14"
             },
             "name": "this step fails",
             "result": {
-              "duration": 1,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:7:9)",
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:15:9)",
               "status": "failed"
             }
           }
@@ -73,7 +72,7 @@
             "keyword": "Given ",
             "line": 10,
             "match": {
-              "location": "support/js/env.js:3"
+              "location": "support/js/env.js:11"
             },
             "name": "this step passes",
             "result": {
@@ -85,7 +84,7 @@
             "keyword": "When ",
             "line": 11,
             "match": {
-              "location": "support/js/env.js:3"
+              "location": "support/js/env.js:11"
             },
             "name": "this step passes",
             "result": {
@@ -97,11 +96,11 @@
             "keyword": "Then ",
             "line": 12,
             "match": {
-              "location": "support/js/env.js:6"
+              "location": "support/js/env.js:14"
             },
             "name": "this step fails",
             "result": {
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:7:9)",
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:15:9)",
               "status": "failed"
             }
           }
