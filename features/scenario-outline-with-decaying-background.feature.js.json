@@ -1,0 +1,83 @@
+[
+  {
+    "elements": [
+      {
+        "id": "scenario-outline;",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/js/env.js:23"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 2,
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "support/js/env.js:11"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 1,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "scenario-outline;",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/js/env.js:23"
+            },
+            "name": "a decaying step",
+            "result": {
+              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-formatter/support/js/env.js:26:21)",
+              "status": "failed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "support/js/env.js:11"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Scenario Outline",
+    "tags": [],
+    "uri": "features/scenario-outline-with-decaying-background.feature"
+  }
+]

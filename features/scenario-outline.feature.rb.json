@@ -1,0 +1,182 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "scenario-outline;;;2",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 53618,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 8,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 12827,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;3",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 9,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "a failing step",
+            "result": {
+              "duration": 290227,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/scenario-outline.feature:9:in `Given a failing step'\nfeatures/scenario-outline.feature:3:in `Given a <something> step'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;3",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 9,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "a failing step",
+            "result": {
+              "duration": 397588,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/scenario-outline.feature:9:in `Given a failing step'\nfeatures/scenario-outline.feature:3:in `Given a <something> step'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;3",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 9,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "a failing step",
+            "result": {
+              "duration": 414246,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nfeatures/scenario-outline.feature:9:in `Given a failing step'\nfeatures/scenario-outline.feature:3:in `Given a <something> step'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;4",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "support/ruby/env.rb:34"
+            },
+            "name": "a pending step",
+            "result": {
+              "duration": 317804,
+              "error_message": "TODO (Cucumber::Pending)\n./support/ruby/env.rb:35:in `/pending/'\nfeatures/scenario-outline.feature:10:in `Given a pending step'\nfeatures/scenario-outline.feature:3:in `Given a <something> step'",
+              "status": "pending"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Scenario Outline",
+    "uri": "features/scenario-outline.feature"
+  }
+]
