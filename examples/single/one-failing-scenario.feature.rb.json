@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 149000,
+              "duration": 248000,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/one-failing-scenario.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -40,7 +40,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 153000,
+              "duration": 595000,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/one-failing-scenario.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -63,7 +63,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 144000,
+              "duration": 275000,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/one-failing-scenario.feature:3:in `Given this step fails'",
               "status": "failed"
             }

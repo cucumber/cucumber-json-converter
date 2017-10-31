@@ -27,7 +27,8 @@
               "location": "support/js/env.js:7"
             },
             "result": {
-              "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/matt/projects/cucumber-json-formatter/support/js/env.js:8:9)",
+              "duration": 1,
+              "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/romain/Projects/cucumber/json-formatter-approval-tests/support/js/env.js:8:9)",
               "status": "failed"
             }
           }

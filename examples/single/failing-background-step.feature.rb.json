@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 135000,
+              "duration": 145000,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-step.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -49,7 +49,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 97000,
+              "duration": 930000,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-step.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -82,7 +82,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 93000,
+              "duration": 255000,
               "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-step.feature:3:in `Given this step fails'",
               "status": "failed"
             }

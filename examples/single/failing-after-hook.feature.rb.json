@@ -9,7 +9,7 @@
               "location": "support/ruby/env.rb:5"
             },
             "result": {
-              "duration": 126000,
+              "duration": 3005000,
               "error_message": "Failing after hook (RuntimeError)\n./support/ruby/env.rb:6:in `After'",
               "status": "failed"
             }
@@ -29,7 +29,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 40000,
+              "duration": 885000,
               "status": "passed"
             }
           }
@@ -49,7 +49,7 @@
               "location": "support/ruby/env.rb:5"
             },
             "result": {
-              "duration": 245000,
+              "duration": 194000,
               "error_message": "Failing after hook (RuntimeError)\n./support/ruby/env.rb:6:in `After'",
               "status": "failed"
             }
@@ -69,7 +69,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 21000,
+              "duration": 32000,
               "status": "passed"
             }
           }
@@ -89,7 +89,7 @@
               "location": "support/ruby/env.rb:5"
             },
             "result": {
-              "duration": 145000,
+              "duration": 209000,
               "error_message": "Failing after hook (RuntimeError)\n./support/ruby/env.rb:6:in `After'",
               "status": "failed"
             }
@@ -109,7 +109,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 14000,
+              "duration": 35000,
               "status": "passed"
             }
           }

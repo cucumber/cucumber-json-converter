@@ -16,7 +16,6 @@
             },
             "name": "this step is pending",
             "result": {
-              "duration": 1,
               "status": "pending"
             }
           }

@@ -16,7 +16,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 76000,
+              "duration": 51000,
               "status": "passed"
             }
           },
@@ -28,7 +28,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 7000,
+              "duration": 18000,
               "status": "passed"
             }
           }
@@ -49,7 +49,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 167000,
+              "duration": 162000,
               "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:24:in `/decaying/'\nexamples/single/scenario-outline-with-decaying-background.feature:3:in `Given a decaying step'",
               "status": "failed"
             }
@@ -82,7 +82,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 95000,
+              "duration": 306000,
               "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:24:in `/decaying/'\nexamples/single/scenario-outline-with-decaying-background.feature:3:in `Given a decaying step'",
               "status": "failed"
             }
@@ -115,7 +115,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 95000,
+              "duration": 187000,
               "error_message": "Decayed (RuntimeError)\n./support/ruby/env.rb:24:in `/decaying/'\nexamples/single/scenario-outline-with-decaying-background.feature:3:in `Given a decaying step'",
               "status": "failed"
             }

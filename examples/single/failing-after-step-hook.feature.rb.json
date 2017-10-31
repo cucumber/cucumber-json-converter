@@ -16,7 +16,7 @@
                   "location": "support/ruby/env.rb:9"
                 },
                 "result": {
-                  "duration": 168000,
+                  "duration": 228000,
                   "error_message": "Failing after step (RuntimeError)\n./support/ruby/env.rb:10:in `AfterStep'",
                   "status": "failed"
                 }
@@ -29,7 +29,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 37000,
+              "duration": 52000,
               "status": "passed"
             }
           }
@@ -56,7 +56,7 @@
                   "location": "support/ruby/env.rb:9"
                 },
                 "result": {
-                  "duration": 87000,
+                  "duration": 930000,
                   "error_message": "Failing after step (RuntimeError)\n./support/ruby/env.rb:10:in `AfterStep'",
                   "status": "failed"
                 }
@@ -69,7 +69,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 17000,
+              "duration": 47000,
               "status": "passed"
             }
           }
@@ -96,7 +96,7 @@
                   "location": "support/ruby/env.rb:9"
                 },
                 "result": {
-                  "duration": 158000,
+                  "duration": 130000,
                   "error_message": "Failing after step (RuntimeError)\n./support/ruby/env.rb:10:in `AfterStep'",
                   "status": "failed"
                 }
@@ -109,7 +109,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 19000,
+              "duration": 24000,
               "status": "passed"
             }
           }

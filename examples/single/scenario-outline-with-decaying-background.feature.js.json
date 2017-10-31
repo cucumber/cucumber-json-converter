@@ -16,7 +16,6 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 1,
               "status": "passed"
             }
           },
@@ -51,7 +50,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/matt/projects/cucumber-json-formatter/support/js/env.js:26:21)",
+              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/romain/Projects/cucumber/json-formatter-approval-tests/support/js/env.js:26:21)",
               "status": "failed"
             }
           },

@@ -16,8 +16,41 @@
             },
             "name": "this step fails",
             "result": {
+              "duration": 1,
               "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/romain/Projects/cucumber/json-formatter-approval-tests/support/js/env.js:19:9)",
               "status": "failed"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "examples/multiple/two-features-two-failing-scenarios-one-passing-scenario/fail.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/js/env.js:11"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "passed"
             }
           }
         ],
@@ -39,7 +72,6 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 1,
               "status": "passed"
             }
           },
@@ -52,53 +84,7 @@
             },
             "name": "this step fails",
             "result": {
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/romain/Projects/cucumber/json-formatter-approval-tests/support/js/env.js:19:9)",
-              "status": "failed"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 10,
-            "match": {
-              "location": "support/js/env.js:11"
-            },
-            "name": "this step passes",
-            "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "match": {
-              "location": "support/js/env.js:11"
-            },
-            "name": "this step passes",
-            "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "match": {
-              "location": "support/js/env.js:18"
-            },
-            "name": "this step fails",
-            "result": {
+              "duration": 1,
               "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/romain/Projects/cucumber/json-formatter-approval-tests/support/js/env.js:19:9)",
               "status": "failed"
             }
@@ -113,6 +99,6 @@
     "line": 1,
     "name": "",
     "tags": [],
-    "uri": "examples/single/three-failing-scenarios.feature"
+    "uri": "examples/multiple/two-features-two-failing-scenarios-one-passing-scenario/one-pass-one-fail.feature"
   }
 ]
