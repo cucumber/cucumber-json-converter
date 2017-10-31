@@ -1,0 +1,34 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";;;2",
+        "keyword": "Scenario Outline",
+        "line": 7,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 33000,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "examples/single/one-passing-scenario-outline-row.feature"
+  }
+]

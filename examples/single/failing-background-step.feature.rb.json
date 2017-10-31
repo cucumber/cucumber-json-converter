@@ -1,0 +1,111 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 135000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-step.feature:3:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 97000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-step.feature:3:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 93000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-step.feature:3:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "examples/single/failing-background-step.feature"
+  }
+]

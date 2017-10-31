@@ -1,0 +1,35 @@
+[
+  {
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/js/env.js:14"
+            },
+            "name": "this step is pending",
+            "result": {
+              "duration": 1,
+              "status": "pending"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "examples/single/one-pending-scenario.feature"
+  }
+]

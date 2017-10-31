@@ -1,0 +1,36 @@
+[
+  {
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/js/env.js:18"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 1,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/matt/projects/cucumber-json-formatter/support/js/env.js:19:9)",
+              "status": "failed"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "examples/single/one-failing-scenario.feature"
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 102000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 85000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 143000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 104000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 117000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 167000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "examples/single/failing-background-with-two-scenarios.feature"
+  }
+]

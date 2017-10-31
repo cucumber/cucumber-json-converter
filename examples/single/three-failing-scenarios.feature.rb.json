@@ -1,0 +1,327 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 112000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/three-failing-scenarios.feature:3:in `Given this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 261000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/three-failing-scenarios.feature:3:in `Given this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 260000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/three-failing-scenarios.feature:3:in `Given this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 18000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 156000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/three-failing-scenarios.feature:7:in `When this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 14000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 85000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/three-failing-scenarios.feature:7:in `When this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 46000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 173000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/three-failing-scenarios.feature:7:in `When this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 23000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 11,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 7000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 99000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/three-failing-scenarios.feature:12:in `Then this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 30000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 11,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 11000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 200000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/three-failing-scenarios.feature:12:in `Then this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 20000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 11,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 7000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "location": "support/ruby/env.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 116000,
+              "error_message": "Fail (RuntimeError)\n./support/ruby/env.rb:17:in `/fail/'\nexamples/single/three-failing-scenarios.feature:12:in `Then this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "examples/single/three-failing-scenarios.feature"
+  }
+]

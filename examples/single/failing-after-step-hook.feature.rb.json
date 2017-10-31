@@ -1,0 +1,132 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "after": [
+              {
+                "match": {
+                  "location": "support/ruby/env.rb:9"
+                },
+                "result": {
+                  "duration": 168000,
+                  "error_message": "Failing after step (RuntimeError)\n./support/ruby/env.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 37000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing-after-step"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "after": [
+              {
+                "match": {
+                  "location": "support/ruby/env.rb:9"
+                },
+                "result": {
+                  "duration": 87000,
+                  "error_message": "Failing after step (RuntimeError)\n./support/ruby/env.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 17000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing-after-step"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "after": [
+              {
+                "match": {
+                  "location": "support/ruby/env.rb:9"
+                },
+                "result": {
+                  "duration": 158000,
+                  "error_message": "Failing after step (RuntimeError)\n./support/ruby/env.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "support/ruby/env.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 19000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing-after-step"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "examples/single/failing-after-step-hook.feature"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {},
+            "name": "this step is flaky",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "examples/single/flaky-scenario.feature"
+  }
+]
