@@ -9,7 +9,7 @@
               "location": "features/step_definitions/stepdefs.rb:5"
             },
             "result": {
-              "duration": 200033,
+              "duration": 272106,
               "error_message": "Failing after hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:6:in `After'",
               "status": "failed"
             }
@@ -29,7 +29,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 61449,
+              "duration": 84451,
               "status": "passed"
             }
           }
@@ -49,7 +49,7 @@
               "location": "features/step_definitions/stepdefs.rb:5"
             },
             "result": {
-              "duration": 132849,
+              "duration": 287132,
               "error_message": "Failing after hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:6:in `After'",
               "status": "failed"
             }
@@ -69,7 +69,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 17887,
+              "duration": 47463,
               "status": "passed"
             }
           }
@@ -89,7 +89,7 @@
               "location": "features/step_definitions/stepdefs.rb:5"
             },
             "result": {
-              "duration": 134276,
+              "duration": 338252,
               "error_message": "Failing after hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:6:in `After'",
               "status": "failed"
             }
@@ -109,7 +109,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 19663,
+              "duration": 44167,
               "status": "passed"
             }
           }
