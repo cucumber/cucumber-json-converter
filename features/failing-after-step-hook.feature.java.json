@@ -13,11 +13,11 @@
             "keyword": "Given ",
             "line": 4,
             "match": {
-              "location": "NativeConstructorAccessorImpl.java:-2"
+              "location": "Steps.java:17"
             },
             "name": "this step passes",
             "result": {
-              "duration": 412241845,
+              "duration": 401297657,
               "status": "passed"
             }
           }
@@ -34,6 +34,7 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
+    "tags": [],
     "uri": "features/failing-after-step-hook.feature"
   }
 ]

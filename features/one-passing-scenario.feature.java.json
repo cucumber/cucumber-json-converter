@@ -13,11 +13,11 @@
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "NativeConstructorAccessorImpl.java:-2"
+              "location": "Steps.java:17"
             },
             "name": "this step passes",
             "result": {
-              "duration": 484272991,
+              "duration": 698500873,
               "status": "passed"
             }
           }
@@ -29,6 +29,7 @@
     "keyword": "Feature",
     "line": 1,
     "name": "",
+    "tags": [],
     "uri": "features/one-passing-scenario.feature"
   }
 ]

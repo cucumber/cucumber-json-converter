@@ -16,7 +16,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 8,
+              "duration": 2,
               "status": "passed"
             }
           },
@@ -52,6 +52,7 @@
             },
             "name": "a decaying step",
             "result": {
+              "duration": 1,
               "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/json-formatter-approval-tests/features/step_definitions/stepdefs.js:26:21)",
               "status": "failed"
             }

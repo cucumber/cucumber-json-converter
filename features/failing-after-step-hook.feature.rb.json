@@ -16,7 +16,7 @@
                   "location": "features/step_definitions/stepdefs.rb:9"
                 },
                 "result": {
-                  "duration": 188082,
+                  "duration": 234529,
                   "error_message": "Failing after step (RuntimeError)\n./features/step_definitions/stepdefs.rb:10:in `AfterStep'",
                   "status": "failed"
                 }
@@ -29,7 +29,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 68025,
+              "duration": 75974,
               "status": "passed"
             }
           }
@@ -56,7 +56,7 @@
                   "location": "features/step_definitions/stepdefs.rb:9"
                 },
                 "result": {
-                  "duration": 250164,
+                  "duration": 291099,
                   "error_message": "Failing after step (RuntimeError)\n./features/step_definitions/stepdefs.rb:10:in `AfterStep'",
                   "status": "failed"
                 }
@@ -69,7 +69,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 43371,
+              "duration": 44511,
               "status": "passed"
             }
           }
@@ -96,7 +96,7 @@
                   "location": "features/step_definitions/stepdefs.rb:9"
                 },
                 "result": {
-                  "duration": 189244,
+                  "duration": 210932,
                   "error_message": "Failing after step (RuntimeError)\n./features/step_definitions/stepdefs.rb:10:in `AfterStep'",
                   "status": "failed"
                 }
@@ -109,7 +109,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 30497,
+              "duration": 31691,
               "status": "passed"
             }
           }

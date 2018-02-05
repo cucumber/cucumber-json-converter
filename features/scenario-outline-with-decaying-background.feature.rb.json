@@ -16,7 +16,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 87839,
+              "duration": 98755,
               "status": "passed"
             }
           },
@@ -28,7 +28,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 50198,
+              "duration": 13951,
               "status": "passed"
             }
           }
@@ -49,7 +49,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 343471,
+              "duration": 264851,
               "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/scenario-outline-with-decaying-background.feature:3:in `Given a decaying step'",
               "status": "failed"
             }
@@ -82,7 +82,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 283655,
+              "duration": 210324,
               "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/scenario-outline-with-decaying-background.feature:3:in `Given a decaying step'",
               "status": "failed"
             }
@@ -115,7 +115,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 298036,
+              "duration": 184941,
               "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/scenario-outline-with-decaying-background.feature:3:in `Given a decaying step'",
               "status": "failed"
             }

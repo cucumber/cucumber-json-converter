@@ -7,6 +7,6 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "cucumber": "^3.0.3"
+    "cucumber": "^4.0.0"
   }
 }

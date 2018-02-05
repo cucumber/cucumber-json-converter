@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'cucumber', '3.0.0.pre.2'
+gem 'cucumber', '3.1.0'

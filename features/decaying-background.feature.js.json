@@ -17,7 +17,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 28,
+              "duration": 6,
               "status": "passed"
             }
           },
