@@ -71,60 +71,7 @@
     <Compile Include="StepDefinitions\StepDefinitions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="../../features/decaying-background.feature">
-      <Link>Features\decaying-background.feature</Link>
-    </None>
-    <None Include="../../features/failing-after-hook.feature">
-      <Link>Features\failing-after-hook.feature</Link>
-    </None>
-    <None Include="../../features/failing-after-step-hook.feature">
-      <Link>Features\failing-after-step-hook.feature</Link>
-    </None>
-    <None Include="../../features/failing-background-step.feature">
-      <Link>Features\failing-background-step.feature</Link>
-    </None>
-    <None Include="../../features/failing-background-with-two-scenarios.feature">
-      <Link>Features\failing-background-with-two-scenarios.feature</Link>
-    </None>
-    <None Include="../../features/failing-before-hook-with-background.feature">
-      <Link>Features\failing-before-hook-with-background.feature</Link>
-    </None>
-    <None Include="../../features/failing-before-hook.feature">
-      <Link>Features\failing-before-hook.feature</Link>
-    </None>
-    <None Include="../../features/flaky-scenario.feature">
-      <Link>Features\flaky-scenario.feature</Link>
-    </None>
-    <None Include="../../features/one-failing-scenario.feature">
-      <Link>Features\one-failing-scenario.feature</Link>
-    </None>
-    <None Include="../../features/one-passing-scenario-outline-row.feature">
-      <Link>Features\one-passing-scenario-outline-row.feature</Link>
-    </None>
-    <None Include="../../features/one-passing-scenario.feature">
-      <Link>Features\one-passing-scenario.feature</Link>
-      <LastGenOutput>one-passing-scenario.feature.cs</LastGenOutput>
-    </None>
-    <None Include="../../features/one-pending-scenario.feature">
-      <Link>Features\one-pending-scenario.feature</Link>
-    </None>
-    <None Include="../../features/one-skipped-scenario.feature">
-      <Link>Features\one-skipped-scenario.feature</Link>
-    </None>
-    <None Include="../../features/one-undefined-scenario.feature">
-      <Link>Features\one-undefined-scenario.feature</Link>
-    </None>
-    <None Include="../../features/scenario-outline-with-decaying-background.feature">
-      <Link>Features\scenario-outline-with-decaying-background.feature</Link>
-    </None>
-    <None Include="../../features/scenario-outline.feature">
-      <Link>Features\scenario-outline.feature</Link>
-    </None>
-    <None Include="../../features/three-failing-scenarios.feature">
-      <Link>Features\three-failing-scenarios.feature</Link>
-    </None>
-    <None Include="../../features/undefined-background-with-two-scenarios.feature">
-      <Link>Features\undefined-background-with-two-scenarios.feature</Link>
+    <None Include="../../features/*.feature">
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
