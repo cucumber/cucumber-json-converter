@@ -33,6 +33,8 @@ features/%.feature.java.json: features/%.feature $(JAVA_FILES)
 
 specflow: $(SPECFLOW_FILES)
 	-cd ./src/Cucumber.Pro.SpecFlowPlugin.TestDataGenerator
+	wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+	mono nuget.exe restore
 	msbuild
 	mono --debug ./bin/Debug/Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.exe
 

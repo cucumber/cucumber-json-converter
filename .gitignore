@@ -24,6 +24,7 @@ bld/
 # NuGet v3's project.json files produces more ignoreable files
 *.nuget.props
 *.nuget.targets
+nuget.exe
 
 # Visual Studio 2015 cache/options directory
 .vs/
