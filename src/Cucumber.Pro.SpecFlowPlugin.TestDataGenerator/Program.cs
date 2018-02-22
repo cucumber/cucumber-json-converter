@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using Cucumber.Pro.SpecFlowPlugin.Formatters;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using NUnit.Common;
 using TechTalk.SpecFlow.Tracing;
 
 namespace Cucumber.Pro.SpecFlowPlugin.TestDataGenerator
@@ -16,7 +12,7 @@ namespace Cucumber.Pro.SpecFlowPlugin.TestDataGenerator
     {
         static void Main(string[] args)
         {
-            Environment.SetEnvironmentVariable("CUCUMBERPRO_LOGGING", "DEBUG", EnvironmentVariableTarget.Process);
+            Environment.SetEnvironmentVariable("CUCUMBERPRO_LOGGING", "INFO", EnvironmentVariableTarget.Process);
             Environment.SetEnvironmentVariable("CUCUMBERPRO_PROJECTNAME", "test-prj", EnvironmentVariableTarget.Process);
             Environment.SetEnvironmentVariable("GIT_COMMIT", "test-sha", EnvironmentVariableTarget.Process);
             Environment.SetEnvironmentVariable("GIT_BRANCH", "test-master", EnvironmentVariableTarget.Process);
@@ -27,7 +23,12 @@ namespace Cucumber.Pro.SpecFlowPlugin.TestDataGenerator
                                  Directory.GetCurrentDirectory(); // in the very rare case the assembly folder cannot be detected, we use current directory
             var featuresFolder = Path.GetFullPath(Path.Combine(assemblyFolder, "..", "..", "..", "..", "features"));
 
-            ProcessFeature("one-passing-scenario.feature", assemblyFolder, featuresFolder);
+            var featureFiles = Directory.GetFiles(featuresFolder, "*.feature");
+            foreach (var featureFile in featureFiles)
+            {
+                Console.WriteLine($"Processing {featureFile}...");
+                ProcessFeature(featureFile, assemblyFolder, featuresFolder);
+            }
         }
 
         private static void ProcessFeature(string featureFileName, string assemblyFolder, string featuresFolder)
@@ -43,9 +44,14 @@ namespace Cucumber.Pro.SpecFlowPlugin.TestDataGenerator
 
             var jsonContent = File.ReadAllText(Path.Combine(assemblyFolder, "results.json"));
             var obj = JObject.Parse(jsonContent);
-            var token = (JObject)obj.SelectToken("cucumberJson").First();
+            var token = obj.SelectToken("cucumberJson");
             var result = JsonConvert.SerializeObject(token, Formatting.Indented);
+            result = result.Replace("\"uri\": \"src/Cucumber.Pro.SpecFlowPlugin.TestDataGenerator/.generated/", "\"uri\": \"features/");
             File.WriteAllText(Path.Combine(featuresFolder, featureFileName + ".specflow.json"), result);
+
+            ConsoleOptions options = (ConsoleOptions)typeof(NUnit.ConsoleRunner.Program).GetField("Options", BindingFlags.Static | BindingFlags.NonPublic).GetValue(null);
+            options.TestList.Clear();
+            options.InputFiles.Clear();
         }
     }
 }
