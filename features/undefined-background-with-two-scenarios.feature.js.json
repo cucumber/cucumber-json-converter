@@ -3,10 +3,10 @@
     "description": "  Here is a description",
     "elements": [
       {
-        "id": ";",
+        "id": "undefined-background-with-two-scenarios;s1",
         "keyword": "Scenario",
         "line": 6,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "arguments": [],
@@ -31,10 +31,10 @@
         "type": "scenario"
       },
       {
-        "id": ";",
+        "id": "undefined-background-with-two-scenarios;s2",
         "keyword": "Scenario",
         "line": 8,
-        "name": "",
+        "name": "S2",
         "steps": [
           {
             "arguments": [],
@@ -59,10 +59,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "undefined-background-with-two-scenarios",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "undefined-background-with-two-scenarios",
     "tags": [],
     "uri": "features/undefined-background-with-two-scenarios.feature"
   }

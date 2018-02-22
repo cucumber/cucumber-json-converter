@@ -3,18 +3,6 @@
     "description": "",
     "elements": [
       {
-        "before": [
-          {
-            "match": {
-              "location": "features/step_definitions/stepdefs.rb:1"
-            },
-            "result": {
-              "duration": 176619,
-              "error_message": "Failing before hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:2:in `Before'",
-              "status": "failed"
-            }
-          }
-        ],
         "description": "",
         "keyword": "Background",
         "line": 2,
@@ -28,52 +16,20 @@
             },
             "name": "this step passes",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "keyword": "Given ",
-            "line": 7,
-            "match": {
-              "location": "features/step_definitions/stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "status": "skipped"
+              "duration": 57964,
+              "status": "passed"
             }
           }
         ],
         "type": "background"
       },
       {
-        "before": [
-          {
-            "match": {
-              "location": "features/step_definitions/stepdefs.rb:1"
-            },
-            "result": {
-              "duration": 200808,
-              "error_message": "Failing before hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:2:in `Before'",
-              "status": "failed"
-            }
-          }
-        ],
         "description": "",
-        "keyword": "Background",
-        "line": 2,
-        "name": "",
+        "id": "failing-before-hook-with-background;s1",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "S1",
         "steps": [
-          {
-            "keyword": "Given ",
-            "line": 3,
-            "match": {
-              "location": "features/step_definitions/stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "status": "skipped"
-            }
-          },
           {
             "keyword": "Given ",
             "line": 7,
@@ -82,60 +38,24 @@
             },
             "name": "this step passes",
             "result": {
-              "status": "skipped"
+              "duration": 11908,
+              "status": "passed"
             }
           }
         ],
-        "type": "background"
-      },
-      {
-        "before": [
+        "tags": [
           {
-            "match": {
-              "location": "features/step_definitions/stepdefs.rb:1"
-            },
-            "result": {
-              "duration": 162456,
-              "error_message": "Failing before hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:2:in `Before'",
-              "status": "failed"
-            }
+            "line": 5,
+            "name": "@failing_before"
           }
         ],
-        "description": "",
-        "keyword": "Background",
-        "line": 2,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 3,
-            "match": {
-              "location": "features/step_definitions/stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "keyword": "Given ",
-            "line": 7,
-            "match": {
-              "location": "features/step_definitions/stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ],
-        "type": "background"
+        "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "failing-before-hook-with-background",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "failing-before-hook-with-background",
     "uri": "features/failing-before-hook-with-background.feature"
   }
 ]

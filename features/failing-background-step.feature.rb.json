@@ -16,11 +16,21 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 210848,
+              "duration": 295933,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-step.feature:3:in `Given this step fails'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-step;s1",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 6,
@@ -33,7 +43,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -49,11 +59,21 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 134593,
+              "duration": 143627,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-step.feature:3:in `Given this step fails'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-step;s1",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 6,
@@ -66,7 +86,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -82,11 +102,21 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 338095,
+              "duration": 165236,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-step.feature:3:in `Given this step fails'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-step;s1",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 6,
@@ -99,13 +129,13 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "failing-background-step",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "failing-background-step",
     "uri": "features/failing-background-step.feature"
   }
 ]

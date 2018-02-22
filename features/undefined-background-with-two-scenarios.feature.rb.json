@@ -18,7 +18,17 @@
             "result": {
               "status": "undefined"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "undefined-background-with-two-scenarios;s1",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 7,
@@ -31,7 +41,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -49,7 +59,17 @@
             "result": {
               "status": "undefined"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "undefined-background-with-two-scenarios;s2",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "S2",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 9,
@@ -62,13 +82,13 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "undefined-background-with-two-scenarios",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "undefined-background-with-two-scenarios",
     "uri": "features/undefined-background-with-two-scenarios.feature"
   }
 ]

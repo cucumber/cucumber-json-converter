@@ -2,23 +2,11 @@
   {
     "elements": [
       {
-        "id": ";",
+        "id": "failing-before-hook-with-background;s1",
         "keyword": "Scenario",
         "line": 6,
-        "name": "",
+        "name": "S1",
         "steps": [
-          {
-            "hidden": true,
-            "keyword": "Before",
-            "match": {
-              "location": "features/step_definitions/stepdefs.js:3"
-            },
-            "result": {
-              "duration": 1,
-              "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/json-formatter-approval-tests/features/step_definitions/stepdefs.js:4:9)",
-              "status": "failed"
-            }
-          },
           {
             "arguments": [],
             "keyword": "Given ",
@@ -28,7 +16,8 @@
             },
             "name": "this step passes",
             "result": {
-              "status": "skipped"
+              "duration": 1,
+              "status": "passed"
             }
           },
           {
@@ -40,23 +29,23 @@
             },
             "name": "this step passes",
             "result": {
-              "status": "skipped"
+              "status": "passed"
             }
           }
         ],
         "tags": [
           {
             "line": 5,
-            "name": "@failing-before"
+            "name": "@failing_before"
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "failing-before-hook-with-background",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "failing-before-hook-with-background",
     "tags": [],
     "uri": "features/failing-before-hook-with-background.feature"
   }

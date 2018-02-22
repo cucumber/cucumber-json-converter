@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": ";",
+        "id": "failing-after-step-hook;s1",
         "keyword": "Scenario",
         "line": 3,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -17,23 +17,23 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 401297657,
+              "duration": 243081844,
               "status": "passed"
             }
           }
         ],
         "tags": [
           {
-            "name": "@failing-after-step"
+            "name": "@failing_after_step"
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "failing-after-step-hook",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "failing-after-step-hook",
     "tags": [],
     "uri": "features/failing-after-step-hook.feature"
   }

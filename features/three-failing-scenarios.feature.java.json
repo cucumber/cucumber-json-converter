@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": ";",
+        "id": "three-failing-scenarios;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 544444016,
+              "duration": 287610781,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/three-failing-scenarios.feature:3)\n",
               "status": "failed"
             }
@@ -27,10 +27,10 @@
       },
       {
         "description": "",
-        "id": ";",
+        "id": "three-failing-scenarios;s2",
         "keyword": "Scenario",
         "line": 5,
-        "name": "",
+        "name": "S2",
         "steps": [
           {
             "keyword": "Given ",
@@ -40,7 +40,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 137974,
+              "duration": 128176,
               "status": "passed"
             }
           },
@@ -52,7 +52,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 344282,
+              "duration": 339962,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/three-failing-scenarios.feature:7)\n",
               "status": "failed"
             }
@@ -62,10 +62,10 @@
       },
       {
         "description": "",
-        "id": ";",
+        "id": "three-failing-scenarios;s3",
         "keyword": "Scenario",
         "line": 9,
-        "name": "",
+        "name": "S3",
         "steps": [
           {
             "keyword": "Given ",
@@ -75,7 +75,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 118552,
+              "duration": 93877,
               "status": "passed"
             }
           },
@@ -87,7 +87,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 52670,
+              "duration": 56671,
               "status": "passed"
             }
           },
@@ -99,7 +99,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 312157,
+              "duration": 228828,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/three-failing-scenarios.feature:12)\n",
               "status": "failed"
             }
@@ -108,10 +108,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "three-failing-scenarios",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "three-failing-scenarios",
     "tags": [],
     "uri": "features/three-failing-scenarios.feature"
   }

@@ -2,10 +2,10 @@
   {
     "elements": [
       {
-        "id": ";",
+        "id": "one-pending-scenario;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "arguments": [],
@@ -16,7 +16,6 @@
             },
             "name": "this step is pending",
             "result": {
-              "duration": 1,
               "status": "pending"
             }
           }
@@ -25,10 +24,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "one-pending-scenario",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "one-pending-scenario",
     "tags": [],
     "uri": "features/one-pending-scenario.feature"
   }

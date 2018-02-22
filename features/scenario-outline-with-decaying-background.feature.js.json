@@ -2,10 +2,10 @@
   {
     "elements": [
       {
-        "id": "scenario-outline;",
+        "id": "scenario-outline-with-decaying-background;s1",
         "keyword": "Scenario",
         "line": 10,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "arguments": [],
@@ -16,7 +16,6 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 2,
               "status": "passed"
             }
           },
@@ -38,10 +37,10 @@
         "type": "scenario"
       },
       {
-        "id": "scenario-outline;",
+        "id": "scenario-outline-with-decaying-background;s1",
         "keyword": "Scenario",
         "line": 11,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "arguments": [],
@@ -52,8 +51,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 1,
-              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/json-formatter-approval-tests/features/step_definitions/stepdefs.js:26:21)",
+              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/features/step_definitions/stepdefs.js:26:21)",
               "status": "failed"
             }
           },
@@ -74,10 +72,10 @@
         "type": "scenario"
       }
     ],
-    "id": "scenario-outline",
+    "id": "scenario-outline-with-decaying-background",
     "keyword": "Feature",
     "line": 1,
-    "name": "Scenario Outline",
+    "name": "scenario-outline-with-decaying-background",
     "tags": [],
     "uri": "features/scenario-outline-with-decaying-background.feature"
   }

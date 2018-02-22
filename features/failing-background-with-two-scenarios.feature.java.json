@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 659262697,
+              "duration": 271274327,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/failing-background-with-two-scenarios.feature:5)\n",
               "status": "failed"
             }
@@ -26,10 +26,10 @@
       },
       {
         "description": "",
-        "id": ";",
+        "id": "failing-background-with-two-scenarios;s1",
         "keyword": "Scenario",
         "line": 7,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -59,7 +59,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 492493,
+              "duration": 274431,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/failing-background-with-two-scenarios.feature:5)\n",
               "status": "failed"
             }
@@ -69,10 +69,10 @@
       },
       {
         "description": "",
-        "id": ";",
+        "id": "failing-background-with-two-scenarios;s2",
         "keyword": "Scenario",
         "line": 10,
-        "name": "",
+        "name": "S2",
         "steps": [
           {
             "keyword": "Given ",
@@ -89,10 +89,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "failing-background-with-two-scenarios",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "failing-background-with-two-scenarios",
     "tags": [],
     "uri": "features/failing-background-with-two-scenarios.feature"
   }

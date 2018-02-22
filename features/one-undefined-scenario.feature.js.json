@@ -2,10 +2,10 @@
   {
     "elements": [
       {
-        "id": ";",
+        "id": "one-undefined-scenario;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "arguments": [],
@@ -21,10 +21,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "one-undefined-scenario",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "one-undefined-scenario",
     "tags": [],
     "uri": "features/one-undefined-scenario.feature"
   }

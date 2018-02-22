@@ -16,10 +16,20 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 66005,
+              "duration": 49235,
               "status": "passed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "decaying-background;s1",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 8,
@@ -28,12 +38,12 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 13685,
+              "duration": 11907,
               "status": "passed"
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -49,11 +59,21 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 178046,
+              "duration": 161276,
               "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "decaying-background;s2",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "S2",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 11,
@@ -66,7 +86,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -82,11 +102,21 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 341097,
+              "duration": 160781,
               "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "decaying-background;s2",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "S2",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 11,
@@ -99,7 +129,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -115,11 +145,21 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 274690,
+              "duration": 229693,
               "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/decaying-background.feature:5:in `Given this step is decaying'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "decaying-background;s2",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "S2",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 11,
@@ -132,13 +172,13 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "decaying-background",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "decaying-background",
     "uri": "features/decaying-background.feature"
   }
 ]

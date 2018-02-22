@@ -17,7 +17,7 @@
             "keyword": "Given ",
             "name": "this step passes",
             "result": {
-              "duration": 21,
+              "duration": 19,
               "status": "passed"
             }
           }

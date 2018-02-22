@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": ";",
+        "id": "one-pending-scenario;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -17,7 +17,7 @@
             },
             "name": "this step is pending",
             "result": {
-              "duration": 344286,
+              "duration": 228421,
               "error_message": "TODO (Cucumber::Pending)\n./features/step_definitions/stepdefs.rb:35:in `/pending/'\nfeatures/one-pending-scenario.feature:3:in `Given this step is pending'",
               "status": "pending"
             }
@@ -26,10 +26,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "one-pending-scenario",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "one-pending-scenario",
     "uri": "features/one-pending-scenario.feature"
   }
 ]

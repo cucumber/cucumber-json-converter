@@ -2,10 +2,10 @@
   {
     "elements": [
       {
-        "id": ";",
+        "id": "failing-after-hook;s1",
         "keyword": "Scenario",
         "line": 3,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "arguments": [],
@@ -16,36 +16,23 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 1,
               "status": "passed"
-            }
-          },
-          {
-            "hidden": true,
-            "keyword": "After",
-            "match": {
-              "location": "features/step_definitions/stepdefs.js:7"
-            },
-            "result": {
-              "duration": 1,
-              "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/json-formatter-approval-tests/features/step_definitions/stepdefs.js:8:9)",
-              "status": "failed"
             }
           }
         ],
         "tags": [
           {
             "line": 2,
-            "name": "@failing-after"
+            "name": "@failing_after"
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "failing-after-hook",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "failing-after-hook",
     "tags": [],
     "uri": "features/failing-after-hook.feature"
   }

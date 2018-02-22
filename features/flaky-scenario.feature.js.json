@@ -3,10 +3,10 @@
     "description": "  Here is a description",
     "elements": [
       {
-        "id": ";",
+        "id": "flaky-scenario;s1",
         "keyword": "Scenario",
         "line": 4,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "arguments": [],
@@ -22,10 +22,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "flaky-scenario",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "flaky-scenario",
     "tags": [],
     "uri": "features/flaky-scenario.feature"
   }

@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": ";",
+        "id": "flaky-scenario;s1",
         "keyword": "Scenario",
         "line": 4,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -17,7 +17,7 @@
             },
             "name": "this step is flaky",
             "result": {
-              "duration": 223857,
+              "duration": 241424,
               "error_message": "Flaky (RuntimeError)\n./features/step_definitions/stepdefs.rb:31:in `/flaky/'\nfeatures/flaky-scenario.feature:5:in `Given this step is flaky'",
               "status": "failed"
             }
@@ -27,10 +27,10 @@
       },
       {
         "description": "",
-        "id": ";",
+        "id": "flaky-scenario;s1",
         "keyword": "Scenario",
         "line": 4,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -40,7 +40,7 @@
             },
             "name": "this step is flaky",
             "result": {
-              "duration": 32502,
+              "duration": 18103,
               "status": "passed"
             }
           }
@@ -48,10 +48,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "flaky-scenario",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "flaky-scenario",
     "uri": "features/flaky-scenario.feature"
   }
 ]

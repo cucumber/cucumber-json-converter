@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": "scenario-outline;;;2",
+        "id": "scenario-outline;s1;;2",
         "keyword": "Scenario Outline",
         "line": 8,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -17,7 +17,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 641926169,
+              "duration": 246454301,
               "status": "passed"
             }
           },
@@ -29,7 +29,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 75585,
+              "duration": 97838,
               "status": "passed"
             }
           }
@@ -38,10 +38,10 @@
       },
       {
         "description": "",
-        "id": "scenario-outline;;;3",
+        "id": "scenario-outline;s1;;3",
         "keyword": "Scenario Outline",
         "line": 9,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -51,7 +51,7 @@
             },
             "name": "a failing step",
             "result": {
-              "duration": 1329047,
+              "duration": 1452157,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.a failing step(features/scenario-outline.feature:3)\n",
               "status": "failed"
             }
@@ -72,10 +72,10 @@
       },
       {
         "description": "",
-        "id": "scenario-outline;;;4",
+        "id": "scenario-outline;s1;;4",
         "keyword": "Scenario Outline",
         "line": 10,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -85,7 +85,7 @@
             },
             "name": "a pending step",
             "result": {
-              "duration": 10130576,
+              "duration": 2390496,
               "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat Steps.lambda$new$3(Steps.java:21)\n\tat ✽.a pending step(features/scenario-outline.feature:3)\n",
               "status": "pending"
             }
@@ -108,7 +108,7 @@
     "id": "scenario-outline",
     "keyword": "Feature",
     "line": 1,
-    "name": "Scenario Outline",
+    "name": "scenario-outline",
     "tags": [],
     "uri": "features/scenario-outline.feature"
   }

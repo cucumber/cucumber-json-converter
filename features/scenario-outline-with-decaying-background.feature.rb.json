@@ -16,10 +16,20 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 98755,
+              "duration": 159931,
               "status": "passed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline-with-decaying-background;s1;;2",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 10,
@@ -28,12 +38,12 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 13951,
+              "duration": 15248,
               "status": "passed"
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -49,11 +59,21 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 264851,
+              "duration": 235216,
               "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/scenario-outline-with-decaying-background.feature:3:in `Given a decaying step'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline-with-decaying-background;s1;;3",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 11,
@@ -66,7 +86,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -82,11 +102,21 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 210324,
+              "duration": 353940,
               "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/scenario-outline-with-decaying-background.feature:3:in `Given a decaying step'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline-with-decaying-background;s1;;3",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 11,
@@ -99,7 +129,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -115,11 +145,21 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 184941,
+              "duration": 256810,
               "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/scenario-outline-with-decaying-background.feature:3:in `Given a decaying step'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline-with-decaying-background;s1;;3",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 11,
@@ -132,13 +172,13 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       }
     ],
-    "id": "scenario-outline",
+    "id": "scenario-outline-with-decaying-background",
     "keyword": "Feature",
     "line": 1,
-    "name": "Scenario Outline",
+    "name": "scenario-outline-with-decaying-background",
     "uri": "features/scenario-outline-with-decaying-background.feature"
   }
 ]

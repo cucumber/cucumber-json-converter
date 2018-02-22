@@ -16,11 +16,21 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 283664,
+              "duration": 419376,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-with-two-scenarios;s1",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 8,
@@ -33,7 +43,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -49,11 +59,21 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 375956,
+              "duration": 202573,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-with-two-scenarios;s1",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 8,
@@ -66,7 +86,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -82,11 +102,21 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 243533,
+              "duration": 216344,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-with-two-scenarios;s1",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "S1",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 8,
@@ -99,7 +129,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -115,11 +145,21 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 140495,
+              "duration": 260428,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-with-two-scenarios;s2",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "S2",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 11,
@@ -132,7 +172,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -148,11 +188,21 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 224226,
+              "duration": 182802,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-with-two-scenarios;s2",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "S2",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 11,
@@ -165,7 +215,7 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       },
       {
         "description": "",
@@ -181,11 +231,21 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 213361,
+              "duration": 194813,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
-          },
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-with-two-scenarios;s2",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "S2",
+        "steps": [
           {
             "keyword": "Given ",
             "line": 11,
@@ -198,13 +258,13 @@
             }
           }
         ],
-        "type": "background"
+        "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "failing-background-with-two-scenarios",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "failing-background-with-two-scenarios",
     "uri": "features/failing-background-with-two-scenarios.feature"
   }
 ]

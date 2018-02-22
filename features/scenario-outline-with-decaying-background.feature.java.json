@@ -16,7 +16,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 477906519,
+              "duration": 254301900,
               "status": "passed"
             }
           }
@@ -25,10 +25,10 @@
       },
       {
         "description": "",
-        "id": "scenario-outline;;;2",
+        "id": "scenario-outline-with-decaying-background;s1;;2",
         "keyword": "Scenario Outline",
         "line": 10,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -38,7 +38,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 125100,
+              "duration": 113723,
               "status": "passed"
             }
           }
@@ -59,7 +59,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 4619759,
+              "duration": 1062315,
               "error_message": "java.lang.RuntimeException: Decayed\n\tat Steps.lambda$new$5(Steps.java:31)\n\tat ✽.a decaying step(features/scenario-outline-with-decaying-background.feature:3)\n",
               "status": "failed"
             }
@@ -69,10 +69,10 @@
       },
       {
         "description": "",
-        "id": "scenario-outline;;;3",
+        "id": "scenario-outline-with-decaying-background;s1;;3",
         "keyword": "Scenario Outline",
         "line": 11,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -89,10 +89,10 @@
         "type": "scenario"
       }
     ],
-    "id": "scenario-outline",
+    "id": "scenario-outline-with-decaying-background",
     "keyword": "Feature",
     "line": 1,
-    "name": "Scenario Outline",
+    "name": "scenario-outline-with-decaying-background",
     "tags": [],
     "uri": "features/scenario-outline-with-decaying-background.feature"
   }

@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": ";",
+        "id": "one-passing-scenario;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -17,7 +17,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 698500873,
+              "duration": 289914529,
               "status": "passed"
             }
           }
@@ -25,10 +25,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "one-passing-scenario",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "one-passing-scenario",
     "tags": [],
     "uri": "features/one-passing-scenario.feature"
   }

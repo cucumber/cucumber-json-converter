@@ -2,10 +2,10 @@
   {
     "elements": [
       {
-        "id": ";",
+        "id": "one-failing-scenario;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "arguments": [],
@@ -16,8 +16,8 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 2,
-              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/json-formatter-approval-tests/features/step_definitions/stepdefs.js:19:9)",
+              "duration": 1,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/features/step_definitions/stepdefs.js:19:9)",
               "status": "failed"
             }
           }
@@ -26,10 +26,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "one-failing-scenario",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "one-failing-scenario",
     "tags": [],
     "uri": "features/one-failing-scenario.feature"
   }

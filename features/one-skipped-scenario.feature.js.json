@@ -2,10 +2,10 @@
   {
     "elements": [
       {
-        "id": ";",
+        "id": "one-skipped-scenario;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "arguments": [],
@@ -25,10 +25,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "one-skipped-scenario",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "one-skipped-scenario",
     "tags": [],
     "uri": "features/one-skipped-scenario.feature"
   }

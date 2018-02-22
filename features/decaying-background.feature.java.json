@@ -16,7 +16,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 384236594,
+              "duration": 249193810,
               "status": "passed"
             }
           }
@@ -25,10 +25,10 @@
       },
       {
         "description": "",
-        "id": ";",
+        "id": "decaying-background;s1",
         "keyword": "Scenario",
         "line": 7,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -38,7 +38,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 126201,
+              "duration": 113059,
               "status": "passed"
             }
           }
@@ -59,7 +59,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 1130053,
+              "duration": 4380120,
               "error_message": "java.lang.RuntimeException: Decayed\n\tat Steps.lambda$new$5(Steps.java:31)\n\tat ✽.this step is decaying(features/decaying-background.feature:5)\n",
               "status": "failed"
             }
@@ -69,10 +69,10 @@
       },
       {
         "description": "",
-        "id": ";",
+        "id": "decaying-background;s2",
         "keyword": "Scenario",
         "line": 10,
-        "name": "",
+        "name": "S2",
         "steps": [
           {
             "keyword": "Given ",
@@ -89,10 +89,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "decaying-background",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "decaying-background",
     "tags": [],
     "uri": "features/decaying-background.feature"
   }

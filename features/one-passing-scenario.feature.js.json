@@ -2,10 +2,10 @@
   {
     "elements": [
       {
-        "id": ";",
+        "id": "one-passing-scenario;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "arguments": [],
@@ -16,7 +16,6 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 1,
               "status": "passed"
             }
           }
@@ -25,10 +24,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "one-passing-scenario",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "one-passing-scenario",
     "tags": [],
     "uri": "features/one-passing-scenario.feature"
   }

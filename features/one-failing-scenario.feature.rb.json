@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": ";",
+        "id": "one-failing-scenario;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 331578,
+              "duration": 220706,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/one-failing-scenario.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -27,10 +27,10 @@
       },
       {
         "description": "",
-        "id": ";",
+        "id": "one-failing-scenario;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -40,7 +40,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 212158,
+              "duration": 198344,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/one-failing-scenario.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -50,10 +50,10 @@
       },
       {
         "description": "",
-        "id": ";",
+        "id": "one-failing-scenario;s1",
         "keyword": "Scenario",
         "line": 2,
-        "name": "",
+        "name": "S1",
         "steps": [
           {
             "keyword": "Given ",
@@ -63,7 +63,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 381418,
+              "duration": 379657,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/one-failing-scenario.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -72,10 +72,10 @@
         "type": "scenario"
       }
     ],
-    "id": "",
+    "id": "one-failing-scenario",
     "keyword": "Feature",
     "line": 1,
-    "name": "",
+    "name": "one-failing-scenario",
     "uri": "features/one-failing-scenario.feature"
   }
 ]

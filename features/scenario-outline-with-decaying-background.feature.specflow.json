@@ -8,7 +8,7 @@
         "name": "S1",
         "type": "scenario",
         "result": {
-          "duration": 25,
+          "duration": 28,
           "status": "passed"
         },
         "steps": [
@@ -26,7 +26,7 @@
             "keyword": "Given ",
             "name": "a passing step",
             "result": {
-              "duration": 22,
+              "duration": 25,
               "status": "passed"
             }
           }
@@ -37,7 +37,7 @@
         "name": "S1",
         "type": "scenario",
         "result": {
-          "duration": 0,
+          "duration": 3,
           "status": "passed"
         },
         "steps": [
@@ -46,7 +46,7 @@
             "keyword": "Given ",
             "name": "a decaying step",
             "result": {
-              "duration": 0,
+              "duration": 1,
               "status": "passed"
             }
           },
@@ -55,7 +55,7 @@
             "keyword": "Given ",
             "name": "a passing step",
             "result": {
-              "duration": 0,
+              "duration": 3,
               "status": "passed"
             }
           }
