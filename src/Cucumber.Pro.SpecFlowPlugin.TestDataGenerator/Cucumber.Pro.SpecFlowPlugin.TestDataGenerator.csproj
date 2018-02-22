@@ -144,10 +144,12 @@
     <Error Condition="!Exists('packages\NUnit3TestAdapter.3.9.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NUnit3TestAdapter.3.9.0\build\net35\NUnit3TestAdapter.props'))" />
   </Target>
   <Target Name="AfterUpdateFeatureFilesInProject">
-    <Move SourceFiles="@(SpecFlowGeneratedFiles)" DestinationFolder=".generated" OverwriteReadOnlyFiles="true" />
+    <Move SourceFiles="@(SpecFlowGeneratedFiles)" DestinationFolder=".generated" OverwriteReadOnlyFiles="true">
+      <Output TaskParameter="MovedFiles" ItemName="MovedGeneratedFiles" />
+    </Move>
     <!-- include any files that specflow generated into the compilation of the project -->
-    <!--<ItemGroup>
-      <Compile Include="@(SpecFlowGeneratedFiles)" />
-    </ItemGroup>-->
+    <ItemGroup>
+      <Compile Include="@(MovedGeneratedFiles)" />
+    </ItemGroup>
   </Target>
 </Project>
