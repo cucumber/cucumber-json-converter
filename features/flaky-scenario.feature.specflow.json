@@ -1,0 +1,28 @@
+[
+  {
+    "name": "flaky-scenario",
+    "uri": "features/flaky-scenario.feature",
+    "elements": [
+      {
+        "line": 4,
+        "name": "S1",
+        "type": "scenario",
+        "result": {
+          "duration": 88,
+          "status": "undefined"
+        },
+        "steps": [
+          {
+            "line": 0,
+            "keyword": "Given ",
+            "name": "this step is flaky",
+            "result": {
+              "duration": 0,
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

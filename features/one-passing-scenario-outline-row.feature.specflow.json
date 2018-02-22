@@ -1,0 +1,28 @@
+[
+  {
+    "name": "one-passing-scenario-outline-row",
+    "uri": "features/one-passing-scenario-outline-row.feature",
+    "elements": [
+      {
+        "line": 2,
+        "name": "S1",
+        "type": "scenario",
+        "result": {
+          "duration": 24,
+          "status": "passed"
+        },
+        "steps": [
+          {
+            "line": 3,
+            "keyword": "Given ",
+            "name": "this step passes",
+            "result": {
+              "duration": 21,
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

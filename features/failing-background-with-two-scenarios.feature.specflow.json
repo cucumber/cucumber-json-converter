@@ -1,0 +1,52 @@
+[
+  {
+    "name": "failing-background-with-two-scenarios",
+    "uri": "features/failing-background-with-two-scenarios.feature",
+    "elements": [
+      {
+        "line": 7,
+        "name": "S1",
+        "type": "scenario",
+        "result": {
+          "duration": 32,
+          "status": "failed",
+          "error_message": "System.Exception: this step failed\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.FailingStep() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\StepDefinitions\\StepDefinitions.cs:line 32\r\n   at lambda_method(Closure , IContextManager )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Failing_Background_With_Two_ScenariosFeature.ScenarioCleanup()\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Failing_Background_With_Two_ScenariosFeature.S1() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\.generated\\failing-background-with-two-scenarios.feature:line 8"
+        },
+        "steps": [
+          {
+            "line": 5,
+            "keyword": "Given ",
+            "name": "this step fails",
+            "result": {
+              "duration": 22,
+              "status": "failed",
+              "error_message": "System.Exception: this step failed\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.FailingStep() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\StepDefinitions\\StepDefinitions.cs:line 32\r\n   at lambda_method(Closure , IContextManager )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+            }
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "S2",
+        "type": "scenario",
+        "result": {
+          "duration": 1,
+          "status": "failed",
+          "error_message": "System.Exception: this step failed\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.FailingStep() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\StepDefinitions\\StepDefinitions.cs:line 32\r\n   at lambda_method(Closure , IContextManager )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Failing_Background_With_Two_ScenariosFeature.ScenarioCleanup()\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Failing_Background_With_Two_ScenariosFeature.S2() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\.generated\\failing-background-with-two-scenarios.feature:line 11"
+        },
+        "steps": [
+          {
+            "line": 5,
+            "keyword": "Given ",
+            "name": "this step fails",
+            "result": {
+              "duration": 0,
+              "status": "failed",
+              "error_message": "System.Exception: this step failed\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.FailingStep() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\StepDefinitions\\StepDefinitions.cs:line 32\r\n   at lambda_method(Closure , IContextManager )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

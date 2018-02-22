@@ -1,0 +1,101 @@
+[
+  {
+    "name": "three-failing-scenarios",
+    "uri": "features/three-failing-scenarios.feature",
+    "elements": [
+      {
+        "line": 2,
+        "name": "S1",
+        "type": "scenario",
+        "result": {
+          "duration": 37,
+          "status": "failed",
+          "error_message": "System.Exception: this step failed\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.FailingStep() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\StepDefinitions\\StepDefinitions.cs:line 32\r\n   at lambda_method(Closure , IContextManager )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Three_Failing_ScenariosFeature.ScenarioCleanup()\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Three_Failing_ScenariosFeature.S1() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\.generated\\three-failing-scenarios.feature:line 3"
+        },
+        "steps": [
+          {
+            "line": 3,
+            "keyword": "Given ",
+            "name": "this step fails",
+            "result": {
+              "duration": 22,
+              "status": "failed",
+              "error_message": "System.Exception: this step failed\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.FailingStep() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\StepDefinitions\\StepDefinitions.cs:line 32\r\n   at lambda_method(Closure , IContextManager )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+            }
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "S2",
+        "type": "scenario",
+        "result": {
+          "duration": 2,
+          "status": "failed",
+          "error_message": "System.Exception: this step failed\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.FailingStep() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\StepDefinitions\\StepDefinitions.cs:line 32\r\n   at lambda_method(Closure , IContextManager )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Three_Failing_ScenariosFeature.ScenarioCleanup()\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Three_Failing_ScenariosFeature.S2() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\.generated\\three-failing-scenarios.feature:line 7"
+        },
+        "steps": [
+          {
+            "line": 6,
+            "keyword": "Given ",
+            "name": "this step passes",
+            "result": {
+              "duration": 1,
+              "status": "passed"
+            }
+          },
+          {
+            "line": 7,
+            "keyword": "When ",
+            "name": "this step fails",
+            "result": {
+              "duration": 2,
+              "status": "failed",
+              "error_message": "System.Exception: this step failed\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.FailingStep() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\StepDefinitions\\StepDefinitions.cs:line 32\r\n   at lambda_method(Closure , IContextManager )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+            }
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "S3",
+        "type": "scenario",
+        "result": {
+          "duration": 1,
+          "status": "failed",
+          "error_message": "System.Exception: this step failed\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.FailingStep() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\StepDefinitions\\StepDefinitions.cs:line 32\r\n   at lambda_method(Closure , IContextManager )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()\r\n   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Three_Failing_ScenariosFeature.ScenarioCleanup()\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Three_Failing_ScenariosFeature.S3() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\.generated\\three-failing-scenarios.feature:line 12"
+        },
+        "steps": [
+          {
+            "line": 10,
+            "keyword": "Given ",
+            "name": "this step passes",
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            }
+          },
+          {
+            "line": 11,
+            "keyword": "When ",
+            "name": "this step passes",
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            }
+          },
+          {
+            "line": 12,
+            "keyword": "Then ",
+            "name": "this step fails",
+            "result": {
+              "duration": 1,
+              "status": "failed",
+              "error_message": "System.Exception: this step failed\r\n   at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.FailingStep() in W:\\CucumberPro\\cucumber-json-testdata-generator\\src\\Cucumber.Pro.SpecFlowPlugin.TestDataGenerator\\StepDefinitions\\StepDefinitions.cs:line 32\r\n   at lambda_method(Closure , IContextManager )\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
