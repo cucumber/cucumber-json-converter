@@ -16,6 +16,7 @@
             },
             "name": "a decaying step",
             "result": {
+              "duration": 1,
               "status": "passed"
             }
           },

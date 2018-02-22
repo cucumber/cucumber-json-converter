@@ -16,7 +16,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 249193810,
+              "duration": 324613844,
               "status": "passed"
             }
           }
@@ -38,7 +38,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 113059,
+              "duration": 161248,
               "status": "passed"
             }
           }
@@ -59,7 +59,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 4380120,
+              "duration": 3954704,
               "error_message": "java.lang.RuntimeException: Decayed\n\tat Steps.lambda$new$5(Steps.java:31)\n\tat ✽.this step is decaying(features/decaying-background.feature:5)\n",
               "status": "failed"
             }

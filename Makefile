@@ -45,4 +45,4 @@ $(SPECFLOW_DIR)/nuget.exe:
 	cd $(SPECFLOW_DIR) && wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
 	
 clean:
-	rm -rf $(CUCUMBER_RB_JSON) $(CUCUMBER_JS_JSON) $(CUCUMBER_JAVA_JSON) $(SPECFLOW_DIR)/nuget.exe
+	rm -rf $(CUCUMBER_RB_JSON) $(CUCUMBER_JS_JSON) $(CUCUMBER_JAVA_JSON) $(SPECFLOW_JSON) $(SPECFLOW_DIR)/nuget.exe

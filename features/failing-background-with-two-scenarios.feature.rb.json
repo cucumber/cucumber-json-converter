@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 419376,
+              "duration": 555561,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
@@ -59,7 +59,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 202573,
+              "duration": 378455,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
@@ -102,7 +102,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 216344,
+              "duration": 320846,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
@@ -145,7 +145,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 260428,
+              "duration": 265771,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
@@ -188,7 +188,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 182802,
+              "duration": 301753,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }
@@ -231,7 +231,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 194813,
+              "duration": 350211,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios.feature:5:in `Given this step fails'",
               "status": "failed"
             }

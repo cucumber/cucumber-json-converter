@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 526656953,
+              "duration": 425819446,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/failing-background-step.feature:3)\n",
               "status": "failed"
             }

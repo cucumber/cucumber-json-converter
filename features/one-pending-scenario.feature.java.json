@@ -17,7 +17,7 @@
             },
             "name": "this step is pending",
             "result": {
-              "duration": 265378636,
+              "duration": 436857889,
               "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat Steps.lambda$new$3(Steps.java:21)\n\tat ✽.this step is pending(features/one-pending-scenario.feature:3)\n",
               "status": "pending"
             }
