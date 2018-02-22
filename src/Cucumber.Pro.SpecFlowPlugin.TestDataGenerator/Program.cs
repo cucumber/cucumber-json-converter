@@ -39,7 +39,10 @@ namespace Cucumber.Pro.SpecFlowPlugin.TestDataGenerator
             {
                 Assembly.GetExecutingAssembly().Location,
                 $"--test=Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.{className}Feature",
-                "--inprocess"
+                "--inprocess",
+                "--noresult",
+                "--noh",
+                "--noc"
             });
 
             var jsonContent = File.ReadAllText(Path.Combine(assemblyFolder, "results.json"));
