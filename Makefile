@@ -4,12 +4,13 @@ FEATURE_FILES = $(shell find features -name "*.feature")
 RB_FILES = $(shell find features -name "*.rb")
 JS_FILES = $(shell find features -name "*.js")
 JAVA_FILES = $(shell find src -name "*.java")
+SPECFLOW_FILES = $(shell find src -name "*.specflow")
 
 CUCUMBER_RB_JSON   = $(patsubst features/%.feature,features/%.feature.rb.json,$(FEATURE_FILES))
 CUCUMBER_JS_JSON   = $(patsubst features/%.feature,features/%.feature.js.json,$(FEATURE_FILES))
 CUCUMBER_JAVA_JSON = $(patsubst features/%.feature,features/%.feature.java.json,$(FEATURE_FILES))
 
-all: cucumber-rb cucumber-js cucumber-java
+all: cucumber-rb cucumber-js cucumber-java specflow
 
 cucumber-rb:   $(CUCUMBER_RB_JSON)
 cucumber-js:   $(CUCUMBER_JS_JSON)
@@ -29,6 +30,11 @@ features/%.feature.java.json: features/%.feature $(JAVA_FILES)
 	-mvn test -Dcucumber.options="--format json:$@ $<"
 	cat $@ | jq --sort-keys "." > $@.tmp
 	mv $@.tmp $@
+
+specflow: $(SPECFLOW_FILES)
+	-cd ./src/Cucumber.Pro.SpecFlowPlugin.TestDataGenerator
+	msbuild
+	mono --debug ./bin/Debug/Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.exe
 
 clean:
 	rm -rf $(CUCUMBER_RB_JSON) $(CUCUMBER_JS_JSON) $(CUCUMBER_JAVA_JSON)
