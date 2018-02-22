@@ -1,11 +1,11 @@
-Feature:
+Feature: decaying-background
   Here is a description
 
   Background:
     Given this step is decaying
 
-  Scenario:
+  Scenario: S1
     Given this step passes
 
-  Scenario:
+  Scenario: S2
     Given this step passes

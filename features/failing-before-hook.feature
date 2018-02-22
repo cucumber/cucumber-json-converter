@@ -1,4 +1,4 @@
-Feature:
+Feature: failing-before-hook
   @failing-before
-  Scenario:
+  Scenario: S1
     Given this step passes

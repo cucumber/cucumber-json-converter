@@ -1,6 +1,6 @@
-Feature:
+Feature: failing-background-step
   Background:
     Given this step fails
 
-  Scenario:
+  Scenario: S1
     Given this step passes

@@ -1,5 +1,5 @@
-Feature:
+Feature: flaky-scenario
   Here is a description
 
-  Scenario:
+  Scenario: S1
     Given this step is flaky

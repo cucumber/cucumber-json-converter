@@ -1,3 +1,3 @@
 Feature: one-passing-scenario
-  Scenario: Scenario 1
+  Scenario: S1
     Given this step passes

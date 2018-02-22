@@ -1,5 +1,5 @@
-Feature: Scenario Outline
-  Scenario Outline:
+Feature: scenario-outline
+  Scenario Outline: S1
     Given a <something> step
     And a passing step
 
