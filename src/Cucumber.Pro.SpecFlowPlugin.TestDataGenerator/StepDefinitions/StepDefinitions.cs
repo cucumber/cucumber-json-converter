@@ -10,12 +10,12 @@ namespace Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions
     [Binding]
     public class StepDefinitions
     {
-        [BeforeScenario("@failing-before")]
+        [BeforeScenario("@failing_before")]
         public void Before()
         {
             throw new Exception("failing before hook");
         }
-        [AfterScenario("@failing-after")]
+        [AfterScenario("@failing_after")]
         public void After()
         {
             throw new Exception("failing after hook");

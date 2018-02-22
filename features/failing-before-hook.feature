@@ -1,4 +1,4 @@
 Feature: failing-before-hook
-  @failing-before
+  @failing_before
   Scenario: S1
     Given this step passes

@@ -1,4 +1,4 @@
 Feature: failing-after-step-hook
-  @failing-after-step
+  @failing_after_step
   Scenario: S1
     Given this step passes
