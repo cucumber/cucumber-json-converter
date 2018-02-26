@@ -8,7 +8,7 @@
         "name": "S1",
         "type": "scenario",
         "result": {
-          "duration": 72,
+          "duration": 68,
           "status": "undefined"
         },
         "steps": [

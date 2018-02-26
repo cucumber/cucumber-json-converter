@@ -8,7 +8,7 @@
         "name": "S1",
         "type": "scenario",
         "result": {
-          "duration": 24,
+          "duration": 26,
           "status": "passed"
         },
         "steps": [
@@ -17,7 +17,7 @@
             "keyword": "Given ",
             "name": "this step passes",
             "result": {
-              "duration": 19,
+              "duration": 22,
               "status": "passed"
             }
           }

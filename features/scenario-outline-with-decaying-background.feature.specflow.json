@@ -8,7 +8,7 @@
         "name": "S1",
         "type": "scenario",
         "result": {
-          "duration": 27,
+          "duration": 33,
           "status": "passed"
         },
         "steps": [
@@ -17,7 +17,7 @@
             "keyword": "Given ",
             "name": "a decaying step",
             "result": {
-              "duration": 20,
+              "duration": 24,
               "status": "passed"
             }
           },
@@ -26,7 +26,7 @@
             "keyword": "Given ",
             "name": "a passing step",
             "result": {
-              "duration": 23,
+              "duration": 29,
               "status": "passed"
             }
           }
@@ -37,8 +37,9 @@
         "name": "S1",
         "type": "scenario",
         "result": {
-          "duration": 4,
-          "status": "passed"
+          "duration": 20,
+          "status": "failed",
+          "error_message": "System.Exception: Decayed\n  at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.DecayingStep () [0x00026] in /Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/src/Cucumber.Pro.SpecFlowPlugin.TestDataGenerator/StepDefinitions/StepDefinitions.cs:48 \n  at (wrapper dynamic-method) System.Object:lambda_method (System.Runtime.CompilerServices.Closure,TechTalk.SpecFlow.Infrastructure.IContextManager)\n  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)\n  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.Reflection/MonoMethod.cs:305 \n  at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding (TechTalk.SpecFlow.Bindings.IBinding binding, TechTalk.SpecFlow.Infrastructure.IContextManager contextManager, System.Object[] arguments, TechTalk.SpecFlow.Tracing.ITestTracer testTracer, System.TimeSpan& duration) [0x000f3] in <21a05bc5c39f46658ac07dbc78d0fec3>:0 \n  at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch (TechTalk.SpecFlow.Bindings.BindingMatch match, System.Object[] arguments) [0x00076] in <21a05bc5c39f46658ac07dbc78d0fec3>:0 \n  at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep (TechTalk.SpecFlow.Infrastructure.IContextManager contextManager, TechTalk.SpecFlow.Bindings.StepInstance stepInstance) [0x0007d] in <21a05bc5c39f46658ac07dbc78d0fec3>:0 \n  at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep () [0x001f7] in <21a05bc5c39f46658ac07dbc78d0fec3>:0 \n  at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors () [0x00000] in <21a05bc5c39f46658ac07dbc78d0fec3>:0 \n  at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Scenario_Outline_With_Decaying_BackgroundFeature.ScenarioCleanup () [0x00001] in <10514e81560743b6ab4a39b8278ac7c9>:0 \n  at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.Scenario_Outline_With_Decaying_BackgroundFeature.S1 (System.String something, System.String[] exampleTags) [0x0003a] in /Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/src/Cucumber.Pro.SpecFlowPlugin.TestDataGenerator/.generated/scenario-outline-with-decaying-background.feature:6 \n  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)\n  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.Reflection/MonoMethod.cs:305 "
         },
         "steps": [
           {
@@ -46,17 +47,9 @@
             "keyword": "Given ",
             "name": "a decaying step",
             "result": {
-              "duration": 2,
-              "status": "passed"
-            }
-          },
-          {
-            "line": 6,
-            "keyword": "Given ",
-            "name": "a passing step",
-            "result": {
-              "duration": 4,
-              "status": "passed"
+              "duration": 9,
+              "status": "failed",
+              "error_message": "System.Exception: Decayed\n  at Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions.StepDefinitions.DecayingStep () [0x00026] in /Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/src/Cucumber.Pro.SpecFlowPlugin.TestDataGenerator/StepDefinitions/StepDefinitions.cs:48 \n  at (wrapper dynamic-method) System.Object:lambda_method (System.Runtime.CompilerServices.Closure,TechTalk.SpecFlow.Infrastructure.IContextManager)\n  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)\n  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in /Users/builder/data/lanes/4992/mono-mac-sdk/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.Reflection/MonoMethod.cs:305 \n  at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding (TechTalk.SpecFlow.Bindings.IBinding binding, TechTalk.SpecFlow.Infrastructure.IContextManager contextManager, System.Object[] arguments, TechTalk.SpecFlow.Tracing.ITestTracer testTracer, System.TimeSpan& duration) [0x000f3] in <21a05bc5c39f46658ac07dbc78d0fec3>:0 \n  at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch (TechTalk.SpecFlow.Bindings.BindingMatch match, System.Object[] arguments) [0x00076] in <21a05bc5c39f46658ac07dbc78d0fec3>:0 \n  at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep (TechTalk.SpecFlow.Infrastructure.IContextManager contextManager, TechTalk.SpecFlow.Bindings.StepInstance stepInstance) [0x0007d] in <21a05bc5c39f46658ac07dbc78d0fec3>:0 "
             }
           }
         ]

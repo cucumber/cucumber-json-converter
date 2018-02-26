@@ -38,7 +38,7 @@ namespace Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.StepDefinitions
             throw new PendingStepException();
         }
 
-        private int decay = 0;
+        private static int decay = 0;
         [StepDefinition(".*decaying.*")]
         public void DecayingStep()
         {
