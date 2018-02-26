@@ -16,7 +16,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 477906519,
+              "duration": 151964320,
               "status": "passed"
             }
           }
@@ -38,7 +38,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 125100,
+              "duration": 92845,
               "status": "passed"
             }
           }
@@ -59,7 +59,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 4619759,
+              "duration": 997023,
               "error_message": "java.lang.RuntimeException: Decayed\n\tat Steps.lambda$new$5(Steps.java:31)\n\tat ✽.a decaying step(features/scenario-outline-with-decaying-background.feature:3)\n",
               "status": "failed"
             }

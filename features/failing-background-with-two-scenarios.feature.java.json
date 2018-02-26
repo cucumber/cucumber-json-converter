@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 659262697,
+              "duration": 151068790,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/failing-background-with-two-scenarios.feature:5)\n",
               "status": "failed"
             }
@@ -59,7 +59,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 492493,
+              "duration": 616793,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/failing-background-with-two-scenarios.feature:5)\n",
               "status": "failed"
             }

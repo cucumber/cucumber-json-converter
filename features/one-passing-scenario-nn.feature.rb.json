@@ -1,0 +1,34 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "one-passing-scenario;scenario-1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Scenario 1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 85619,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-passing-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-passing-scenario",
+    "uri": "features/one-passing-scenario-nn.feature"
+  }
+]

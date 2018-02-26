@@ -1,0 +1,141 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "before": [
+          {
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:1"
+            },
+            "result": {
+              "duration": 177917,
+              "error_message": "Failing before hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:2:in `Before'",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "before": [
+          {
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:1"
+            },
+            "result": {
+              "duration": 306963,
+              "error_message": "Failing before hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:2:in `Before'",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "before": [
+          {
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:1"
+            },
+            "result": {
+              "duration": 294704,
+              "error_message": "Failing before hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:2:in `Before'",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "features/failing-before-hook-with-background-nn.feature"
+  }
+]

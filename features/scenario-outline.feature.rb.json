@@ -17,7 +17,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 74107,
+              "duration": 68846,
               "status": "passed"
             }
           },
@@ -29,7 +29,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 13809,
+              "duration": 11267,
               "status": "passed"
             }
           }
@@ -51,7 +51,7 @@
             },
             "name": "a failing step",
             "result": {
-              "duration": 169475,
+              "duration": 163054,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/scenario-outline.feature:9:in `Given a failing step'\nfeatures/scenario-outline.feature:3:in `Given a <something> step'",
               "status": "failed"
             }
@@ -85,7 +85,7 @@
             },
             "name": "a failing step",
             "result": {
-              "duration": 320505,
+              "duration": 148018,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/scenario-outline.feature:9:in `Given a failing step'\nfeatures/scenario-outline.feature:3:in `Given a <something> step'",
               "status": "failed"
             }
@@ -119,7 +119,7 @@
             },
             "name": "a failing step",
             "result": {
-              "duration": 173986,
+              "duration": 225437,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/scenario-outline.feature:9:in `Given a failing step'\nfeatures/scenario-outline.feature:3:in `Given a <something> step'",
               "status": "failed"
             }
@@ -153,7 +153,7 @@
             },
             "name": "a pending step",
             "result": {
-              "duration": 249376,
+              "duration": 166018,
               "error_message": "TODO (Cucumber::Pending)\n./features/step_definitions/stepdefs.rb:35:in `/pending/'\nfeatures/scenario-outline.feature:10:in `Given a pending step'\nfeatures/scenario-outline.feature:3:in `Given a <something> step'",
               "status": "pending"
             }

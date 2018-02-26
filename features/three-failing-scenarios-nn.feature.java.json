@@ -1,0 +1,118 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Steps.java:24"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 134960286,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/three-failing-scenarios-nn.feature:3)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "Steps.java:17"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 103762,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "Steps.java:24"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 278025,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/three-failing-scenarios-nn.feature:7)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "Steps.java:17"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 105204,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 11,
+            "match": {
+              "location": "Steps.java:17"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 60567,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "location": "Steps.java:24"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 198091,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/three-failing-scenarios-nn.feature:12)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "features/three-failing-scenarios-nn.feature"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "Steps.java:17"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 277956363,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@failing-after-step"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "features/failing-after-step-hook-nn.feature"
+  }
+]

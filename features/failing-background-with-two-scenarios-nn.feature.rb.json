@@ -1,0 +1,210 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 248827,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios-nn.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 137193,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios-nn.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 452455,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios-nn.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 279283,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios-nn.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 437125,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios-nn.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 322657,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-with-two-scenarios-nn.feature:5:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "features/failing-background-with-two-scenarios-nn.feature"
+  }
+]

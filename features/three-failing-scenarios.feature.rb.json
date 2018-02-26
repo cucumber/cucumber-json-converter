@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 297122,
+              "duration": 188591,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -40,7 +40,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 165569,
+              "duration": 279655,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -63,7 +63,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 370136,
+              "duration": 396662,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -86,7 +86,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 33065,
+              "duration": 29093,
               "status": "passed"
             }
           },
@@ -98,7 +98,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 173294,
+              "duration": 159734,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:7:in `When this step fails'",
               "status": "failed"
             }
@@ -121,7 +121,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 29393,
+              "duration": 33869,
               "status": "passed"
             }
           },
@@ -133,7 +133,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 176425,
+              "duration": 165949,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:7:in `When this step fails'",
               "status": "failed"
             }
@@ -156,7 +156,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 37926,
+              "duration": 15853,
               "status": "passed"
             }
           },
@@ -168,7 +168,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 174574,
+              "duration": 150974,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:7:in `When this step fails'",
               "status": "failed"
             }
@@ -191,7 +191,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 20922,
+              "duration": 23167,
               "status": "passed"
             }
           },
@@ -203,7 +203,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 10165,
+              "duration": 19416,
               "status": "passed"
             }
           },
@@ -215,7 +215,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 139517,
+              "duration": 160017,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:12:in `Then this step fails'",
               "status": "failed"
             }
@@ -238,7 +238,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 36058,
+              "duration": 14849,
               "status": "passed"
             }
           },
@@ -250,7 +250,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 15260,
+              "duration": 10906,
               "status": "passed"
             }
           },
@@ -262,7 +262,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 221058,
+              "duration": 167678,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:12:in `Then this step fails'",
               "status": "failed"
             }
@@ -285,7 +285,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 32460,
+              "duration": 20420,
               "status": "passed"
             }
           },
@@ -297,7 +297,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 14504,
+              "duration": 16523,
               "status": "passed"
             }
           },
@@ -309,7 +309,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 382425,
+              "duration": 198179,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/three-failing-scenarios.feature:12:in `Then this step fails'",
               "status": "failed"
             }

@@ -1,0 +1,111 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 349818,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-step-nn.feature:3:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 295340,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-step-nn.feature:3:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 408037,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-step-nn.feature:3:in `Given this step fails'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "features/failing-background-step-nn.feature"
+  }
+]

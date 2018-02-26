@@ -27,8 +27,7 @@
               "location": "features/step_definitions/stepdefs.js:7"
             },
             "result": {
-              "duration": 1,
-              "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/json-formatter-approval-tests/features/step_definitions/stepdefs.js:8:9)",
+              "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/features/step_definitions/stepdefs.js:8:9)",
               "status": "failed"
             }
           }

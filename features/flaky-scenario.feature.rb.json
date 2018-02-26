@@ -17,7 +17,7 @@
             },
             "name": "this step is flaky",
             "result": {
-              "duration": 223857,
+              "duration": 190283,
               "error_message": "Flaky (RuntimeError)\n./features/step_definitions/stepdefs.rb:31:in `/flaky/'\nfeatures/flaky-scenario.feature:5:in `Given this step is flaky'",
               "status": "failed"
             }
@@ -40,7 +40,7 @@
             },
             "name": "this step is flaky",
             "result": {
-              "duration": 32502,
+              "duration": 22978,
               "status": "passed"
             }
           }

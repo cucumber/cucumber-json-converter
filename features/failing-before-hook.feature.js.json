@@ -15,7 +15,7 @@
             },
             "result": {
               "duration": 1,
-              "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/json-formatter-approval-tests/features/step_definitions/stepdefs.js:4:9)",
+              "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/features/step_definitions/stepdefs.js:4:9)",
               "status": "failed"
             }
           },

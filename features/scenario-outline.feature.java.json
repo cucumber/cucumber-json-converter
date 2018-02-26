@@ -17,7 +17,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 641926169,
+              "duration": 145268851,
               "status": "passed"
             }
           },
@@ -29,7 +29,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 75585,
+              "duration": 70343,
               "status": "passed"
             }
           }
@@ -51,7 +51,7 @@
             },
             "name": "a failing step",
             "result": {
-              "duration": 1329047,
+              "duration": 1153411,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.a failing step(features/scenario-outline.feature:3)\n",
               "status": "failed"
             }
@@ -85,7 +85,7 @@
             },
             "name": "a pending step",
             "result": {
-              "duration": 10130576,
+              "duration": 2661311,
               "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat Steps.lambda$new$3(Steps.java:21)\n\tat ✽.a pending step(features/scenario-outline.feature:3)\n",
               "status": "pending"
             }
