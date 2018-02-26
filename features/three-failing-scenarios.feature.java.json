@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 408228524,
+              "duration": 158394247,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/three-failing-scenarios.feature:3)\n",
               "status": "failed"
             }
@@ -40,7 +40,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 152786,
+              "duration": 113164,
               "status": "passed"
             }
           },
@@ -52,7 +52,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 341483,
+              "duration": 302087,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/three-failing-scenarios.feature:7)\n",
               "status": "failed"
             }
@@ -75,7 +75,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 105340,
+              "duration": 107465,
               "status": "passed"
             }
           },
@@ -87,7 +87,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 33368,
+              "duration": 53464,
               "status": "passed"
             }
           },
@@ -99,7 +99,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 202805,
+              "duration": 246191,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat Steps.lambda$new$4(Steps.java:25)\n\tat ✽.this step fails(features/three-failing-scenarios.feature:12)\n",
               "status": "failed"
             }

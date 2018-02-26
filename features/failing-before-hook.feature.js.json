@@ -8,6 +8,18 @@
         "name": "S1",
         "steps": [
           {
+            "hidden": true,
+            "keyword": "Before",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:3"
+            },
+            "result": {
+              "duration": 1,
+              "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/features/step_definitions/stepdefs.js:4:9)",
+              "status": "failed"
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
@@ -16,8 +28,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 1,
-              "status": "passed"
+              "status": "skipped"
             }
           }
         ],

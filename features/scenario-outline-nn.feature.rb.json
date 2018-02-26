@@ -1,0 +1,182 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "scenario-outline;;;2",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 78203,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 13868,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;3",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "a failing step",
+            "result": {
+              "duration": 362647,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/scenario-outline-nn.feature:9:in `Given a failing step'\nfeatures/scenario-outline-nn.feature:3:in `Given a <something> step'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;3",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "a failing step",
+            "result": {
+              "duration": 259034,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/scenario-outline-nn.feature:9:in `Given a failing step'\nfeatures/scenario-outline-nn.feature:3:in `Given a <something> step'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;3",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:16"
+            },
+            "name": "a failing step",
+            "result": {
+              "duration": 338697,
+              "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/scenario-outline-nn.feature:9:in `Given a failing step'\nfeatures/scenario-outline-nn.feature:3:in `Given a <something> step'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;4",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:34"
+            },
+            "name": "a pending step",
+            "result": {
+              "duration": 272431,
+              "error_message": "TODO (Cucumber::Pending)\n./features/step_definitions/stepdefs.rb:35:in `/pending/'\nfeatures/scenario-outline-nn.feature:10:in `Given a pending step'\nfeatures/scenario-outline-nn.feature:3:in `Given a <something> step'",
+              "status": "pending"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Scenario Outline",
+    "uri": "features/scenario-outline-nn.feature"
+  }
+]

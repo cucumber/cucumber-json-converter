@@ -1,10 +1,10 @@
 const { Given, Before, After } = require('cucumber')
 
-Before({ tags: "@failing-before" }, function () {
+Before({ tags: "@failing_before" }, function () {
   throw new Error("failing before hook")
 })
 
-After({ tags: "@failing-after" }, function () {
+After({ tags: "@failing_after" }, function () {
   throw new Error("failing after hook")
 })
 

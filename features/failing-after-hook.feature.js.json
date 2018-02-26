@@ -16,8 +16,20 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 1,
+              "duration": 2,
               "status": "passed"
+            }
+          },
+          {
+            "hidden": true,
+            "keyword": "After",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:7"
+            },
+            "result": {
+              "duration": 1,
+              "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/features/step_definitions/stepdefs.js:8:9)",
+              "status": "failed"
             }
           }
         ],

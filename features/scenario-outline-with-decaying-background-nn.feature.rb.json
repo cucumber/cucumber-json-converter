@@ -1,0 +1,144 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:21"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 86410,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 22086,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:21"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 270730,
+              "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/scenario-outline-with-decaying-background-nn.feature:3:in `Given a decaying step'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:21"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 199200,
+              "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/scenario-outline-with-decaying-background-nn.feature:3:in `Given a decaying step'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:21"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 287604,
+              "error_message": "Decayed (RuntimeError)\n./features/step_definitions/stepdefs.rb:24:in `/decaying/'\nfeatures/scenario-outline-with-decaying-background-nn.feature:3:in `Given a decaying step'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      }
+    ],
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Scenario Outline",
+    "uri": "features/scenario-outline-with-decaying-background-nn.feature"
+  }
+]

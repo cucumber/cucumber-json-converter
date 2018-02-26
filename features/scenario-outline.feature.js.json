@@ -29,7 +29,6 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 1,
               "status": "passed"
             }
           }
@@ -52,7 +51,7 @@
             },
             "name": "a failing step",
             "result": {
-              "duration": 3,
+              "duration": 1,
               "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/features/step_definitions/stepdefs.js:19:9)",
               "status": "failed"
             }
@@ -88,7 +87,6 @@
             },
             "name": "a pending step",
             "result": {
-              "duration": 1,
               "status": "pending"
             }
           },

@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 323397,
+              "duration": 192271,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-step.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -59,7 +59,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 331636,
+              "duration": 176930,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-step.feature:3:in `Given this step fails'",
               "status": "failed"
             }
@@ -102,7 +102,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 1597326,
+              "duration": 414756,
               "error_message": "Fail (RuntimeError)\n./features/step_definitions/stepdefs.rb:17:in `/fail/'\nfeatures/failing-background-step.feature:3:in `Given this step fails'",
               "status": "failed"
             }

@@ -13,7 +13,7 @@ SPECFLOW_JSON      = $(patsubst features/%.feature,features/%.feature.specflow.j
 
 SPECFLOW_DIR=src/Cucumber.Pro.SpecFlowPlugin.TestDataGenerator
 
-all: cucumber-rb cucumber-js cucumber-java specflow
+all: cucumber-rb cucumber-js cucumber-java
 
 cucumber-rb:   $(CUCUMBER_RB_JSON)
 cucumber-js:   $(CUCUMBER_JS_JSON)
@@ -40,6 +40,7 @@ features/%.feature.specflow.json: features/%.feature $(CS_FILES) $(SPECFLOW_DIR)
 	mono nuget.exe restore && \
 	msbuild && \
 	mono --debug ./bin/Debug/Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.exe
+	touch $@
 
 $(SPECFLOW_DIR)/nuget.exe:
 	cd $(SPECFLOW_DIR) && wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe

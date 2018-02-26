@@ -1,0 +1,36 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Steps.java:20"
+            },
+            "name": "this step is pending",
+            "result": {
+              "duration": 231238327,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat Steps.lambda$new$3(Steps.java:21)\n\tat ✽.this step is pending(features/one-pending-scenario-nn.feature:3)\n",
+              "status": "pending"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "features/one-pending-scenario-nn.feature"
+  }
+]

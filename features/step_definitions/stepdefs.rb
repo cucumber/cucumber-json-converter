@@ -1,12 +1,12 @@
-Before('@failing-before') do
+Before('@failing_before') do
   raise "Failing before hook"
 end
 
-After('@failing-after') do
+After('@failing_after') do
   raise "Failing after hook"
 end
 
-AfterStep('@failing-after-step') do
+AfterStep('@failing_after_step') do
   raise "Failing after step"
 end
 

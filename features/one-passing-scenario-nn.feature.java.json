@@ -1,0 +1,35 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "one-passing-scenario;scenario-1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Scenario 1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Steps.java:17"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 238352995,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-passing-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-passing-scenario",
+    "tags": [],
+    "uri": "features/one-passing-scenario-nn.feature"
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Steps.java:28"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 333944103,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;2",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "Steps.java:17"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 117436,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Steps.java:28"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 1357442,
+              "error_message": "java.lang.RuntimeException: Decayed\n\tat Steps.lambda$new$5(Steps.java:31)\n\tat ✽.a decaying step(features/scenario-outline-with-decaying-background-nn.feature:3)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;3",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "Steps.java:17"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Scenario Outline",
+    "tags": [],
+    "uri": "features/scenario-outline-with-decaying-background-nn.feature"
+  }
+]

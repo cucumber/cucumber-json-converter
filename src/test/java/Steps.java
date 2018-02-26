@@ -6,11 +6,11 @@ public class Steps implements En {
 
     public Steps() {
 
-        Before(new String[]{"@failing-before"}, () -> {
+        Before(new String[]{"@failing_before"}, () -> {
             throw new RuntimeException("failing before hook");
         });
 
-        After(new String[]{"@failing-after"}, () -> {
+        After(new String[]{"@failing_after"}, () -> {
             throw new RuntimeException("failing after hook");
         });
 

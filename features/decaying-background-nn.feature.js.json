@@ -1,0 +1,84 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:23"
+            },
+            "name": "this step is decaying",
+            "result": {
+              "duration": 2,
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:11"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:23"
+            },
+            "name": "this step is decaying",
+            "result": {
+              "duration": 1,
+              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/aslakhellesoy/git/cucumber/cucumber-json-testdata-generator/features/step_definitions/stepdefs.js:26:21)",
+              "status": "failed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:11"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "features/decaying-background-nn.feature"
+  }
+]

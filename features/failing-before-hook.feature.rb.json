@@ -3,6 +3,18 @@
     "description": "",
     "elements": [
       {
+        "before": [
+          {
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:1"
+            },
+            "result": {
+              "duration": 351310,
+              "error_message": "Failing before hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:2:in `Before'",
+              "status": "failed"
+            }
+          }
+        ],
         "description": "",
         "id": "failing-before-hook;s1",
         "keyword": "Scenario",
@@ -17,8 +29,85 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 136384,
-              "status": "passed"
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_before"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "before": [
+          {
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:1"
+            },
+            "result": {
+              "duration": 182551,
+              "error_message": "Failing before hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:2:in `Before'",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "id": "failing-before-hook;s1",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_before"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "before": [
+          {
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:1"
+            },
+            "result": {
+              "duration": 304874,
+              "error_message": "Failing before hook (RuntimeError)\n./features/step_definitions/stepdefs.rb:2:in `Before'",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "id": "failing-before-hook;s1",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
             }
           }
         ],

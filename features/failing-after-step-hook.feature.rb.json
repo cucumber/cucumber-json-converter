@@ -10,6 +10,18 @@
         "name": "S1",
         "steps": [
           {
+            "after": [
+              {
+                "match": {
+                  "location": "features/step_definitions/stepdefs.rb:9"
+                },
+                "result": {
+                  "duration": 177137,
+                  "error_message": "Failing after step (RuntimeError)\n./features/step_definitions/stepdefs.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
             "keyword": "Given ",
             "line": 4,
             "match": {
@@ -17,7 +29,87 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 63687,
+              "duration": 58934,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after_step"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "failing-after-step-hook;s1",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "S1",
+        "steps": [
+          {
+            "after": [
+              {
+                "match": {
+                  "location": "features/step_definitions/stepdefs.rb:9"
+                },
+                "result": {
+                  "duration": 298049,
+                  "error_message": "Failing after step (RuntimeError)\n./features/step_definitions/stepdefs.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 70018,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after_step"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "failing-after-step-hook;s1",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "S1",
+        "steps": [
+          {
+            "after": [
+              {
+                "match": {
+                  "location": "features/step_definitions/stepdefs.rb:9"
+                },
+                "result": {
+                  "duration": 272128,
+                  "error_message": "Failing after step (RuntimeError)\n./features/step_definitions/stepdefs.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 35155,
               "status": "passed"
             }
           }

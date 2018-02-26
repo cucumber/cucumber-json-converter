@@ -29,7 +29,6 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 1,
               "status": "passed"
             }
           }
