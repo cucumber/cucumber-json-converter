@@ -19,3 +19,10 @@ The JSON reports are generated into the `features` directory.
     make clean
     make
 
+Then, generate the JSON files for SpecFlow:
+
+    # Temporarily remove "no name" feature files (SpecFlow can't handle them)
+    rm features/*-nn.feature
+    make specflow
+    # Restore removed "no name" feature files
+    git checkout features/*-nn.feature

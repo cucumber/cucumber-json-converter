@@ -1,0 +1,28 @@
+[
+  {
+    "name": "one-undefined-scenario",
+    "uri": "features/one-undefined-scenario.feature",
+    "elements": [
+      {
+        "line": 2,
+        "name": "S1",
+        "type": "scenario",
+        "result": {
+          "duration": 78,
+          "status": "undefined"
+        },
+        "steps": [
+          {
+            "line": 0,
+            "keyword": "Given ",
+            "name": "this step is undefined",
+            "result": {
+              "duration": 0,
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

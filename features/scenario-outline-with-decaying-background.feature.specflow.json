@@ -1,0 +1,66 @@
+[
+  {
+    "name": "scenario-outline-with-decaying-background",
+    "uri": "features/scenario-outline-with-decaying-background.feature",
+    "elements": [
+      {
+        "line": 5,
+        "name": "S1",
+        "type": "scenario",
+        "result": {
+          "duration": 27,
+          "status": "passed"
+        },
+        "steps": [
+          {
+            "line": 3,
+            "keyword": "Given ",
+            "name": "a decaying step",
+            "result": {
+              "duration": 20,
+              "status": "passed"
+            }
+          },
+          {
+            "line": 6,
+            "keyword": "Given ",
+            "name": "a passing step",
+            "result": {
+              "duration": 23,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "S1",
+        "type": "scenario",
+        "result": {
+          "duration": 4,
+          "status": "passed"
+        },
+        "steps": [
+          {
+            "line": 3,
+            "keyword": "Given ",
+            "name": "a decaying step",
+            "result": {
+              "duration": 2,
+              "status": "passed"
+            }
+          },
+          {
+            "line": 6,
+            "keyword": "Given ",
+            "name": "a passing step",
+            "result": {
+              "duration": 4,
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

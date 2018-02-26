@@ -1,0 +1,24 @@
+[
+  {
+    "name": "failing-after-hook",
+    "uri": "features/failing-after-hook.feature",
+    "elements": [
+      {
+        "line": 3,
+        "name": "S1",
+        "type": "scenario",
+        "steps": [
+          {
+            "line": 4,
+            "keyword": "Given ",
+            "name": "this step passes",
+            "result": {
+              "duration": 20,
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "one-pending-scenario",
+    "uri": "features/one-pending-scenario.feature",
+    "elements": [
+      {
+        "line": 2,
+        "name": "S1",
+        "type": "scenario",
+        "result": {
+          "duration": 37,
+          "status": "pending"
+        },
+        "steps": [
+          {
+            "line": 3,
+            "keyword": "Given ",
+            "name": "this step is pending",
+            "result": {
+              "duration": 21,
+              "status": "pending"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

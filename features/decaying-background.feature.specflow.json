@@ -1,0 +1,66 @@
+[
+  {
+    "name": "decaying-background",
+    "uri": "features/decaying-background.feature",
+    "elements": [
+      {
+        "line": 7,
+        "name": "S1",
+        "type": "scenario",
+        "result": {
+          "duration": 38,
+          "status": "passed"
+        },
+        "steps": [
+          {
+            "line": 5,
+            "keyword": "Given ",
+            "name": "this step is decaying",
+            "result": {
+              "duration": 30,
+              "status": "passed"
+            }
+          },
+          {
+            "line": 8,
+            "keyword": "Given ",
+            "name": "this step passes",
+            "result": {
+              "duration": 34,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "S2",
+        "type": "scenario",
+        "result": {
+          "duration": 4,
+          "status": "passed"
+        },
+        "steps": [
+          {
+            "line": 5,
+            "keyword": "Given ",
+            "name": "this step is decaying",
+            "result": {
+              "duration": 2,
+              "status": "passed"
+            }
+          },
+          {
+            "line": 11,
+            "keyword": "Given ",
+            "name": "this step passes",
+            "result": {
+              "duration": 4,
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
