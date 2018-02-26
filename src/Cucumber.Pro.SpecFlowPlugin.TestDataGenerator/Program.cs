@@ -35,6 +35,17 @@ namespace Cucumber.Pro.SpecFlowPlugin.TestDataGenerator
         {
             string baseName = Path.GetFileNameWithoutExtension(featureFileName);
             string className = baseName.ToIdentifier();
+            string classFullName = $"Cucumber.Pro.SpecFlowPlugin.TestDataGenerator.Features.{className}Feature";
+            if (Assembly.GetExecutingAssembly().GetType(classFullName) == null)
+            {
+                Console.WriteLine($"No generated test found for file '{featureFileName}'. Skipping...");
+                return;
+            }
+
+            var resultsFile = Path.Combine(assemblyFolder, "results.json");
+            if (File.Exists(resultsFile))
+                File.Delete(resultsFile);
+
             NUnit.ConsoleRunner.Program.Main(new[]
             {
                 Assembly.GetExecutingAssembly().Location,
@@ -45,7 +56,11 @@ namespace Cucumber.Pro.SpecFlowPlugin.TestDataGenerator
                 "--noc"
             });
 
-            var jsonContent = File.ReadAllText(Path.Combine(assemblyFolder, "results.json"));
+            if (!File.Exists(resultsFile))
+            {
+                throw new Exception("Unable to find results for the execution. Check console out.");
+            }
+            var jsonContent = File.ReadAllText(resultsFile);
             var obj = JObject.Parse(jsonContent);
             var token = obj.SelectToken("cucumberJson");
             var result = JsonConvert.SerializeObject(token, Formatting.Indented);
