@@ -1,0 +1,17 @@
+{"source":{"uri":"features/one-undefined-scenario-nn.feature","data":"Feature:\n  Scenario:\n    Given this step is undefined\n","mediaType":"text/x.cucumber.gherkin+plain"}}
+{"gherkinDocument":{"uri":"features/one-undefined-scenario-nn.feature","feature":{"location":{"line":1,"column":1},"language":"en","keyword":"Feature","children":[{"scenario":{"location":{"line":2,"column":3},"keyword":"Scenario","steps":[{"location":{"line":3,"column":5},"keyword":"Given ","text":"this step is undefined","id":"16d10e79-2646-4b2b-a0a4-44c78aeb557b"}],"id":"5bcbb089-5b4e-4575-bdd5-6b31ac7a5e12"}}]}}}
+{"pickle":{"id":"ed642227-4e22-408b-a98e-6272a63ac1a9","uri":"features/one-undefined-scenario-nn.feature","language":"en","steps":[{"text":"this step is undefined","id":"9d9774be-e71c-4da4-bf8d-c416d4e6f63b","astNodeIds":["16d10e79-2646-4b2b-a0a4-44c78aeb557b"]}],"astNodeIds":["5bcbb089-5b4e-4575-bdd5-6b31ac7a5e12"]}}
+{"stepDefinition":{"id":"b6837923-083d-4a2c-ab2e-6b0bb513a7f4","pattern":{"source":"pass","type":"REGULAR_EXPRESSION"},"sourceReference":{"uri":"features/step_definitions/stepdefs.fakecucumber.js","location":{"line":11}}}}
+{"stepDefinition":{"id":"cc4c932e-7618-47c3-b3ea-cbfda9105e19","pattern":{"source":"pending","type":"REGULAR_EXPRESSION"},"sourceReference":{"uri":"features/step_definitions/stepdefs.fakecucumber.js","location":{"line":14}}}}
+{"stepDefinition":{"id":"6730777e-128b-4693-a8f7-da3fe787a6ef","pattern":{"source":"fail","type":"REGULAR_EXPRESSION"},"sourceReference":{"uri":"features/step_definitions/stepdefs.fakecucumber.js","location":{"line":18}}}}
+{"stepDefinition":{"id":"cf6c7094-588a-4a70-acca-3f066c4f4ffb","pattern":{"source":"decaying","type":"REGULAR_EXPRESSION"},"sourceReference":{"uri":"features/step_definitions/stepdefs.fakecucumber.js","location":{"line":23}}}}
+{"stepDefinition":{"id":"95c5f6a7-e848-49b4-a35a-35e541045130","pattern":{"source":"skip","type":"REGULAR_EXPRESSION"},"sourceReference":{"uri":"features/step_definitions/stepdefs.fakecucumber.js","location":{"line":29}}}}
+{"hook":{"id":"2392211e-b471-4783-ac2e-3e2df96fc459","tagExpression":"@failing_before","sourceReference":{"uri":"features/step_definitions/stepdefs.fakecucumber.js","location":{"line":3}}}}
+{"hook":{"id":"e62e9ee6-fedd-43f3-980f-829e996b24cd","tagExpression":"@failing_after","sourceReference":{"uri":"features/step_definitions/stepdefs.fakecucumber.js","location":{"line":7}}}}
+{"testRunStarted":{"timestamp":{"seconds":"0","nanos":240838351}}}
+{"testCase":{"id":"d2eb76d5-9676-406c-8ad5-d6afb8bad3bc","pickleId":"ed642227-4e22-408b-a98e-6272a63ac1a9","testSteps":[{"id":"6e9ed59d-77ff-41df-bfdd-5aaa469fc92c","pickleStepId":"9d9774be-e71c-4da4-bf8d-c416d4e6f63b"}]}}
+{"testCaseStarted":{"timestamp":{"seconds":"0","nanos":246161749},"attempt":0,"testCaseId":"d2eb76d5-9676-406c-8ad5-d6afb8bad3bc","id":"4a7c38ca-24e3-42b6-ad2e-2eda758fbaa9"}}
+{"testStepStarted":{"timestamp":{"seconds":"0","nanos":251590667},"testStepId":"6e9ed59d-77ff-41df-bfdd-5aaa469fc92c","testCaseStartedId":"4a7c38ca-24e3-42b6-ad2e-2eda758fbaa9"}}
+{"testStepFinished":{"testStepResult":{"status":"UNDEFINED","duration":{"seconds":"0","nanos":3977}},"timestamp":{"seconds":"0","nanos":252059126},"testStepId":"6e9ed59d-77ff-41df-bfdd-5aaa469fc92c","testCaseStartedId":"4a7c38ca-24e3-42b6-ad2e-2eda758fbaa9"}}
+{"testCaseFinished":{"timestamp":{"seconds":"0","nanos":252644476},"testCaseStartedId":"4a7c38ca-24e3-42b6-ad2e-2eda758fbaa9"}}
+{"testRunFinished":{"timestamp":{"seconds":"0","nanos":252862077}}}
