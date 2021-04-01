@@ -28,7 +28,7 @@ features/%.feature.rb.json: features/%.feature $(RB_FILES)
 	mv $@.tmp $@
 
 features/%.feature.js.json: features/%.feature $(JS_FILES)
-	-./node_modules/.bin/cucumberjs --format json:$@ $<
+	-./node_modules/.bin/cucumber-js --format json:$@ $<
 	cat $@ | jq --sort-keys "." > $@.tmp
 	mv $@.tmp $@
 
