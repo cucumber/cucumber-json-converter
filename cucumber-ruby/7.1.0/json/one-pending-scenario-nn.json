@@ -1,0 +1,35 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.rb:34"
+            },
+            "name": "this step is pending",
+            "result": {
+              "duration": 125000,
+              "error_message": "TODO (Cucumber::Pending)\n./stepdefs.rb:35:in `/pending/'\n../../features/one-pending-scenario-nn.feature:3:in `this step is pending'",
+              "status": "pending"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "../../features/one-pending-scenario-nn.feature"
+  }
+]

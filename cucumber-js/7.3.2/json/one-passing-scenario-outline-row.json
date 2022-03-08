@@ -1,0 +1,37 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "one-passing-scenario-outline-row;s1",
+        "keyword": "Scenario Outline",
+        "line": 2,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.js:11"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-passing-scenario-outline-row",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-passing-scenario-outline-row",
+    "tags": [],
+    "uri": "../../features/one-passing-scenario-outline-row.feature"
+  }
+]

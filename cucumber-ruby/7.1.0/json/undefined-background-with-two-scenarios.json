@@ -1,0 +1,94 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "../../features/undefined-background-with-two-scenarios.feature:5"
+            },
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "undefined-background-with-two-scenarios;s1",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "../../features/undefined-background-with-two-scenarios.feature:7"
+            },
+            "name": "this step is also undfined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "../../features/undefined-background-with-two-scenarios.feature:5"
+            },
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "undefined-background-with-two-scenarios;s2",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "S2",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 9,
+            "match": {
+              "location": "../../features/undefined-background-with-two-scenarios.feature:9"
+            },
+            "name": "even this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "undefined-background-with-two-scenarios",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "undefined-background-with-two-scenarios",
+    "uri": "../../features/undefined-background-with-two-scenarios.feature"
+  }
+]
