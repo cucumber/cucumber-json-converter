@@ -1,0 +1,132 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "after": [
+              {
+                "match": {
+                  "location": "stepdefs.rb:9"
+                },
+                "result": {
+                  "duration": 90000,
+                  "error_message": "Failing after step (RuntimeError)\n./stepdefs.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 24000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after_step"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "after": [
+              {
+                "match": {
+                  "location": "stepdefs.rb:9"
+                },
+                "result": {
+                  "duration": 78000,
+                  "error_message": "Failing after step (RuntimeError)\n./stepdefs.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 7000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after_step"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "after": [
+              {
+                "match": {
+                  "location": "stepdefs.rb:9"
+                },
+                "result": {
+                  "duration": 83000,
+                  "error_message": "Failing after step (RuntimeError)\n./stepdefs.rb:10:in `AfterStep'",
+                  "status": "failed"
+                }
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 9000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after_step"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "../../features/failing-after-step-hook-nn.feature"
+  }
+]

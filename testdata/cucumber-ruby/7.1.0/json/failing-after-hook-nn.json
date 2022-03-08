@@ -1,0 +1,132 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "after": [
+          {
+            "match": {
+              "location": "stepdefs.rb:5"
+            },
+            "result": {
+              "duration": 101000,
+              "error_message": "Failing after hook (RuntimeError)\n./stepdefs.rb:6:in `After'",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 25000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "match": {
+              "location": "stepdefs.rb:5"
+            },
+            "result": {
+              "duration": 91000,
+              "error_message": "Failing after hook (RuntimeError)\n./stepdefs.rb:6:in `After'",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 10000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "after": [
+          {
+            "match": {
+              "location": "stepdefs.rb:5"
+            },
+            "result": {
+              "duration": 97000,
+              "error_message": "Failing after hook (RuntimeError)\n./stepdefs.rb:6:in `After'",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 8000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "../../features/failing-after-hook-nn.feature"
+  }
+]
