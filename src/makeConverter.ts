@@ -6,7 +6,7 @@ import { behaveConverter } from './behave/1/behaveConverter.js'
 import { cucumberJsConverter } from './cucumber-js/7/cucumberJsConverter.js'
 import { cucumberJvmConverter } from './cucumber-jvm/7/cucumberJvmConverter.js'
 import { cucumberRubyConverter } from './cucumber-ruby/7/cucumberRubyConverter.js'
-import { Convalidator, Converter } from './types.js'
+import { Convalidator, Converter, MultiConverter } from './types.js'
 
 const readFile = promisify(fs.readFile)
 
@@ -18,7 +18,7 @@ const converterByPath: Record<string, Converter<never>> = {
   'src/CucumberJson.json': (data) => data,
 }
 
-export async function makeConverter(): Promise<Converter<never>> {
+export async function makeConverter(): Promise<MultiConverter<never>> {
   const schemaFiles = Object.keys(converterByPath)
 
   const schemas = await Promise.all(schemaFiles.map((json) => readFile(json, 'utf-8')))
@@ -32,7 +32,7 @@ export async function makeConverter(): Promise<Converter<never>> {
 
   return (data: never) => {
     const errors: string[] = []
-    const convalidator = convalidators.find((convalidator) => {
+    const candidateConvalidators = convalidators.filter((convalidator) => {
       if (convalidator.validator(data)) {
         return true
       } else {
@@ -45,9 +45,9 @@ export async function makeConverter(): Promise<Converter<never>> {
         )
       }
     })
-    if (!convalidator) {
+    if (candidateConvalidators.length === 0) {
       throw new Error(`Could not validate Cucumber JSON.\n${errors.join('\n')}`)
     }
-    return convalidator.converter(data)
+    return candidateConvalidators.map(convalidator => convalidator.converter(data))
   }
 }

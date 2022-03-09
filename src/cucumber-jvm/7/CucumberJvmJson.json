@@ -265,35 +265,10 @@
       "properties": {
         "name": {
           "type": "string"
-        },
-        "line": {
-          "type": "number"
-        },
-        "type": {
-          "type": "string"
-        },
-        "location": {
-          "$ref": "#/definitions/Location"
         }
       },
       "required": [
         "name"
-      ],
-      "additionalProperties": false
-    },
-    "Location": {
-      "type": "object",
-      "properties": {
-        "line": {
-          "type": "number"
-        },
-        "column": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "line",
-        "column"
       ],
       "additionalProperties": false
     },
@@ -314,6 +289,22 @@
         "name",
         "type",
         "location"
+      ],
+      "additionalProperties": false
+    },
+    "Location": {
+      "type": "object",
+      "properties": {
+        "line": {
+          "type": "number"
+        },
+        "column": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "line",
+        "column"
       ],
       "additionalProperties": false
     }

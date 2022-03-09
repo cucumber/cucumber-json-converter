@@ -3,14 +3,15 @@ import glob from 'glob'
 import { promisify } from 'util'
 
 import { makeConverter } from '../src/makeConverter.js'
-import { Converter } from '../src/types.js'
+import { MultiConverter } from '../src/types.js'
+import assert from 'assert'
 
 const readFile = promisify(fs.readFile)
 
 describe('converter', async () => {
   const jsonFiles = glob.sync('testdata/*/*/json/*.json')
 
-  let convert: Converter<never>
+  let convert: MultiConverter<never>
   beforeEach(async () => {
     if (!convert) convert = await makeConverter()
   })
@@ -18,9 +19,11 @@ describe('converter', async () => {
   for (const jsonFile of jsonFiles) {
     it(`converts ${jsonFile}`, async () => {
       const ob = await readFile(jsonFile, 'utf-8')
-      const cucumberJson = convert(JSON.parse(ob) as never)
-      if (!jsonFile.includes(cucumberJson.implementation)) {
-        throw new Error(`Unexpected implementation: ${cucumberJson.implementation}`)
+      const cucumberJsons = convert(JSON.parse(ob) as never)
+      if (cucumberJsons.length > 1) {
+        for (let n = 1; n < cucumberJsons.length; n++) {
+          assert.deepStrictEqual(cucumberJsons[n - 1], cucumberJsons[n])
+        }
       }
     })
   }

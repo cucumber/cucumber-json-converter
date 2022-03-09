@@ -1,0 +1,91 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "foo;bar;;2",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Bar",
+        "start_timestamp": "2022-03-09T10:52:42.656Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.passing_step()"
+            },
+            "name": "passing",
+            "result": {
+              "duration": 590000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@feature-tag"
+          },
+          {
+            "name": "@scenario-outline-tag"
+          },
+          {
+            "name": "@examples-tag"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "foo;bar;;3",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Bar",
+        "start_timestamp": "2022-03-09T10:52:42.700Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.failing_step()"
+            },
+            "name": "failing",
+            "result": {
+              "duration": 1338000,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.failing(file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/tagged-feature.feature:6)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@feature-tag"
+          },
+          {
+            "name": "@scenario-outline-tag"
+          },
+          {
+            "name": "@examples-tag"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "foo",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Foo",
+    "tags": [
+      {
+        "location": {
+          "column": 1,
+          "line": 1
+        },
+        "name": "@feature-tag",
+        "type": "Tag"
+      }
+    ],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/tagged-feature.feature"
+  }
+]

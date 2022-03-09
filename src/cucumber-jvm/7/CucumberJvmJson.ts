@@ -55,11 +55,6 @@ export type Match = Readonly<{
   arguments?: readonly Argument[]
 }>
 
-export type Argument = {
-  val: string
-  offset: number
-}
-
 export type Result = Readonly<{
   duration?: number
   status: Status
@@ -70,11 +65,6 @@ export type Status = 'passed' | 'failed' | 'skipped' | 'undefined'
 
 export type Tag = Readonly<{
   name: string
-  line?: number
-  // For Cucumber-JVM 7.0.1, the Feature level tag does not have a *line*,
-  // but instead it has a *location* (and a *type*).
-  type?: string
-  location?: Location
 }>
 
 // For Cucumber-JVM 7.0.1, the Feature level tag does not have a *line*,
@@ -89,3 +79,8 @@ export type Location = Readonly<{
   line: number
   column: number
 }>
+
+export type Argument = {
+  val: string
+  offset: number
+}

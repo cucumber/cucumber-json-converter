@@ -1,0 +1,165 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "foo;bar;;2",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Bar",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "passing",
+            "result": {
+              "duration": 30000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@feature-tag"
+          },
+          {
+            "line": 4,
+            "name": "@scenario-outline-tag"
+          },
+          {
+            "line": 8,
+            "name": "@examples-tag"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "foo;bar;;3",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Bar",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "failing",
+            "result": {
+              "duration": 332000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/tagged-feature.feature:12:6:in `failing'",
+              "status": "failed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@feature-tag"
+          },
+          {
+            "line": 4,
+            "name": "@scenario-outline-tag"
+          },
+          {
+            "line": 8,
+            "name": "@examples-tag"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "foo;bar;;3",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Bar",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "failing",
+            "result": {
+              "duration": 127000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/tagged-feature.feature:12:6:in `failing'",
+              "status": "failed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@feature-tag"
+          },
+          {
+            "line": 4,
+            "name": "@scenario-outline-tag"
+          },
+          {
+            "line": 8,
+            "name": "@examples-tag"
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "foo;bar;;3",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Bar",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "failing",
+            "result": {
+              "duration": 116000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/tagged-feature.feature:12:6:in `failing'",
+              "status": "failed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@feature-tag"
+          },
+          {
+            "line": 4,
+            "name": "@scenario-outline-tag"
+          },
+          {
+            "line": 8,
+            "name": "@examples-tag"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "foo",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Foo",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@feature-tag"
+      }
+    ],
+    "uri": "../../features/tagged-feature.feature"
+  }
+]

@@ -61,7 +61,7 @@ export type Result = Readonly<{
   error_message?: string
 }>
 
-export type Status = 'passed' | 'failed' | 'skipped' | 'undefined' | 'pendin'
+export type Status = 'passed' | 'failed' | 'skipped' | 'undefined' | 'pending'
 
 export type Tag = {
   line: number
