@@ -1,0 +1,279 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/CucumberJsJson",
+  "definitions": {
+    "CucumberJsJson": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Feature"
+      }
+    },
+    "Feature": {
+      "type": "object",
+      "properties": {
+        "uri": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "line": {
+          "type": "number"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "elements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Element"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Tag"
+          }
+        }
+      },
+      "required": [
+        "uri",
+        "id",
+        "line",
+        "keyword",
+        "name",
+        "description",
+        "elements",
+        "tags"
+      ],
+      "additionalProperties": false
+    },
+    "Element": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "line": {
+          "type": "number"
+        },
+        "type": {
+          "type": "string",
+          "const": "scenario"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/definitions/Step"
+              },
+              {
+                "$ref": "#/definitions/HookStep"
+              }
+            ]
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Tag"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "line",
+        "type",
+        "keyword",
+        "name",
+        "description",
+        "steps",
+        "tags"
+      ],
+      "additionalProperties": false
+    },
+    "Step": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Argument"
+          }
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "line": {
+          "type": "number"
+        },
+        "match": {
+          "$ref": "#/definitions/Match"
+        },
+        "name": {
+          "type": "string"
+        },
+        "result": {
+          "$ref": "#/definitions/Result"
+        }
+      },
+      "required": [
+        "arguments",
+        "keyword",
+        "line",
+        "name",
+        "result"
+      ],
+      "additionalProperties": false
+    },
+    "Argument": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/DocString"
+        },
+        {
+          "$ref": "#/definitions/DataTable"
+        }
+      ]
+    },
+    "DocString": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string"
+        },
+        "line": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "content",
+        "line"
+      ],
+      "additionalProperties": false
+    },
+    "DataTable": {
+      "type": "object",
+      "properties": {
+        "rows": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Row"
+          }
+        }
+      },
+      "required": [
+        "rows"
+      ],
+      "additionalProperties": false
+    },
+    "Row": {
+      "type": "object",
+      "properties": {
+        "cells": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "cells"
+      ],
+      "additionalProperties": false
+    },
+    "Match": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "location"
+      ],
+      "additionalProperties": false
+    },
+    "Result": {
+      "type": "object",
+      "properties": {
+        "duration": {
+          "type": "number"
+        },
+        "status": {
+          "$ref": "#/definitions/Status"
+        },
+        "error_message": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "duration",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "Status": {
+      "type": "string",
+      "enum": [
+        "passed",
+        "failed",
+        "skipped",
+        "undefined",
+        "pending"
+      ]
+    },
+    "HookStep": {
+      "type": "object",
+      "properties": {
+        "hidden": {
+          "type": "boolean"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "result": {
+          "$ref": "#/definitions/Result"
+        }
+      },
+      "required": [
+        "hidden",
+        "keyword",
+        "result"
+      ],
+      "additionalProperties": false
+    },
+    "Tag": {
+      "type": "object",
+      "properties": {
+        "line": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "line",
+        "name"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

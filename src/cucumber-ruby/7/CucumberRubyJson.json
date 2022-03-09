@@ -1,0 +1,265 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/CucumberRubyJson",
+  "definitions": {
+    "CucumberRubyJson": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Feature"
+      }
+    },
+    "Feature": {
+      "type": "object",
+      "properties": {
+        "uri": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "line": {
+          "type": "number"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "elements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Element"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Tag"
+          }
+        }
+      },
+      "required": [
+        "uri",
+        "id",
+        "line",
+        "keyword",
+        "name",
+        "description",
+        "elements"
+      ],
+      "additionalProperties": false
+    },
+    "Element": {
+      "type": "object",
+      "properties": {
+        "start_timestamp": {
+          "type": "string"
+        },
+        "line": {
+          "type": "number"
+        },
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "background",
+            "scenario"
+          ]
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Step"
+          }
+        },
+        "before": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Hook"
+          }
+        },
+        "after": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Hook"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Tag"
+          }
+        }
+      },
+      "required": [
+        "line",
+        "type",
+        "keyword",
+        "name",
+        "description",
+        "steps"
+      ],
+      "additionalProperties": false
+    },
+    "Step": {
+      "type": "object",
+      "properties": {
+        "keyword": {
+          "type": "string"
+        },
+        "line": {
+          "type": "number"
+        },
+        "match": {
+          "$ref": "#/definitions/Match"
+        },
+        "name": {
+          "type": "string"
+        },
+        "result": {
+          "$ref": "#/definitions/Result"
+        },
+        "doc_string": {
+          "$ref": "#/definitions/DocString"
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DataTableRow"
+          }
+        },
+        "after": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Hook"
+          }
+        }
+      },
+      "required": [
+        "keyword",
+        "line",
+        "name",
+        "result"
+      ],
+      "additionalProperties": false
+    },
+    "Match": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Result": {
+      "type": "object",
+      "properties": {
+        "duration": {
+          "type": "number"
+        },
+        "status": {
+          "$ref": "#/definitions/Status"
+        },
+        "error_message": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "Status": {
+      "type": "string",
+      "enum": [
+        "passed",
+        "failed",
+        "skipped",
+        "undefined",
+        "pending"
+      ]
+    },
+    "DocString": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "line": {
+          "type": "number"
+        },
+        "content_type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "line"
+      ],
+      "additionalProperties": false
+    },
+    "DataTableRow": {
+      "type": "object",
+      "properties": {
+        "cells": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "cells"
+      ],
+      "additionalProperties": false
+    },
+    "Hook": {
+      "type": "object",
+      "properties": {
+        "match": {
+          "$ref": "#/definitions/Match"
+        },
+        "result": {
+          "$ref": "#/definitions/Result"
+        }
+      },
+      "required": [
+        "match",
+        "result"
+      ],
+      "additionalProperties": false
+    },
+    "Tag": {
+      "type": "object",
+      "properties": {
+        "line": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "line",
+        "name"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
