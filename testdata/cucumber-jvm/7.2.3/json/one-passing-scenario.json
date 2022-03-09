@@ -1,0 +1,36 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "one-passing-scenario;s1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "S1",
+        "start_timestamp": "2022-03-09T10:19:18.117Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 795000,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-passing-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-passing-scenario",
+    "tags": [],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/one-passing-scenario.feature"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.decaying_step()"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 1023000,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline-with-decaying-background;s1;;2",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "S1",
+        "start_timestamp": "2022-03-09T10:20:14.233Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.passing_step()"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 99000,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.decaying_step()"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 2173000,
+              "error_message": "java.lang.RuntimeException: Decayed\n\tat io.cucumber.jsonschema.Stepdefs.decaying_step(Stepdefs.java:39)\n\tat ✽.a decaying step(file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/scenario-outline-with-decaying-background.feature:3)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline-with-decaying-background;s1;;3",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "S1",
+        "start_timestamp": "2022-03-09T10:20:14.278Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.passing_step()"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 44000,
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "scenario-outline-with-decaying-background",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "scenario-outline-with-decaying-background",
+    "tags": [],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/scenario-outline-with-decaying-background.feature"
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "after": [
+          {
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.tagged_failing_after_hook()"
+            },
+            "result": {
+              "duration": 2161000,
+              "error_message": "java.lang.RuntimeException: failing after hook\n\tat io.cucumber.jsonschema.Stepdefs.tagged_failing_after_hook(Stepdefs.java:18)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "start_timestamp": "2022-03-09T10:17:08.975Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 1246000,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@failing_after"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/failing-after-hook-nn.feature"
+  }
+]

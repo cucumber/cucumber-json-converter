@@ -1,11 +1,7 @@
 include $(dir $(lastword $(MAKEFILE_LIST)))/../default.mk
 
-Gemfile.lock: Gemfile
-	bundle install
-	touch $@
-
-json/%.json: ../../features/%.feature stepdefs.rb Gemfile.lock
+json/%.json: ../../features/%.feature src/test/java/io/cucumber/jsonschema/Stepdefs.java
 	mkdir -p $(@D)
-	-bundle exec cucumber --require stepdefs.rb --retry 2 --format json --out $@ $<
+	-mvn test -Dcucumber.features="$<" -Dcucumber.plugin="json:$@"
 	cat $@ | jq --sort-keys "." > $@.tmp
 	mv $@.tmp $@

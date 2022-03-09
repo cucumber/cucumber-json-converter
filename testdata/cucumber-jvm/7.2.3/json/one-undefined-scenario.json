@@ -1,0 +1,33 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "one-undefined-scenario;s1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "S1",
+        "start_timestamp": "2022-03-09T10:19:55.499Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {},
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-undefined-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-undefined-scenario",
+    "tags": [],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/one-undefined-scenario.feature"
+  }
+]

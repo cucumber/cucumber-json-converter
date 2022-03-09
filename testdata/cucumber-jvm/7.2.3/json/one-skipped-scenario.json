@@ -1,0 +1,33 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "one-skipped-scenario;s1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "S1",
+        "start_timestamp": "2022-03-09T10:19:42.559Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {},
+            "name": "this scenario is skipped",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-skipped-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-skipped-scenario",
+    "tags": [],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/one-skipped-scenario.feature"
+  }
+]
