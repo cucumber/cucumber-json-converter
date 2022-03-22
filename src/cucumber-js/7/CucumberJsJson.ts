@@ -1,70 +1,77 @@
-export type CucumberJsJson = readonly Feature[]
+export type CucumberJsJson = readonly JsFeature[]
 
-export type Feature = Readonly<{
+export type JsFeature = Readonly<{
   uri: string
   id: string
   line: number
   keyword: string
   name: string
-  description: string
-  elements: readonly Element[]
-  tags: readonly Tag[]
+  // 6.0.5 can omit description
+  description?: string
+  elements: readonly JsElement[]
+  tags: readonly JsTag[]
 }>
 
-export type Element = Readonly<{
+export type JsElement = Readonly<{
   id: string
   line: number
   type: 'scenario'
   keyword: string
   name: string
-  description: string
-  steps: readonly (Step | HookStep)[]
-  tags: readonly Tag[]
+  // 6.0.5 can omit description
+  description?: string
+  steps: readonly JsStepOrHook[]
+  tags: readonly JsTag[]
 }>
 
-export type HookStep = Readonly<{
-  hidden: boolean
-  keyword: string
-  result: Result
-}>
+export type JsStepOrHook = JsStep | JsHookStep
 
-export type Step = Readonly<{
-  arguments: readonly Argument[]
+export type JsStep = Readonly<{
+  arguments: readonly JsArgument[]
   keyword: string
   line: number
-  match?: Match
+  match?: JsMatch
   name: string
-  result: Result
+  result: JsResult
 }>
 
-export type Argument = DocString | DataTable
+export type JsHookStep = Readonly<{
+  hidden: true
+  keyword: string
+  // 6.0.5 has match, but 7.3.2 does not
+  match?: JsMatch
+  result: JsResult
+}>
 
-export type DocString = Readonly<{
+export type JsArgument = JsDocString | JsDataTable
+
+export type JsDocString = Readonly<{
   content: string
   line: number
 }>
 
-export type DataTable = Readonly<{
-  rows: readonly Row[]
+export type JsDataTable = Readonly<{
+  rows: readonly JsRow[]
 }>
 
-export type Row = Readonly<{
+export type JsRow = Readonly<{
   cells: readonly string[]
 }>
 
-export type Match = Readonly<{
+export type JsMatch = Readonly<{
   location: string
 }>
 
-export type Result = Readonly<{
-  duration: number
-  status: Status
+export type JsResult = Readonly<{
+  // 6.0.5 does not set duration for undefined steps
+  duration?: number
+  status: JsStatus
   error_message?: string
 }>
 
-export type Status = 'passed' | 'failed' | 'skipped' | 'undefined' | 'pending'
+export type JsStatus = 'passed' | 'failed' | 'skipped' | 'undefined' | 'pending'
 
-export type Tag = Readonly<{
+export type JsTag = Readonly<{
   line: number
   name: string
 }>

@@ -1,0 +1,8 @@
+{
+  "name": "cucumber-json-schema",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "cucumber": "6.0.5"
+  }
+}

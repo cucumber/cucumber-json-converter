@@ -1,0 +1,51 @@
+[
+  {
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "hidden": true,
+            "keyword": "Before",
+            "match": {
+              "location": "stepdefs.js:3"
+            },
+            "result": {
+              "duration": 1000000,
+              "error_message": "Error: failing before hook\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/6.0.5/stepdefs.js:4:9)",
+              "status": "failed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "stepdefs.js:11"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_before"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "../../features/failing-before-hook-nn.feature"
+  }
+]

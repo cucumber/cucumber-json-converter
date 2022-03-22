@@ -1,0 +1,85 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "id": "decaying-background;s1",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "stepdefs.js:23"
+            },
+            "name": "this step is decaying",
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "stepdefs.js:11"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "decaying-background;s2",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "S2",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "stepdefs.js:23"
+            },
+            "name": "this step is decaying",
+            "result": {
+              "duration": 1000000,
+              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/6.0.5/stepdefs.js:26:21)",
+              "status": "failed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "stepdefs.js:11"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "decaying-background",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "decaying-background",
+    "tags": [],
+    "uri": "../../features/decaying-background.feature"
+  }
+]
