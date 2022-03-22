@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 147000,
+              "duration": 124000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-step.feature:3:in `this step fails'",
               "status": "failed"
             }
@@ -59,7 +59,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 146000,
+              "duration": 87000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-step.feature:3:in `this step fails'",
               "status": "failed"
             }
@@ -102,7 +102,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 142000,
+              "duration": 85000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-step.feature:3:in `this step fails'",
               "status": "failed"
             }

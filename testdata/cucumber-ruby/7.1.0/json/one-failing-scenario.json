@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 129000,
+              "duration": 147000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/one-failing-scenario.feature:3:in `this step fails'",
               "status": "failed"
             }
@@ -40,7 +40,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 96000,
+              "duration": 109000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/one-failing-scenario.feature:3:in `this step fails'",
               "status": "failed"
             }
@@ -63,7 +63,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 148000,
+              "duration": 111000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/one-failing-scenario.feature:3:in `this step fails'",
               "status": "failed"
             }

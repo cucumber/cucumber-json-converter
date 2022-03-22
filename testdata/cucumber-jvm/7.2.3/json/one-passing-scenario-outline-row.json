@@ -8,7 +8,7 @@
         "keyword": "Scenario Outline",
         "line": 7,
         "name": "S1",
-        "start_timestamp": "2022-03-09T10:19:12.265Z",
+        "start_timestamp": "2022-03-22T15:15:16.092Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -18,7 +18,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 658000,
+              "duration": 656000,
               "status": "passed"
             }
           }

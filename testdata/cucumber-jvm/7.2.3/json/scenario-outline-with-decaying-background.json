@@ -16,7 +16,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 1023000,
+              "duration": 891000,
               "status": "passed"
             }
           }
@@ -29,7 +29,7 @@
         "keyword": "Scenario Outline",
         "line": 10,
         "name": "S1",
-        "start_timestamp": "2022-03-09T10:20:14.233Z",
+        "start_timestamp": "2022-03-22T15:16:10.443Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -39,7 +39,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 99000,
+              "duration": 37000,
               "status": "passed"
             }
           }
@@ -60,7 +60,7 @@
             },
             "name": "a decaying step",
             "result": {
-              "duration": 2173000,
+              "duration": 1336000,
               "error_message": "java.lang.RuntimeException: Decayed\n\tat io.cucumber.jsonschema.Stepdefs.decaying_step(Stepdefs.java:39)\n\tat ✽.a decaying step(file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/scenario-outline-with-decaying-background.feature:3)\n",
               "status": "failed"
             }
@@ -74,7 +74,7 @@
         "keyword": "Scenario Outline",
         "line": 11,
         "name": "S1",
-        "start_timestamp": "2022-03-09T10:20:14.278Z",
+        "start_timestamp": "2022-03-22T15:16:10.476Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -84,7 +84,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 44000,
+              "duration": 21000,
               "status": "skipped"
             }
           }

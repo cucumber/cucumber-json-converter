@@ -16,7 +16,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 837000,
+              "duration": 895000,
               "status": "passed"
             }
           }
@@ -29,7 +29,7 @@
         "keyword": "Scenario",
         "line": 7,
         "name": "S1",
-        "start_timestamp": "2022-03-09T10:17:02.989Z",
+        "start_timestamp": "2022-03-22T15:13:40.663Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -39,7 +39,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 44000,
+              "duration": 61000,
               "status": "passed"
             }
           }
@@ -60,7 +60,7 @@
             },
             "name": "this step is decaying",
             "result": {
-              "duration": 1256000,
+              "duration": 1216000,
               "error_message": "java.lang.RuntimeException: Decayed\n\tat io.cucumber.jsonschema.Stepdefs.decaying_step(Stepdefs.java:39)\n\tat ✽.this step is decaying(file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/decaying-background.feature:5)\n",
               "status": "failed"
             }
@@ -74,7 +74,7 @@
         "keyword": "Scenario",
         "line": 10,
         "name": "S2",
-        "start_timestamp": "2022-03-09T10:17:03.030Z",
+        "start_timestamp": "2022-03-22T15:13:40.710Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -84,7 +84,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 30000,
+              "duration": 24000,
               "status": "skipped"
             }
           }

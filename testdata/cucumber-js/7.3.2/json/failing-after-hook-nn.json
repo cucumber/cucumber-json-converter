@@ -18,7 +18,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 0,
+              "duration": 1000000,
               "status": "passed"
             }
           },
@@ -27,7 +27,7 @@
             "keyword": "After",
             "result": {
               "duration": 0,
-              "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/cucumber-js/7.3.2/stepdefs.js:8:9)",
+              "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/7.3.2/stepdefs.js:8:9)",
               "status": "failed"
             }
           }

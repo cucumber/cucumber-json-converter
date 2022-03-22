@@ -17,7 +17,7 @@
             },
             "name": "a passing step",
             "result": {
-              "duration": 26000,
+              "duration": 24000,
               "status": "passed"
             }
           },
@@ -51,7 +51,41 @@
             },
             "name": "a failing step",
             "result": {
-              "duration": 115000,
+              "duration": 106000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/scenario-outline-nn.feature:9:3:in `a failing step'",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 4,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;3",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "a failing step",
+            "result": {
+              "duration": 93000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/scenario-outline-nn.feature:9:3:in `a failing step'",
               "status": "failed"
             }
@@ -106,40 +140,6 @@
       },
       {
         "description": "",
-        "id": "scenario-outline;;;3",
-        "keyword": "Scenario Outline",
-        "line": 9,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 3,
-            "match": {
-              "location": "stepdefs.rb:16"
-            },
-            "name": "a failing step",
-            "result": {
-              "duration": 90000,
-              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/scenario-outline-nn.feature:9:3:in `a failing step'",
-              "status": "failed"
-            }
-          },
-          {
-            "keyword": "And ",
-            "line": 4,
-            "match": {
-              "location": "stepdefs.rb:13"
-            },
-            "name": "a passing step",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
         "id": "scenario-outline;;;4",
         "keyword": "Scenario Outline",
         "line": 10,
@@ -153,7 +153,7 @@
             },
             "name": "a pending step",
             "result": {
-              "duration": 87000,
+              "duration": 94000,
               "error_message": "TODO (Cucumber::Pending)\n./stepdefs.rb:35:in `/pending/'\n../../features/scenario-outline-nn.feature:10:3:in `a pending step'",
               "status": "pending"
             }

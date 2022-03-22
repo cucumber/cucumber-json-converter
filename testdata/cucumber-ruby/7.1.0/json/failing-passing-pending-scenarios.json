@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 128000,
+              "duration": 139000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-passing-pending-scenarios.feature:3:in `this step fails'",
               "status": "failed"
             }
@@ -40,7 +40,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 93000,
+              "duration": 106000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-passing-pending-scenarios.feature:3:in `this step fails'",
               "status": "failed"
             }
@@ -63,7 +63,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 104000,
+              "duration": 106000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-passing-pending-scenarios.feature:3:in `this step fails'",
               "status": "failed"
             }
@@ -86,7 +86,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 9000,
+              "duration": 10000,
               "status": "passed"
             }
           },
@@ -98,7 +98,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 4000,
+              "duration": 139000,
               "status": "passed"
             }
           }
@@ -120,7 +120,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 9000,
+              "duration": 7000,
               "status": "passed"
             }
           },
@@ -144,7 +144,7 @@
             },
             "name": "this step is pending",
             "result": {
-              "duration": 158000,
+              "duration": 89000,
               "error_message": "TODO (Cucumber::Pending)\n./stepdefs.rb:35:in `/pending/'\n../../features/failing-passing-pending-scenarios.feature:12:in `this step is pending'",
               "status": "pending"
             }

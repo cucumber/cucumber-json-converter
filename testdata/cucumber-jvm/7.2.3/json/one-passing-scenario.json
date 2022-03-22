@@ -8,7 +8,7 @@
         "keyword": "Scenario",
         "line": 2,
         "name": "S1",
-        "start_timestamp": "2022-03-09T10:19:18.117Z",
+        "start_timestamp": "2022-03-22T15:15:21.761Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -18,7 +18,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 795000,
+              "duration": 686000,
               "status": "passed"
             }
           }

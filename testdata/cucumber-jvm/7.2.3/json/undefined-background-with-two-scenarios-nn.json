@@ -26,7 +26,7 @@
         "keyword": "Scenario",
         "line": 6,
         "name": "",
-        "start_timestamp": "2022-03-09T10:20:38.509Z",
+        "start_timestamp": "2022-03-22T15:16:42.809Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -34,7 +34,7 @@
             "match": {},
             "name": "this step is also undfined",
             "result": {
-              "duration": 37000,
+              "duration": 21000,
               "status": "skipped"
             }
           }
@@ -65,7 +65,7 @@
         "keyword": "Scenario",
         "line": 8,
         "name": "",
-        "start_timestamp": "2022-03-09T10:20:38.551Z",
+        "start_timestamp": "2022-03-22T15:16:42.849Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -73,7 +73,7 @@
             "match": {},
             "name": "even this step is undefined",
             "result": {
-              "duration": 15000,
+              "duration": 16000,
               "status": "skipped"
             }
           }

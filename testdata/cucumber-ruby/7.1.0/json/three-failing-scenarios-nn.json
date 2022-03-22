@@ -17,7 +17,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 129000,
+              "duration": 130000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:3:in `this step fails'",
               "status": "failed"
             }
@@ -40,7 +40,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 104000,
+              "duration": 142000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:3:in `this step fails'",
               "status": "failed"
             }
@@ -63,7 +63,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 128000,
+              "duration": 133000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:3:in `this step fails'",
               "status": "failed"
             }
@@ -81,205 +81,6 @@
           {
             "keyword": "Given ",
             "line": 6,
-            "match": {
-              "location": "stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "duration": 14000,
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "When ",
-            "line": 7,
-            "match": {
-              "location": "stepdefs.rb:16"
-            },
-            "name": "this step fails",
-            "result": {
-              "duration": 95000,
-              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:7:in `this step fails'",
-              "status": "failed"
-            }
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 5,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 6,
-            "match": {
-              "location": "stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "duration": 15000,
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "When ",
-            "line": 7,
-            "match": {
-              "location": "stepdefs.rb:16"
-            },
-            "name": "this step fails",
-            "result": {
-              "duration": 114000,
-              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:7:in `this step fails'",
-              "status": "failed"
-            }
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 5,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 6,
-            "match": {
-              "location": "stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "duration": 16000,
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "When ",
-            "line": 7,
-            "match": {
-              "location": "stepdefs.rb:16"
-            },
-            "name": "this step fails",
-            "result": {
-              "duration": 122000,
-              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:7:in `this step fails'",
-              "status": "failed"
-            }
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 10,
-            "match": {
-              "location": "stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "duration": 13000,
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "When ",
-            "line": 11,
-            "match": {
-              "location": "stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "duration": 5000,
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "Then ",
-            "line": 12,
-            "match": {
-              "location": "stepdefs.rb:16"
-            },
-            "name": "this step fails",
-            "result": {
-              "duration": 106000,
-              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:12:in `this step fails'",
-              "status": "failed"
-            }
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 10,
-            "match": {
-              "location": "stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "duration": 20000,
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "When ",
-            "line": 11,
-            "match": {
-              "location": "stepdefs.rb:13"
-            },
-            "name": "this step passes",
-            "result": {
-              "duration": 7000,
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "Then ",
-            "line": 12,
-            "match": {
-              "location": "stepdefs.rb:16"
-            },
-            "name": "this step fails",
-            "result": {
-              "duration": 111000,
-              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:12:in `this step fails'",
-              "status": "failed"
-            }
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": ";",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "line": 10,
             "match": {
               "location": "stepdefs.rb:13"
             },
@@ -291,6 +92,111 @@
           },
           {
             "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 240000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:7:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 13000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 102000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:7:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 11000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 103000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:7:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 9000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
             "line": 11,
             "match": {
               "location": "stepdefs.rb:13"
@@ -309,7 +215,101 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 118000,
+              "duration": 256000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:12:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 11000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 11,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 4000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 95000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:12:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 14000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 11,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 5000,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 113000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/three-failing-scenarios-nn.feature:12:in `this step fails'",
               "status": "failed"
             }

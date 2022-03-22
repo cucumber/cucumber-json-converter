@@ -4,34 +4,31 @@
     "elements": [
       {
         "description": "",
-        "id": "one-passing-scenario;scenario-1",
+        "id": "foo;bar",
         "keyword": "Scenario",
         "line": 2,
-        "name": "Scenario 1",
+        "name": "Bar",
         "steps": [
           {
-            "arguments": [],
             "keyword": "Given ",
             "line": 3,
             "match": {
-              "location": "stepdefs.js:11"
+              "location": "stepdefs.rb:42"
             },
-            "name": "this step passes",
+            "name": "I have 3 cukes in my belly",
             "result": {
-              "duration": 1000000,
+              "duration": 86000,
               "status": "passed"
             }
           }
         ],
-        "tags": [],
         "type": "scenario"
       }
     ],
-    "id": "one-passing-scenario",
+    "id": "foo",
     "keyword": "Feature",
     "line": 1,
-    "name": "one-passing-scenario",
-    "tags": [],
-    "uri": "../../features/one-passing-scenario-nn.feature"
+    "name": "Foo",
+    "uri": "../../features/step-with-arguments.feature"
   }
 ]

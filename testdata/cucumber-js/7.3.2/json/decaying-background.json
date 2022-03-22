@@ -31,7 +31,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 0,
+              "duration": 1000000,
               "status": "passed"
             }
           }
@@ -56,7 +56,7 @@
             "name": "this step is decaying",
             "result": {
               "duration": 0,
-              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/cucumber-js/7.3.2/stepdefs.js:26:21)",
+              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/7.3.2/stepdefs.js:26:21)",
               "status": "failed"
             }
           },

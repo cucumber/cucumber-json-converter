@@ -38,3 +38,7 @@ end
 Given /skip/ do
   skip_this_scenario
 end
+
+Given /I have (\d+) cukes in my (.*)/ do |count, something|
+
+end

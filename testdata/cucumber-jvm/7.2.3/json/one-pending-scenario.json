@@ -8,7 +8,7 @@
         "keyword": "Scenario",
         "line": 2,
         "name": "S1",
-        "start_timestamp": "2022-03-09T10:19:29.942Z",
+        "start_timestamp": "2022-03-22T15:15:32.538Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -18,7 +18,7 @@
             },
             "name": "this step is pending",
             "result": {
-              "duration": 2143000,
+              "duration": 3311000,
               "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat io.cucumber.jsonschema.Stepdefs.pending_step(Stepdefs.java:27)\n\tat ✽.this step is pending(file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/one-pending-scenario.feature:3)\n",
               "status": "pending"
             }

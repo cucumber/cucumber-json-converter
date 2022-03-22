@@ -16,7 +16,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 199000,
+              "duration": 156000,
               "status": "skipped"
             }
           }
@@ -30,7 +30,7 @@
               "location": "io.cucumber.jsonschema.Stepdefs.tagged_failing_before_hook()"
             },
             "result": {
-              "duration": 2005000,
+              "duration": 1414000,
               "error_message": "java.lang.RuntimeException: failing before hook\n\tat io.cucumber.jsonschema.Stepdefs.tagged_failing_before_hook(Stepdefs.java:13)\n",
               "status": "failed"
             }
@@ -41,7 +41,7 @@
         "keyword": "Scenario",
         "line": 6,
         "name": "S1",
-        "start_timestamp": "2022-03-09T10:18:14.992Z",
+        "start_timestamp": "2022-03-22T15:14:28.445Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -51,7 +51,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 26000,
+              "duration": 19000,
               "status": "skipped"
             }
           }

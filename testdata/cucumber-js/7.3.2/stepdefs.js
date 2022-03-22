@@ -29,3 +29,5 @@ Given(/decaying/, function () {
 Given(/skip/, function () {
   return 'skipped'
 })
+
+Given(/I have (\d+) cukes in my (.*)/, function(count, something) {})

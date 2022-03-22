@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 1543000,
+              "duration": 1463000,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/failing-background-with-two-scenarios.feature:5)\n",
               "status": "failed"
             }
@@ -30,7 +30,7 @@
         "keyword": "Scenario",
         "line": 7,
         "name": "S1",
-        "start_timestamp": "2022-03-09T10:17:56.891Z",
+        "start_timestamp": "2022-03-22T15:14:15.152Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -40,7 +40,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 29000,
+              "duration": 23000,
               "status": "skipped"
             }
           }
@@ -61,7 +61,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 169000,
+              "duration": 138000,
               "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/failing-background-with-two-scenarios.feature:5)\n",
               "status": "failed"
             }
@@ -75,7 +75,7 @@
         "keyword": "Scenario",
         "line": 10,
         "name": "S2",
-        "start_timestamp": "2022-03-09T10:17:56.938Z",
+        "start_timestamp": "2022-03-22T15:14:15.190Z",
         "steps": [
           {
             "keyword": "Given ",
@@ -85,7 +85,7 @@
             },
             "name": "this step passes",
             "result": {
-              "duration": 17000,
+              "duration": 16000,
               "status": "skipped"
             }
           }

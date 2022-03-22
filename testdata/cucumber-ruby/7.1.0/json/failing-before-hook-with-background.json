@@ -9,7 +9,7 @@
               "location": "stepdefs.rb:1"
             },
             "result": {
-              "duration": 134000,
+              "duration": 142000,
               "error_message": "Failing before hook (RuntimeError)\n./stepdefs.rb:2:in `Before'",
               "status": "failed"
             }
@@ -68,7 +68,7 @@
               "location": "stepdefs.rb:1"
             },
             "result": {
-              "duration": 134000,
+              "duration": 102000,
               "error_message": "Failing before hook (RuntimeError)\n./stepdefs.rb:2:in `Before'",
               "status": "failed"
             }
@@ -127,7 +127,7 @@
               "location": "stepdefs.rb:1"
             },
             "result": {
-              "duration": 273000,
+              "duration": 104000,
               "error_message": "Failing before hook (RuntimeError)\n./stepdefs.rb:2:in `Before'",
               "status": "failed"
             }

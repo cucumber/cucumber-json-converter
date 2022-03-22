@@ -38,4 +38,9 @@ public class Stepdefs {
         decay++;
         if (failing) throw new RuntimeException("Decayed");
     }
+
+    @Given("/I have (\\d+) cukes in my (.*)/")
+    public void cukes_in_something(int count, String something) {
+
+    }
 }

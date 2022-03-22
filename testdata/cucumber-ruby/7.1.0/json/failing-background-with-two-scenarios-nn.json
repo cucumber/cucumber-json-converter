@@ -16,7 +16,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 204000,
+              "duration": 118000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-with-two-scenarios-nn.feature:5:in `this step fails'",
               "status": "failed"
             }
@@ -59,7 +59,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 539000,
+              "duration": 90000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-with-two-scenarios-nn.feature:5:in `this step fails'",
               "status": "failed"
             }
@@ -102,7 +102,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 138000,
+              "duration": 86000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-with-two-scenarios-nn.feature:5:in `this step fails'",
               "status": "failed"
             }
@@ -145,7 +145,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 187000,
+              "duration": 72000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-with-two-scenarios-nn.feature:5:in `this step fails'",
               "status": "failed"
             }
@@ -188,7 +188,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 201000,
+              "duration": 79000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-with-two-scenarios-nn.feature:5:in `this step fails'",
               "status": "failed"
             }
@@ -231,7 +231,7 @@
             },
             "name": "this step fails",
             "result": {
-              "duration": 167000,
+              "duration": 91000,
               "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-with-two-scenarios-nn.feature:5:in `this step fails'",
               "status": "failed"
             }
