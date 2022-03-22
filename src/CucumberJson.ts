@@ -75,8 +75,3 @@ export type Tag = Readonly<{
   name: string
   line?: number
 }>
-
-export type Location = Readonly<{
-  line: number
-  column: number
-}>

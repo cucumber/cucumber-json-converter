@@ -22,11 +22,14 @@ function jvmFeatureToFeature(feature: JvmFeature): Feature {
   const elements: readonly Element[] = feature.elements.map(jvmElementToElement)
 
   return {
-    ...feature,
-    ...{
-      tags,
-      elements,
-    },
+    description: feature.description,
+    elements,
+    id: feature.id,
+    keyword: feature.keyword,
+    line: feature.line,
+    name: feature.name,
+    tags,
+    uri: feature.uri,
   }
 }
 
@@ -61,14 +64,17 @@ function jvmHookToHook(jvmHook: JvmHook): Hook {
 
 function jvmMatchToMatch(jvmMatch: JvmMatch): Match {
   return {
-    ...jvmMatch,
-    ...{
-      arguments: (jvmMatch.arguments || []).map((arg) => ({
-        value: arg.val,
-        offset: arg.offset,
-      })),
-    },
+    location: jvmMatch.location
   }
+  // return {
+  //   ...jvmMatch,
+  //   ...{
+  //     arguments: (jvmMatch.arguments || []).map((arg) => ({
+  //       value: arg.val,
+  //       offset: arg.offset,
+  //     })),
+  //   },
+  // }
 }
 
 function jvmStepToStep(jvmStep: JvmStep): Step {

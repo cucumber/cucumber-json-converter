@@ -11,6 +11,7 @@
     "skipLibCheck": true,
     "strictNullChecks": true,
     "experimentalDecorators": true,
+    "suppressExcessPropertyErrors": false,
     "module": "ESNext",
     "lib": [
       "ES6",

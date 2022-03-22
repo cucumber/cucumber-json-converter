@@ -1,17 +1,17 @@
-export type CucumberRubyJson = readonly Feature[]
+export type CucumberRubyJson = readonly RubyFeature[]
 
-export type Feature = Readonly<{
+export type RubyFeature = Readonly<{
   uri: string
   id: string
   line: number
   keyword: string
   name: string
   description: string
-  elements: readonly Element[]
-  tags?: readonly Tag[]
+  elements: readonly RubyElement[]
+  tags?: readonly RubyTag[]
 }>
 
-export type Element = Readonly<{
+export type RubyElement = Readonly<{
   start_timestamp?: string
   line: number
   id?: string
@@ -19,51 +19,51 @@ export type Element = Readonly<{
   keyword: string
   name: string
   description: string
-  steps: readonly Step[]
-  before?: readonly Hook[]
-  after?: readonly Hook[]
-  tags?: readonly Tag[]
+  steps: readonly RubyStep[]
+  before?: readonly RubyHook[]
+  after?: readonly RubyHook[]
+  tags?: readonly RubyTag[]
 }>
 
-export type Hook = Readonly<{
-  match: Match
-  result: Result
+export type RubyHook = Readonly<{
+  match: RubyMatch
+  result: RubyResult
 }>
 
-export type Step = Readonly<{
+export type RubyStep = Readonly<{
   keyword: string
   line: number
-  match?: Match
+  match?: RubyMatch
   name: string
-  result: Result
-  doc_string?: DocString
-  rows?: readonly DataTableRow[]
-  after?: Hook[]
+  result: RubyResult
+  doc_string?: RubyDocString
+  rows?: readonly RubyDataTableRow[]
+  after?: RubyHook[]
 }>
 
-export type DataTableRow = Readonly<{
+export type RubyDataTableRow = Readonly<{
   cells: readonly string[]
 }>
 
-export type DocString = Readonly<{
+export type RubyDocString = Readonly<{
   value: string
   line: number
   content_type?: string
 }>
 
-export type Match = Readonly<{
+export type RubyMatch = Readonly<{
   location?: string
 }>
 
-export type Result = Readonly<{
+export type RubyResult = Readonly<{
   duration?: number
-  status: Status
+  status: RubyStatus
   error_message?: string
 }>
 
-export type Status = 'passed' | 'failed' | 'skipped' | 'undefined' | 'pending'
+export type RubyStatus = 'passed' | 'failed' | 'skipped' | 'undefined' | 'pending'
 
-export type Tag = {
+export type RubyTag = {
   line: number
   name: string
 }

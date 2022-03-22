@@ -5,10 +5,10 @@
     "CucumberRubyJson": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/Feature"
+        "$ref": "#/definitions/RubyFeature"
       }
     },
-    "Feature": {
+    "RubyFeature": {
       "type": "object",
       "properties": {
         "uri": {
@@ -32,13 +32,13 @@
         "elements": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Element"
+            "$ref": "#/definitions/RubyElement"
           }
         },
         "tags": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Tag"
+            "$ref": "#/definitions/RubyTag"
           }
         }
       },
@@ -53,7 +53,7 @@
       ],
       "additionalProperties": false
     },
-    "Element": {
+    "RubyElement": {
       "type": "object",
       "properties": {
         "start_timestamp": {
@@ -84,25 +84,25 @@
         "steps": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Step"
+            "$ref": "#/definitions/RubyStep"
           }
         },
         "before": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Hook"
+            "$ref": "#/definitions/RubyHook"
           }
         },
         "after": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Hook"
+            "$ref": "#/definitions/RubyHook"
           }
         },
         "tags": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Tag"
+            "$ref": "#/definitions/RubyTag"
           }
         }
       },
@@ -116,7 +116,7 @@
       ],
       "additionalProperties": false
     },
-    "Step": {
+    "RubyStep": {
       "type": "object",
       "properties": {
         "keyword": {
@@ -126,27 +126,27 @@
           "type": "number"
         },
         "match": {
-          "$ref": "#/definitions/Match"
+          "$ref": "#/definitions/RubyMatch"
         },
         "name": {
           "type": "string"
         },
         "result": {
-          "$ref": "#/definitions/Result"
+          "$ref": "#/definitions/RubyResult"
         },
         "doc_string": {
-          "$ref": "#/definitions/DocString"
+          "$ref": "#/definitions/RubyDocString"
         },
         "rows": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/DataTableRow"
+            "$ref": "#/definitions/RubyDataTableRow"
           }
         },
         "after": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Hook"
+            "$ref": "#/definitions/RubyHook"
           }
         }
       },
@@ -158,7 +158,7 @@
       ],
       "additionalProperties": false
     },
-    "Match": {
+    "RubyMatch": {
       "type": "object",
       "properties": {
         "location": {
@@ -167,14 +167,14 @@
       },
       "additionalProperties": false
     },
-    "Result": {
+    "RubyResult": {
       "type": "object",
       "properties": {
         "duration": {
           "type": "number"
         },
         "status": {
-          "$ref": "#/definitions/Status"
+          "$ref": "#/definitions/RubyStatus"
         },
         "error_message": {
           "type": "string"
@@ -185,7 +185,7 @@
       ],
       "additionalProperties": false
     },
-    "Status": {
+    "RubyStatus": {
       "type": "string",
       "enum": [
         "passed",
@@ -195,7 +195,7 @@
         "pending"
       ]
     },
-    "DocString": {
+    "RubyDocString": {
       "type": "object",
       "properties": {
         "value": {
@@ -214,7 +214,7 @@
       ],
       "additionalProperties": false
     },
-    "DataTableRow": {
+    "RubyDataTableRow": {
       "type": "object",
       "properties": {
         "cells": {
@@ -229,14 +229,14 @@
       ],
       "additionalProperties": false
     },
-    "Hook": {
+    "RubyHook": {
       "type": "object",
       "properties": {
         "match": {
-          "$ref": "#/definitions/Match"
+          "$ref": "#/definitions/RubyMatch"
         },
         "result": {
-          "$ref": "#/definitions/Result"
+          "$ref": "#/definitions/RubyResult"
         }
       },
       "required": [
@@ -245,7 +245,7 @@
       ],
       "additionalProperties": false
     },
-    "Tag": {
+    "RubyTag": {
       "type": "object",
       "properties": {
         "line": {

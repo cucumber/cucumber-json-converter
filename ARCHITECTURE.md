@@ -8,8 +8,9 @@ These JSON Schemas are generated from a `.ts` file in the same directory with th
 A Cucumber JSON document originating from a supported version can then be converted to a new JSON document that conforms
 with the [canonical Cucumber JSON schema](src/CucumberJson.json).
 
-This is done by iterating over each of the _implementation_ JSON schemas and attempting to validate the document. As soon as the document
-passes validation of an implementation, it is converted to canonical Cucumber JSON with a `{implementation}Converter` function.
+This is done by iterating over each of the _implementation_ JSON schemas and attempting to validate the document.
+As soon as the document passes validation of an implementation, it is converted to canonical Cucumber JSON with a
+`{implementation}Converter` function.
 
 If the document does not validate against any of the schemas, an error is thrown.
 
