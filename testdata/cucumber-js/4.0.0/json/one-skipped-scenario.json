@@ -1,0 +1,34 @@
+[
+  {
+    "elements": [
+      {
+        "id": "one-skipped-scenario;s1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.js:29"
+            },
+            "name": "this scenario is skipped",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-skipped-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-skipped-scenario",
+    "tags": [],
+    "uri": "../../features/one-skipped-scenario.feature"
+  }
+]

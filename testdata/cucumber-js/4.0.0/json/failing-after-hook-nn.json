@@ -1,0 +1,51 @@
+[
+  {
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "stepdefs.js:11"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "hidden": true,
+            "keyword": "After",
+            "match": {
+              "location": "stepdefs.js:7"
+            },
+            "result": {
+              "duration": 1000000,
+              "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/4.0.0/stepdefs.js:8:9)",
+              "status": "failed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "../../features/failing-after-hook-nn.feature"
+  }
+]
