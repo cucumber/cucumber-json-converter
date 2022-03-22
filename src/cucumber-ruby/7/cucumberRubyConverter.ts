@@ -1,6 +1,13 @@
 import { Element, Feature, Hook, Match, Step } from '../../CucumberJson.js'
 import { Converter } from '../../types'
-import { CucumberRubyJson, RubyElement, RubyFeature, RubyHook, RubyMatch, RubyStep } from './CucumberRubyJson.js'
+import {
+  CucumberRubyJson,
+  RubyElement,
+  RubyFeature,
+  RubyHook,
+  RubyMatch,
+  RubyStep,
+} from './CucumberRubyJson.js'
 
 export const cucumberRubyConverter: Converter<CucumberRubyJson> = (json) => {
   return {
@@ -48,7 +55,7 @@ function rubyHookToHook(rubyHook: RubyHook): Hook {
 
 function rubyMatchToMatch(rubyMatch: RubyMatch): Match {
   return {
-    location: rubyMatch.location
+    location: rubyMatch.location,
   }
 }
 

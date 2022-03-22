@@ -1,11 +1,11 @@
+import assert from 'assert'
 import fs from 'fs'
 import glob from 'glob'
 import { promisify } from 'util'
 
+import { CucumberJson } from '../src/CucumberJson'
 import { makeConverter } from '../src/makeConverter.js'
 import { MultiConverter } from '../src/types.js'
-import assert from 'assert'
-import { CucumberJson } from '../src/CucumberJson'
 
 const readFile = promisify(fs.readFile)
 
@@ -26,7 +26,10 @@ describe('converter', async () => {
           const cucumberJson1 = cucumberJsons[n - 1]
 
           const cucumberJson2 = cucumberJsons[n]
-          assert.deepStrictEqual(withoutImplementation(cucumberJson1), withoutImplementation(cucumberJson2))
+          assert.deepStrictEqual(
+            withoutImplementation(cucumberJson1),
+            withoutImplementation(cucumberJson2)
+          )
         }
       }
     })

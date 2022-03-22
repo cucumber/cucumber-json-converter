@@ -24,7 +24,9 @@ export async function makeConverter(): Promise<MultiConverter<never>> {
   const resultSchema = await readFile(resultSchemaFile, 'utf-8')
   const resultValidator = new Ajv().compile(JSON.parse(resultSchema))
 
-  const implementationSchemas = await Promise.all(implementationSchemaFiles.map((json) => readFile(json, 'utf-8')))
+  const implementationSchemas = await Promise.all(
+    implementationSchemaFiles.map((json) => readFile(json, 'utf-8'))
+  )
   const convalidators: Convalidator[] = implementationSchemaFiles.map((schemaFile, i) => {
     const implementationSchema = implementationSchemas[i]
     const implementationValidator = new Ajv().compile(JSON.parse(implementationSchema))
@@ -33,7 +35,7 @@ export async function makeConverter(): Promise<MultiConverter<never>> {
 
     const resultValidatingConverter: Converter<never> = (obj: never) => {
       const converted = converter(obj)
-      if(resultValidator(converted)) {
+      if (resultValidator(converted)) {
         return converted
       } else {
         const error = `Error from ${resultSchemaFile} validation: ${JSON.stringify(
@@ -42,7 +44,9 @@ export async function makeConverter(): Promise<MultiConverter<never>> {
           2
         )}`
         const convertedJson = JSON.stringify(converted, null, 2)
-        throw new Error(`Could not validate converted Cucumber JSON.\n${error}\nConverted JSON:${convertedJson}`)
+        throw new Error(
+          `Could not validate converted Cucumber JSON.\n${error}\nConverted JSON:${convertedJson}`
+        )
       }
     }
 
@@ -58,17 +62,13 @@ export async function makeConverter(): Promise<MultiConverter<never>> {
         return true
       } else {
         errors.push(
-          `Errors from ${schemaFile} validation: ${JSON.stringify(
-            validator.errors,
-            null,
-            2
-          )}`
+          `Errors from ${schemaFile} validation: ${JSON.stringify(validator.errors, null, 2)}`
         )
       }
     })
     if (candidateConvalidators.length === 0) {
       throw new Error(`Could not validate Cucumber JSON.\n${errors.join('\n')}`)
     }
-    return candidateConvalidators.map(convalidator => convalidator.converter(data))
+    return candidateConvalidators.map((convalidator) => convalidator.converter(data))
   }
 }

@@ -64,7 +64,7 @@ function jvmHookToHook(jvmHook: JvmHook): Hook {
 
 function jvmMatchToMatch(jvmMatch: JvmMatch): Match {
   return {
-    location: jvmMatch.location
+    location: jvmMatch.location,
   }
   // return {
   //   ...jvmMatch,
