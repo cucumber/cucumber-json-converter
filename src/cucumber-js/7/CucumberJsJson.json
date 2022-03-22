@@ -91,7 +91,6 @@
       "required": [
         "id",
         "line",
-        "type",
         "keyword",
         "name",
         "steps",
@@ -129,6 +128,9 @@
         },
         "name": {
           "type": "string"
+        },
+        "isBackground": {
+          "type": "boolean"
         },
         "result": {
           "$ref": "#/definitions/JsResult"
@@ -242,6 +244,11 @@
     "JsHookStep": {
       "type": "object",
       "properties": {
+        "arguments": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 0
+        },
         "hidden": {
           "type": "boolean",
           "const": true

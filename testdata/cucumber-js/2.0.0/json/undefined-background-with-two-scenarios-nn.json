@@ -1,0 +1,69 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "isBackground": true,
+            "keyword": "Given ",
+            "line": 5,
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "this step is also undfined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "tags": []
+      },
+      {
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "isBackground": true,
+            "keyword": "Given ",
+            "line": 5,
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "even this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "tags": []
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/features/undefined-background-with-two-scenarios-nn.feature"
+  }
+]

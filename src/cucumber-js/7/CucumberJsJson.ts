@@ -15,7 +15,7 @@ export type JsFeature = Readonly<{
 export type JsElement = Readonly<{
   id: string
   line: number
-  type: 'scenario'
+  type?: 'scenario'
   keyword: string
   name: string
   // 6.0.5 can omit description
@@ -32,10 +32,14 @@ export type JsStep = Readonly<{
   line: number
   match?: JsMatch
   name: string
+  // This property existed in 2.1.0 and was removed in a later version (what version is not documented in the changelog)
+  isBackground?: boolean
   result: JsResult
 }>
 
 export type JsHookStep = Readonly<{
+  // 2.1.0 always has empty arguments
+  arguments?: []
   hidden: true
   keyword: string
   // 6.0.5 has match, but 7.3.2 does not

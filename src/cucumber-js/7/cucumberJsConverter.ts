@@ -42,7 +42,7 @@ function jsElementToElement(jsElement: JsElement): Element {
     name: jsElement.name,
     steps,
     tags: jsElement.tags,
-    type: jsElement.type,
+    type: jsElement.type || 'scenario',
   }
 }
 

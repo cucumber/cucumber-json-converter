@@ -1,0 +1,31 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "id": "flaky-scenario;s1",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "this step is flaky",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "tags": []
+      }
+    ],
+    "id": "flaky-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "flaky-scenario",
+    "tags": [],
+    "uri": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/features/flaky-scenario.feature"
+  }
+]
