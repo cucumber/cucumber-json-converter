@@ -1,232 +1,194 @@
 import { SchemaObject } from 'ajv'
 export default {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$ref": "#/definitions/BehaveJson",
-  "definitions": {
-    "BehaveJson": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/Feature"
-      }
-    },
-    "Feature": {
-      "type": "object",
-      "properties": {
-        "status": {
-          "$ref": "#/definitions/Status"
-        },
-        "location": {
-          "type": "string"
-        },
-        "keyword": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        },
-        "description": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "elements": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Element"
-          }
-        },
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
+  $schema: 'http://json-schema.org/draft-07/schema#',
+  $ref: '#/definitions/BehaveJson',
+  definitions: {
+    BehaveJson: {
+      type: 'array',
+      items: {
+        $ref: '#/definitions/Feature',
       },
-      "required": [
-        "status",
-        "location",
-        "keyword",
-        "name",
-        "elements",
-        "tags"
-      ],
-      "additionalProperties": false
     },
-    "Status": {
-      "type": "string",
-      "enum": [
-        "passed",
-        "failed",
-        "skipped",
-        "undefined"
-      ]
-    },
-    "Element": {
-      "type": "object",
-      "properties": {
-        "steps": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Step"
-          }
+    Feature: {
+      type: 'object',
+      properties: {
+        status: {
+          $ref: '#/definitions/Status',
         },
-        "type": {
-          "type": "string",
-          "enum": [
-            "background",
-            "scenario"
-          ]
+        location: {
+          type: 'string',
         },
-        "name": {
-          "type": "string"
+        keyword: {
+          type: 'string',
         },
-        "description": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
+        name: {
+          type: 'string',
         },
-        "keyword": {
-          "type": "string"
+        description: {
+          type: 'array',
+          items: {
+            type: 'string',
+          },
         },
-        "location": {
-          "type": "string"
+        elements: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/Element',
+          },
         },
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
+        tags: {
+          type: 'array',
+          items: {
+            type: 'string',
+          },
         },
-        "status": {
-          "$ref": "#/definitions/Status"
-        }
       },
-      "required": [
-        "steps",
-        "type",
-        "name",
-        "keyword",
-        "location"
-      ],
-      "additionalProperties": false
+      required: ['status', 'location', 'keyword', 'name', 'elements', 'tags'],
+      additionalProperties: false,
     },
-    "Step": {
-      "type": "object",
-      "properties": {
-        "step_type": {
-          "type": "string"
+    Status: {
+      type: 'string',
+      enum: ['passed', 'failed', 'skipped', 'undefined'],
+    },
+    Element: {
+      type: 'object',
+      properties: {
+        steps: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/Step',
+          },
         },
-        "name": {
-          "type": "string"
+        type: {
+          type: 'string',
+          enum: ['background', 'scenario'],
         },
-        "keyword": {
-          "type": "string"
+        name: {
+          type: 'string',
         },
-        "location": {
-          "type": "string"
+        description: {
+          type: 'array',
+          items: {
+            type: 'string',
+          },
         },
-        "result": {
-          "$ref": "#/definitions/Result"
+        keyword: {
+          type: 'string',
         },
-        "match": {
-          "$ref": "#/definitions/Match"
+        location: {
+          type: 'string',
         },
-        "table": {
-          "$ref": "#/definitions/Table"
+        tags: {
+          type: 'array',
+          items: {
+            type: 'string',
+          },
         },
-        "text": {
-          "type": "string"
-        }
+        status: {
+          $ref: '#/definitions/Status',
+        },
       },
-      "required": [
-        "step_type",
-        "name",
-        "keyword",
-        "location"
-      ],
-      "additionalProperties": false
+      required: ['steps', 'type', 'name', 'keyword', 'location'],
+      additionalProperties: false,
     },
-    "Result": {
-      "type": "object",
-      "properties": {
-        "status": {
-          "$ref": "#/definitions/Status"
+    Step: {
+      type: 'object',
+      properties: {
+        step_type: {
+          type: 'string',
         },
-        "duration": {
-          "type": "number"
+        name: {
+          type: 'string',
         },
-        "error_message": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "status",
-        "duration"
-      ],
-      "additionalProperties": false
-    },
-    "Match": {
-      "type": "object",
-      "properties": {
-        "location": {
-          "type": "string"
+        keyword: {
+          type: 'string',
         },
-        "arguments": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Argument"
-          }
-        }
-      },
-      "required": [
-        "location",
-        "arguments"
-      ],
-      "additionalProperties": false
-    },
-    "Argument": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
+        location: {
+          type: 'string',
         },
-        "value": {},
-        "original": {
-          "type": "string"
-        }
+        result: {
+          $ref: '#/definitions/Result',
+        },
+        match: {
+          $ref: '#/definitions/Match',
+        },
+        table: {
+          $ref: '#/definitions/Table',
+        },
+        text: {
+          type: 'string',
+        },
       },
-      "required": [
-        "name",
-        "value",
-        "original"
-      ],
-      "additionalProperties": false
+      required: ['step_type', 'name', 'keyword', 'location'],
+      additionalProperties: false,
     },
-    "Table": {
-      "type": "object",
-      "properties": {
-        "rows": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Row"
-          }
-        }
+    Result: {
+      type: 'object',
+      properties: {
+        status: {
+          $ref: '#/definitions/Status',
+        },
+        duration: {
+          type: 'number',
+        },
+        error_message: {
+          type: 'array',
+          items: {
+            type: 'string',
+          },
+        },
       },
-      "required": [
-        "rows"
-      ],
-      "additionalProperties": false
+      required: ['status', 'duration'],
+      additionalProperties: false,
     },
-    "Row": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    }
-  }
+    Match: {
+      type: 'object',
+      properties: {
+        location: {
+          type: 'string',
+        },
+        arguments: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/Argument',
+          },
+        },
+      },
+      required: ['location', 'arguments'],
+      additionalProperties: false,
+    },
+    Argument: {
+      type: 'object',
+      properties: {
+        name: {
+          type: 'string',
+        },
+        value: {},
+        original: {
+          type: 'string',
+        },
+      },
+      required: ['name', 'value', 'original'],
+      additionalProperties: false,
+    },
+    Table: {
+      type: 'object',
+      properties: {
+        rows: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/Row',
+          },
+        },
+      },
+      required: ['rows'],
+      additionalProperties: false,
+    },
+    Row: {
+      type: 'array',
+      items: {
+        type: 'string',
+      },
+    },
+  },
 } as SchemaObject

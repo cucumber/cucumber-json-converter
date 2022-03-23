@@ -8,7 +8,7 @@ import {
   Step as BehaveStep,
 } from './BehaveJson.js'
 
-export const behaveConverter: Converter<BehaveJson> = (json) => {
+export const behaveConverter: Converter = (json: BehaveJson) => {
   return {
     implementation: 'behave',
     features: json.map(behaveFeatureToFeature),

@@ -1,314 +1,263 @@
 import { SchemaObject } from 'ajv'
 export default {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$ref": "#/definitions/CucumberJvmJson",
-  "definitions": {
-    "CucumberJvmJson": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/JvmFeature"
-      }
-    },
-    "JvmFeature": {
-      "type": "object",
-      "properties": {
-        "uri": {
-          "type": "string"
-        },
-        "id": {
-          "type": "string"
-        },
-        "line": {
-          "type": "number"
-        },
-        "keyword": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "elements": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/JvmElement"
-          }
-        },
-        "tags": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/JvmLocationTag"
-          }
-        }
+  $schema: 'http://json-schema.org/draft-07/schema#',
+  $ref: '#/definitions/CucumberJvmJson',
+  definitions: {
+    CucumberJvmJson: {
+      type: 'array',
+      items: {
+        $ref: '#/definitions/JvmFeature',
       },
-      "required": [
-        "uri",
-        "id",
-        "line",
-        "keyword",
-        "name",
-        "description",
-        "elements"
-      ],
-      "additionalProperties": false
     },
-    "JvmElement": {
-      "type": "object",
-      "properties": {
-        "start_timestamp": {
-          "type": "string"
+    JvmFeature: {
+      type: 'object',
+      properties: {
+        uri: {
+          type: 'string',
         },
-        "line": {
-          "type": "number"
+        id: {
+          type: 'string',
         },
-        "id": {
-          "type": "string"
+        line: {
+          type: 'number',
         },
-        "type": {
-          "type": "string",
-          "enum": [
-            "background",
-            "scenario"
-          ]
+        keyword: {
+          type: 'string',
         },
-        "keyword": {
-          "type": "string"
+        name: {
+          type: 'string',
         },
-        "name": {
-          "type": "string"
+        description: {
+          type: 'string',
         },
-        "description": {
-          "type": "string"
+        elements: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/JvmElement',
+          },
         },
-        "steps": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/JvmStep"
-          }
+        tags: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/JvmLocationTag',
+          },
         },
-        "before": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/JvmHook"
-          }
-        },
-        "after": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/JvmHook"
-          }
-        },
-        "tags": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/JvmTag"
-          }
-        }
       },
-      "required": [
-        "line",
-        "type",
-        "keyword",
-        "name",
-        "description",
-        "steps"
-      ],
-      "additionalProperties": false
+      required: ['uri', 'id', 'line', 'keyword', 'name', 'description', 'elements'],
+      additionalProperties: false,
     },
-    "JvmStep": {
-      "type": "object",
-      "properties": {
-        "keyword": {
-          "type": "string"
+    JvmElement: {
+      type: 'object',
+      properties: {
+        start_timestamp: {
+          type: 'string',
         },
-        "line": {
-          "type": "number"
+        line: {
+          type: 'number',
         },
-        "match": {
-          "$ref": "#/definitions/JvmMatch"
+        id: {
+          type: 'string',
         },
-        "name": {
-          "type": "string"
+        type: {
+          type: 'string',
+          enum: ['background', 'scenario'],
         },
-        "result": {
-          "$ref": "#/definitions/JvmResult"
+        keyword: {
+          type: 'string',
         },
-        "doc_string": {
-          "$ref": "#/definitions/JvmDocString"
+        name: {
+          type: 'string',
         },
-        "rows": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/JvmDataTableRow"
-          }
-        }
+        description: {
+          type: 'string',
+        },
+        steps: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/JvmStep',
+          },
+        },
+        before: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/JvmHook',
+          },
+        },
+        after: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/JvmHook',
+          },
+        },
+        tags: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/JvmTag',
+          },
+        },
       },
-      "required": [
-        "keyword",
-        "line",
-        "name",
-        "result"
-      ],
-      "additionalProperties": false
+      required: ['line', 'type', 'keyword', 'name', 'description', 'steps'],
+      additionalProperties: false,
     },
-    "JvmMatch": {
-      "type": "object",
-      "properties": {
-        "location": {
-          "type": "string"
+    JvmStep: {
+      type: 'object',
+      properties: {
+        keyword: {
+          type: 'string',
         },
-        "arguments": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/JvmArgument"
-          }
-        }
+        line: {
+          type: 'number',
+        },
+        match: {
+          $ref: '#/definitions/JvmMatch',
+        },
+        name: {
+          type: 'string',
+        },
+        result: {
+          $ref: '#/definitions/JvmResult',
+        },
+        doc_string: {
+          $ref: '#/definitions/JvmDocString',
+        },
+        rows: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/JvmDataTableRow',
+          },
+        },
       },
-      "additionalProperties": false
+      required: ['keyword', 'line', 'name', 'result'],
+      additionalProperties: false,
     },
-    "JvmArgument": {
-      "type": "object",
-      "properties": {
-        "val": {
-          "type": "string"
+    JvmMatch: {
+      type: 'object',
+      properties: {
+        location: {
+          type: 'string',
         },
-        "offset": {
-          "type": "number"
-        }
+        arguments: {
+          type: 'array',
+          items: {
+            $ref: '#/definitions/JvmArgument',
+          },
+        },
       },
-      "required": [
-        "val",
-        "offset"
-      ],
-      "additionalProperties": false
+      additionalProperties: false,
     },
-    "JvmResult": {
-      "type": "object",
-      "properties": {
-        "duration": {
-          "type": "number"
+    JvmArgument: {
+      type: 'object',
+      properties: {
+        val: {
+          type: 'string',
         },
-        "status": {
-          "$ref": "#/definitions/JvmStatus"
+        offset: {
+          type: 'number',
         },
-        "error_message": {
-          "type": "string"
-        }
       },
-      "required": [
-        "status"
-      ],
-      "additionalProperties": false
+      required: ['val', 'offset'],
+      additionalProperties: false,
     },
-    "JvmStatus": {
-      "type": "string",
-      "enum": [
-        "passed",
-        "failed",
-        "skipped",
-        "undefined",
-        "pending"
-      ]
-    },
-    "JvmDocString": {
-      "type": "object",
-      "properties": {
-        "line": {
-          "type": "number"
+    JvmResult: {
+      type: 'object',
+      properties: {
+        duration: {
+          type: 'number',
         },
-        "value": {
-          "type": "string"
+        status: {
+          $ref: '#/definitions/JvmStatus',
         },
-        "content_type": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "line",
-        "value"
-      ],
-      "additionalProperties": false
-    },
-    "JvmDataTableRow": {
-      "type": "object",
-      "properties": {
-        "cells": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "cells"
-      ],
-      "additionalProperties": false
-    },
-    "JvmHook": {
-      "type": "object",
-      "properties": {
-        "match": {
-          "$ref": "#/definitions/JvmMatch"
+        error_message: {
+          type: 'string',
         },
-        "result": {
-          "$ref": "#/definitions/JvmResult"
-        }
       },
-      "required": [
-        "match",
-        "result"
-      ],
-      "additionalProperties": false
+      required: ['status'],
+      additionalProperties: false,
     },
-    "JvmTag": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name"
-      ],
-      "additionalProperties": false
+    JvmStatus: {
+      type: 'string',
+      enum: ['passed', 'failed', 'skipped', 'undefined', 'pending'],
     },
-    "JvmLocationTag": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
+    JvmDocString: {
+      type: 'object',
+      properties: {
+        line: {
+          type: 'number',
         },
-        "type": {
-          "type": "string"
+        value: {
+          type: 'string',
         },
-        "location": {
-          "$ref": "#/definitions/JvmLocation"
-        }
+        content_type: {
+          type: 'string',
+        },
       },
-      "required": [
-        "name",
-        "type",
-        "location"
-      ],
-      "additionalProperties": false
+      required: ['line', 'value'],
+      additionalProperties: false,
     },
-    "JvmLocation": {
-      "type": "object",
-      "properties": {
-        "line": {
-          "type": "number"
+    JvmDataTableRow: {
+      type: 'object',
+      properties: {
+        cells: {
+          type: 'array',
+          items: {
+            type: 'string',
+          },
         },
-        "column": {
-          "type": "number"
-        }
       },
-      "required": [
-        "line",
-        "column"
-      ],
-      "additionalProperties": false
-    }
-  }
+      required: ['cells'],
+      additionalProperties: false,
+    },
+    JvmHook: {
+      type: 'object',
+      properties: {
+        match: {
+          $ref: '#/definitions/JvmMatch',
+        },
+        result: {
+          $ref: '#/definitions/JvmResult',
+        },
+      },
+      required: ['match', 'result'],
+      additionalProperties: false,
+    },
+    JvmTag: {
+      type: 'object',
+      properties: {
+        name: {
+          type: 'string',
+        },
+      },
+      required: ['name'],
+      additionalProperties: false,
+    },
+    JvmLocationTag: {
+      type: 'object',
+      properties: {
+        name: {
+          type: 'string',
+        },
+        type: {
+          type: 'string',
+        },
+        location: {
+          $ref: '#/definitions/JvmLocation',
+        },
+      },
+      required: ['name', 'type', 'location'],
+      additionalProperties: false,
+    },
+    JvmLocation: {
+      type: 'object',
+      properties: {
+        line: {
+          type: 'number',
+        },
+        column: {
+          type: 'number',
+        },
+      },
+      required: ['line', 'column'],
+      additionalProperties: false,
+    },
+  },
 } as SchemaObject

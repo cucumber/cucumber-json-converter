@@ -9,7 +9,7 @@ import {
   RubyStep,
 } from './CucumberRubyJson.js'
 
-export const cucumberRubyConverter: Converter<CucumberRubyJson> = (json) => {
+export const cucumberRubyConverter: Converter = (json: CucumberRubyJson) => {
   return {
     implementation: 'cucumber-ruby',
     features: json.map(rubyFeatureToFeature),
