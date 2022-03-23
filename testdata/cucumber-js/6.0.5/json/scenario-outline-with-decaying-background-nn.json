@@ -1,0 +1,84 @@
+[
+  {
+    "elements": [
+      {
+        "id": "scenario-outline;",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.js:23"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.js:11"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "scenario-outline;",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.js:23"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 0,
+              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/6.0.5/stepdefs.js:26:21)",
+              "status": "failed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.js:11"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Scenario Outline",
+    "tags": [],
+    "uri": "../../features/scenario-outline-with-decaying-background-nn.feature"
+  }
+]

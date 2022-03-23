@@ -1,0 +1,102 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.decaying_step()"
+            },
+            "name": "this step is decaying",
+            "result": {
+              "duration": 405000,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "",
+        "start_timestamp": "2022-03-23T09:44:30.505Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 26000,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.decaying_step()"
+            },
+            "name": "this step is decaying",
+            "result": {
+              "duration": 555000,
+              "error_message": "java.lang.RuntimeException: Decayed\n\tat io.cucumber.jsonschema.Stepdefs.decaying_step(Stepdefs.java:39)\n\tat ✽.this step is decaying(file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/5.7.0/../../features/decaying-background-nn.feature:5)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "",
+        "start_timestamp": "2022-03-23T09:44:30.529Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 15000,
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/5.7.0/../../features/decaying-background-nn.feature"
+  }
+]

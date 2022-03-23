@@ -1,0 +1,46 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "foo;bar",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Bar",
+        "start_timestamp": "2022-03-22T15:16:21.136Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 7,
+                  "val": "3"
+                },
+                {
+                  "offset": 21,
+                  "val": "belly"
+                }
+              ],
+              "location": "io.cucumber.jsonschema.Stepdefs.cukes_in_something(int,java.lang.String)"
+            },
+            "name": "I have 3 cukes in my belly",
+            "result": {
+              "duration": 1748000,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "foo",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Foo",
+    "tags": [],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/step-with-arguments.feature"
+  }
+]

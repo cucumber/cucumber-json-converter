@@ -1,0 +1,31 @@
+[
+  {
+    "elements": [
+      {
+        "id": "one-undefined-scenario;s1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-undefined-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-undefined-scenario",
+    "tags": [],
+    "uri": "../../features/one-undefined-scenario.feature"
+  }
+]

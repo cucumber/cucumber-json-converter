@@ -1,0 +1,115 @@
+[
+  {
+    "elements": [
+      {
+        "id": "scenario-outline;s1",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:12"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 1,
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:12"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": []
+      },
+      {
+        "id": "scenario-outline;s1",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:19"
+            },
+            "name": "a failing step",
+            "result": {
+              "duration": 0,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:20:9)",
+              "status": "failed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:12"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": []
+      },
+      {
+        "id": "scenario-outline;s1",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:15"
+            },
+            "name": "a pending step",
+            "result": {
+              "status": "pending"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:12"
+            },
+            "name": "a passing step",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": []
+      }
+    ],
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "scenario-outline",
+    "tags": [],
+    "uri": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/features/scenario-outline.feature"
+  }
+]

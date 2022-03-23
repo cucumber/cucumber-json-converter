@@ -1,0 +1,55 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "examples": [
+          {
+            "description": "",
+            "id": ";;",
+            "keyword": "Examples",
+            "line": 5,
+            "name": "",
+            "rows": [
+              {
+                "cells": [
+                  "status"
+                ],
+                "id": ";;;1",
+                "line": 6
+              },
+              {
+                "cells": [
+                  "passes"
+                ],
+                "id": ";;;2",
+                "line": 7
+              }
+            ]
+          }
+        ],
+        "id": ";",
+        "keyword": "Scenario Outline",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "../../features/one-passing-scenario-outline-row-nn.feature:3"
+            },
+            "name": "this step <status>"
+          }
+        ],
+        "type": "scenario_outline"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "../../features/one-passing-scenario-outline-row-nn.feature"
+  }
+]

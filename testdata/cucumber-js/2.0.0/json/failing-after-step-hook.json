@@ -1,0 +1,39 @@
+[
+  {
+    "elements": [
+      {
+        "id": "failing-after-step-hook;s1",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:12"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after_step"
+          }
+        ]
+      }
+    ],
+    "id": "failing-after-step-hook",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "failing-after-step-hook",
+    "tags": [],
+    "uri": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/features/failing-after-step-hook.feature"
+  }
+]

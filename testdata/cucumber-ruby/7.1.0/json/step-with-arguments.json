@@ -1,0 +1,34 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "foo;bar",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Bar",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.rb:42"
+            },
+            "name": "I have 3 cukes in my belly",
+            "result": {
+              "duration": 86000,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "foo",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Foo",
+    "uri": "../../features/step-with-arguments.feature"
+  }
+]

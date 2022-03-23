@@ -1,0 +1,81 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 141000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/one-failing-scenario-nn.feature:3:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 96000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/one-failing-scenario-nn.feature:3:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 107000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/one-failing-scenario-nn.feature:3:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "../../features/one-failing-scenario-nn.feature"
+  }
+]

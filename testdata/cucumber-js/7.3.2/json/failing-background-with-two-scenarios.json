@@ -1,0 +1,89 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "id": "failing-background-with-two-scenarios;s1",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "stepdefs.js:18"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 0,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/7.3.2/stepdefs.js:19:9)",
+              "status": "failed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "stepdefs.js:11"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 0,
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "failing-background-with-two-scenarios;s2",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "S2",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "stepdefs.js:18"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 0,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/7.3.2/stepdefs.js:19:9)",
+              "status": "failed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "stepdefs.js:11"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 0,
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "failing-background-with-two-scenarios",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "failing-background-with-two-scenarios",
+    "tags": [],
+    "uri": "../../features/failing-background-with-two-scenarios.feature"
+  }
+]

@@ -1,0 +1,141 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 124000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-step.feature:3:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-step;s1",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 87000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-step.feature:3:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-step;s1",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "stepdefs.rb:16"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 85000,
+              "error_message": "Fail (RuntimeError)\n./stepdefs.rb:17:in `/fail/'\n../../features/failing-background-step.feature:3:in `this step fails'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "failing-background-step;s1",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "stepdefs.rb:13"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "failing-background-step",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "failing-background-step",
+    "uri": "../../features/failing-background-step.feature"
+  }
+]

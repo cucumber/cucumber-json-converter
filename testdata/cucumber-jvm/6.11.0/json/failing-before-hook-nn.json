@@ -1,0 +1,53 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "before": [
+          {
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.tagged_failing_before_hook()"
+            },
+            "result": {
+              "duration": 2144000,
+              "error_message": "java.lang.RuntimeException: failing before hook\n\tat io.cucumber.jsonschema.Stepdefs.tagged_failing_before_hook(Stepdefs.java:13)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "",
+        "start_timestamp": "2022-03-23T09:39:15.544Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 161000,
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@failing_before"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/6.11.0/../../features/failing-before-hook-nn.feature"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "UNKNOWN:-1"
+            },
+            "name": "a decaying step",
+            "result": {
+              "duration": 50000,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "examples": [
+          {
+            "description": "",
+            "id": "scenario-outline;;",
+            "keyword": "Examples",
+            "line": 8,
+            "name": "",
+            "rows": [
+              {
+                "cells": [
+                  "something"
+                ],
+                "id": "scenario-outline;;;1",
+                "line": 9
+              },
+              {
+                "cells": [
+                  "passing"
+                ],
+                "id": "scenario-outline;;;2",
+                "line": 10
+              },
+              {
+                "cells": [
+                  "passing"
+                ],
+                "id": "scenario-outline;;;3",
+                "line": 11
+              }
+            ]
+          }
+        ],
+        "id": "scenario-outline;",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "../../features/scenario-outline-with-decaying-background-nn.feature:6"
+            },
+            "name": "a <something> step"
+          }
+        ],
+        "type": "scenario_outline"
+      }
+    ],
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Scenario Outline",
+    "uri": "../../features/scenario-outline-with-decaying-background-nn.feature"
+  }
+]

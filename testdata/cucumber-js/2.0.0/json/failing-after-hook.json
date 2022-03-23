@@ -1,0 +1,52 @@
+[
+  {
+    "elements": [
+      {
+        "id": "failing-after-hook;s1",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:12"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "hidden": true,
+            "keyword": "After",
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:8"
+            },
+            "result": {
+              "duration": 0,
+              "error_message": "Error: failing after hook\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:9:9)",
+              "status": "failed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_after"
+          }
+        ]
+      }
+    ],
+    "id": "failing-after-hook",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "failing-after-hook",
+    "tags": [],
+    "uri": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/features/failing-after-hook.feature"
+  }
+]

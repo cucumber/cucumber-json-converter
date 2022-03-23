@@ -1,0 +1,88 @@
+[
+  {
+    "elements": [
+      {
+        "id": "foo;bar",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Bar",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:12"
+            },
+            "name": "passing",
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@feature-tag"
+          },
+          {
+            "line": 4,
+            "name": "@scenario-outline-tag"
+          },
+          {
+            "line": 8,
+            "name": "@examples-tag"
+          }
+        ]
+      },
+      {
+        "id": "foo;bar",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Bar",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:19"
+            },
+            "name": "failing",
+            "result": {
+              "duration": 0,
+              "error_message": "Error: this step failed\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:20:9)",
+              "status": "failed"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@feature-tag"
+          },
+          {
+            "line": 4,
+            "name": "@scenario-outline-tag"
+          },
+          {
+            "line": 8,
+            "name": "@examples-tag"
+          }
+        ]
+      }
+    ],
+    "id": "foo",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Foo",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@feature-tag"
+      }
+    ],
+    "uri": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/features/tagged-feature.feature"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "description": "Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "UNKNOWN:-1"
+            },
+            "name": "this step is flaky",
+            "result": {
+              "duration": 155000,
+              "error_message": "Flaky (RuntimeError)\n./stepdefs.rb:31:in `/flaky/'\n../../features/flaky-scenario-nn.feature:5:in `Given this step is flaky'",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "uri": "../../features/flaky-scenario-nn.feature"
+  }
+]

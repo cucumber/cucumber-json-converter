@@ -1,0 +1,85 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "id": "decaying-background;s1",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "isBackground": true,
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:24"
+            },
+            "name": "this step is decaying",
+            "result": {
+              "duration": 0,
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:12"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 1,
+              "status": "passed"
+            }
+          }
+        ],
+        "tags": []
+      },
+      {
+        "id": "decaying-background;s2",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "S2",
+        "steps": [
+          {
+            "arguments": [],
+            "isBackground": true,
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:24"
+            },
+            "name": "this step is decaying",
+            "result": {
+              "duration": 0,
+              "error_message": "Error: Decayed\n    at World.<anonymous> (/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:27:21)",
+              "status": "failed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-js/2.0.0/stepdefs.js:12"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": []
+      }
+    ],
+    "id": "decaying-background",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "decaying-background",
+    "tags": [],
+    "uri": "/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/features/decaying-background.feature"
+  }
+]

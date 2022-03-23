@@ -1,0 +1,77 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "examples": [
+          {
+            "description": "",
+            "id": "scenario-outline;s1;",
+            "keyword": "Examples",
+            "line": 6,
+            "name": "",
+            "rows": [
+              {
+                "cells": [
+                  "something"
+                ],
+                "id": "scenario-outline;s1;;1",
+                "line": 7
+              },
+              {
+                "cells": [
+                  "passing"
+                ],
+                "id": "scenario-outline;s1;;2",
+                "line": 8
+              },
+              {
+                "cells": [
+                  "failing"
+                ],
+                "id": "scenario-outline;s1;;3",
+                "line": 9
+              },
+              {
+                "cells": [
+                  "pending"
+                ],
+                "id": "scenario-outline;s1;;4",
+                "line": 10
+              }
+            ]
+          }
+        ],
+        "id": "scenario-outline;s1",
+        "keyword": "Scenario Outline",
+        "line": 2,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "../../features/scenario-outline.feature:3"
+            },
+            "name": "a <something> step"
+          },
+          {
+            "keyword": "And ",
+            "line": 4,
+            "match": {
+              "location": "../../features/scenario-outline.feature:4"
+            },
+            "name": "a passing step"
+          }
+        ],
+        "type": "scenario_outline"
+      }
+    ],
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "scenario-outline",
+    "uri": "../../features/scenario-outline.feature"
+  }
+]

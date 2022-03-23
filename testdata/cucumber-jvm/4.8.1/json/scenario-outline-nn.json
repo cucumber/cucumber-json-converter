@@ -1,0 +1,120 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "scenario-outline;;;2",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "",
+        "start_timestamp": "2022-03-23T10:01:50.637Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 784567,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 4,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 23158,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;3",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "",
+        "start_timestamp": "2022-03-23T10:01:50.660Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Stepdefs.failing_step()"
+            },
+            "name": "a failing step",
+            "result": {
+              "duration": 637876,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.a failing step(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/scenario-outline-nn.feature:3)\n",
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 4,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 13702,
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "scenario-outline;;;4",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "",
+        "start_timestamp": "2022-03-23T10:01:50.663Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Stepdefs.pending_step()"
+            },
+            "name": "a pending step",
+            "result": {
+              "duration": 1686141,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat io.cucumber.jsonschema.Stepdefs.pending_step(Stepdefs.java:27)\n\tat ✽.a pending step(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/scenario-outline-nn.feature:3)\n",
+              "status": "pending"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 4,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "a passing step",
+            "result": {
+              "duration": 12641,
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "scenario-outline",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Scenario Outline",
+    "tags": [],
+    "uri": "file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/scenario-outline-nn.feature"
+  }
+]

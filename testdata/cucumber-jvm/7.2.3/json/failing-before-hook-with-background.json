@@ -1,0 +1,74 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 2,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 156000,
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "before": [
+          {
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.tagged_failing_before_hook()"
+            },
+            "result": {
+              "duration": 1414000,
+              "error_message": "java.lang.RuntimeException: failing before hook\n\tat io.cucumber.jsonschema.Stepdefs.tagged_failing_before_hook(Stepdefs.java:13)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "description": "",
+        "id": "failing-before-hook-with-background;s1",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "S1",
+        "start_timestamp": "2022-03-22T15:14:28.445Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "match": {
+              "location": "io.cucumber.jsonschema.Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 19000,
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@failing_before"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "failing-before-hook-with-background",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "failing-before-hook-with-background",
+    "tags": [],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/7.2.3/../../features/failing-before-hook-with-background.feature"
+  }
+]

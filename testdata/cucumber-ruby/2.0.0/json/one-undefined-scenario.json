@@ -1,0 +1,33 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "one-undefined-scenario;s1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "../../features/one-undefined-scenario.feature:3"
+            },
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-undefined-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-undefined-scenario",
+    "uri": "../../features/one-undefined-scenario.feature"
+  }
+]

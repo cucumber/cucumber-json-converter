@@ -1,0 +1,39 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "failing-before-hook;s1",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "match": {
+              "location": "UNKNOWN:-1"
+            },
+            "name": "this step passes",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@failing_before"
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "failing-before-hook",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "failing-before-hook",
+    "uri": "../../features/failing-before-hook.feature"
+  }
+]

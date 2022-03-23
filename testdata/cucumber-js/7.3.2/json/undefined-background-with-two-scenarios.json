@@ -1,0 +1,75 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "id": "undefined-background-with-two-scenarios;s1",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "S1",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "this step is undefined",
+            "result": {
+              "duration": 0,
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "this step is also undfined",
+            "result": {
+              "duration": 0,
+              "status": "undefined"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "undefined-background-with-two-scenarios;s2",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "S2",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "this step is undefined",
+            "result": {
+              "duration": 0,
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "even this step is undefined",
+            "result": {
+              "duration": 0,
+              "status": "undefined"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "undefined-background-with-two-scenarios",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "undefined-background-with-two-scenarios",
+    "tags": [],
+    "uri": "../../features/undefined-background-with-two-scenarios.feature"
+  }
+]
