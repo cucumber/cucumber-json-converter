@@ -1,58 +1,58 @@
-export type BehaveJson = readonly Feature[]
+export type BehaveJson = readonly BehaveFeature[]
 
-export type Feature = Readonly<{
-  status: Status
+export type BehaveFeature = Readonly<{
+  status: BehaveStatus
   location: string
   keyword: string
   name: string
   description?: readonly string[]
-  elements: readonly Element[]
+  elements: readonly BehaveElement[]
   tags: readonly string[]
 }>
 
-export type Element = Readonly<{
-  steps: readonly Step[]
+export type BehaveElement = Readonly<{
+  steps: readonly BehaveStep[]
   type: 'background' | 'scenario'
   name: string
   description?: readonly string[]
   keyword: string
   location: string
   tags?: readonly string[]
-  status?: Status
+  status?: BehaveStatus
 }>
 
-export type Step = Readonly<{
+export type BehaveStep = Readonly<{
   step_type: string
   name: string
   keyword: string
   location: string
-  result?: Result
-  match?: Match
-  table?: Table
+  result?: BehaveResult
+  match?: BehaveMatch
+  table?: BehaveTable
   text?: string
 }>
 
-export type Result = Readonly<{
-  status: Status
+export type BehaveResult = Readonly<{
+  status: BehaveStatus
   duration: number
   error_message?: readonly string[]
 }>
 
-export type Match = Readonly<{
+export type BehaveMatch = Readonly<{
   location: string
-  arguments: readonly Argument[]
+  arguments: readonly BehaveArgument[]
 }>
 
-export type Argument = Readonly<{
+export type BehaveArgument = Readonly<{
   name: string
   value: unknown
   original: string
 }>
 
-export type Table = Readonly<{
-  rows: readonly Row[]
+export type BehaveTable = Readonly<{
+  rows: readonly BehaveRow[]
 }>
 
-export type Row = readonly string[]
+export type BehaveRow = readonly string[]
 
-export type Status = 'passed' | 'failed' | 'skipped' | 'undefined'
+export type BehaveStatus = 'passed' | 'failed' | 'skipped' | 'undefined'

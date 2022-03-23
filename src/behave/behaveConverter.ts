@@ -1,12 +1,6 @@
 import { Element, Feature, Result, Step, Tag } from '../CucumberJson.js'
 import { Converter } from '../types.js'
-import {
-  BehaveJson,
-  Element as BehaveElement,
-  Feature as BehaveFeature,
-  Result as BehaveResult,
-  Step as BehaveStep,
-} from './BehaveJson.js'
+import { BehaveElement, BehaveFeature, BehaveJson, BehaveResult, BehaveStep } from './BehaveJson.js'
 
 export const behaveConverter: Converter = (json: BehaveJson) => {
   return {
