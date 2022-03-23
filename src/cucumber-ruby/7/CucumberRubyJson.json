@@ -169,8 +169,30 @@
       "properties": {
         "location": {
           "type": "string"
+        },
+        "arguments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RubyArgument"
+          }
         }
       },
+      "additionalProperties": false
+    },
+    "RubyArgument": {
+      "type": "object",
+      "properties": {
+        "val": {
+          "type": "string"
+        },
+        "offset": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "val",
+        "offset"
+      ],
       "additionalProperties": false
     },
     "RubyResult": {

@@ -73,6 +73,8 @@ export type RubyDocString = Readonly<{
 
 export type RubyMatch = Readonly<{
   location?: string
+  // 7.1.0 does not have arguments. Regression??
+  arguments?: readonly RubyArgument[]
 }>
 
 export type RubyResult = Readonly<{
@@ -86,4 +88,9 @@ export type RubyStatus = 'passed' | 'failed' | 'skipped' | 'undefined' | 'pendin
 export type RubyTag = {
   line: number
   name: string
+}
+
+export type RubyArgument = {
+  val: string
+  offset: number
 }

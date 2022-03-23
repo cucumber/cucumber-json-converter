@@ -2,12 +2,12 @@ import { Element, Feature, Hook, Match, Step, Tag } from '../../CucumberJson.js'
 import { Converter } from '../../types'
 import {
   CucumberJvmJson,
-  Element as JvmElement,
-  Feature as JvmFeature,
-  Hook as JvmHook,
-  LocationTag,
-  Match as JvmMatch,
-  Step as JvmStep,
+  JvmElement,
+  JvmFeature,
+  JvmHook,
+  JvmLocationTag,
+  JvmMatch,
+  JvmStep,
 } from './CucumberJvmJson.js'
 
 export const cucumberJvmConverter: Converter<CucumberJvmJson> = (json) => {
@@ -33,7 +33,7 @@ function jvmFeatureToFeature(feature: JvmFeature): Feature {
   }
 }
 
-function locationTagToTag(locationTag: LocationTag): Tag {
+function locationTagToTag(locationTag: JvmLocationTag): Tag {
   return {
     name: locationTag.name,
     line: locationTag.location.line,

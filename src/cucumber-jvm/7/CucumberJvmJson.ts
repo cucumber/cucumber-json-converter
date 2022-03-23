@@ -1,17 +1,17 @@
-export type CucumberJvmJson = readonly Feature[]
+export type CucumberJvmJson = readonly JvmFeature[]
 
-export type Feature = Readonly<{
+export type JvmFeature = Readonly<{
   uri: string
   id: string
   line: number
   keyword: string
   name: string
   description: string
-  elements: readonly Element[]
-  tags?: readonly LocationTag[]
+  elements: readonly JvmElement[]
+  tags?: readonly JvmLocationTag[]
 }>
 
-export type Element = Readonly<{
+export type JvmElement = Readonly<{
   start_timestamp?: string
   line: number
   id?: string
@@ -19,68 +19,68 @@ export type Element = Readonly<{
   keyword: string
   name: string
   description: string
-  steps: readonly Step[]
-  before?: readonly Hook[]
-  after?: readonly Hook[]
-  tags?: readonly Tag[]
+  steps: readonly JvmStep[]
+  before?: readonly JvmHook[]
+  after?: readonly JvmHook[]
+  tags?: readonly JvmTag[]
 }>
 
-export type Hook = Readonly<{
-  match: Match
-  result: Result
+export type JvmHook = Readonly<{
+  match: JvmMatch
+  result: JvmResult
 }>
 
-export type Step = Readonly<{
+export type JvmStep = Readonly<{
   keyword: string
   line: number
-  match?: Match
+  match?: JvmMatch
   name: string
-  result: Result
-  doc_string?: DocString
-  rows?: readonly DataTableRow[]
+  result: JvmResult
+  doc_string?: JvmDocString
+  rows?: readonly JvmDataTableRow[]
 }>
 
-export type DataTableRow = Readonly<{
+export type JvmDataTableRow = Readonly<{
   cells: readonly string[]
 }>
 
-export type DocString = Readonly<{
+export type JvmDocString = Readonly<{
   line: number
   value: string
   content_type?: string
 }>
 
-export type Match = Readonly<{
+export type JvmMatch = Readonly<{
   location?: string
-  arguments?: readonly Argument[]
+  arguments?: readonly JvmArgument[]
 }>
 
-export type Result = Readonly<{
+export type JvmResult = Readonly<{
   duration?: number
-  status: Status
+  status: JvmStatus
   error_message?: string
 }>
 
-export type Status = 'passed' | 'failed' | 'skipped' | 'undefined'
+export type JvmStatus = 'passed' | 'failed' | 'skipped' | 'undefined' | 'pending'
 
-export type Tag = Readonly<{
+export type JvmTag = Readonly<{
   name: string
 }>
 
 // For Cucumber-JVM 7.0.1, the Feature level tag does not have a *line*,
 // but instead it has a *location* (and a *type*).
-export type LocationTag = Readonly<{
+export type JvmLocationTag = Readonly<{
   name: string
   type: string
-  location: Location
+  location: JvmLocation
 }>
 
-export type Location = Readonly<{
+export type JvmLocation = Readonly<{
   line: number
   column: number
 }>
 
-export type Argument = {
+export type JvmArgument = {
   val: string
   offset: number
 }

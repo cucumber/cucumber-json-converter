@@ -5,10 +5,10 @@
     "CucumberJvmJson": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/Feature"
+        "$ref": "#/definitions/JvmFeature"
       }
     },
-    "Feature": {
+    "JvmFeature": {
       "type": "object",
       "properties": {
         "uri": {
@@ -32,13 +32,13 @@
         "elements": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Element"
+            "$ref": "#/definitions/JvmElement"
           }
         },
         "tags": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/LocationTag"
+            "$ref": "#/definitions/JvmLocationTag"
           }
         }
       },
@@ -53,7 +53,7 @@
       ],
       "additionalProperties": false
     },
-    "Element": {
+    "JvmElement": {
       "type": "object",
       "properties": {
         "start_timestamp": {
@@ -84,25 +84,25 @@
         "steps": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Step"
+            "$ref": "#/definitions/JvmStep"
           }
         },
         "before": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Hook"
+            "$ref": "#/definitions/JvmHook"
           }
         },
         "after": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Hook"
+            "$ref": "#/definitions/JvmHook"
           }
         },
         "tags": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Tag"
+            "$ref": "#/definitions/JvmTag"
           }
         }
       },
@@ -116,7 +116,7 @@
       ],
       "additionalProperties": false
     },
-    "Step": {
+    "JvmStep": {
       "type": "object",
       "properties": {
         "keyword": {
@@ -126,21 +126,21 @@
           "type": "number"
         },
         "match": {
-          "$ref": "#/definitions/Match"
+          "$ref": "#/definitions/JvmMatch"
         },
         "name": {
           "type": "string"
         },
         "result": {
-          "$ref": "#/definitions/Result"
+          "$ref": "#/definitions/JvmResult"
         },
         "doc_string": {
-          "$ref": "#/definitions/DocString"
+          "$ref": "#/definitions/JvmDocString"
         },
         "rows": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/DataTableRow"
+            "$ref": "#/definitions/JvmDataTableRow"
           }
         }
       },
@@ -152,7 +152,7 @@
       ],
       "additionalProperties": false
     },
-    "Match": {
+    "JvmMatch": {
       "type": "object",
       "properties": {
         "location": {
@@ -161,13 +161,13 @@
         "arguments": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Argument"
+            "$ref": "#/definitions/JvmArgument"
           }
         }
       },
       "additionalProperties": false
     },
-    "Argument": {
+    "JvmArgument": {
       "type": "object",
       "properties": {
         "val": {
@@ -183,14 +183,14 @@
       ],
       "additionalProperties": false
     },
-    "Result": {
+    "JvmResult": {
       "type": "object",
       "properties": {
         "duration": {
           "type": "number"
         },
         "status": {
-          "$ref": "#/definitions/Status"
+          "$ref": "#/definitions/JvmStatus"
         },
         "error_message": {
           "type": "string"
@@ -201,16 +201,17 @@
       ],
       "additionalProperties": false
     },
-    "Status": {
+    "JvmStatus": {
       "type": "string",
       "enum": [
         "passed",
         "failed",
         "skipped",
-        "undefined"
+        "undefined",
+        "pending"
       ]
     },
-    "DocString": {
+    "JvmDocString": {
       "type": "object",
       "properties": {
         "line": {
@@ -229,7 +230,7 @@
       ],
       "additionalProperties": false
     },
-    "DataTableRow": {
+    "JvmDataTableRow": {
       "type": "object",
       "properties": {
         "cells": {
@@ -244,14 +245,14 @@
       ],
       "additionalProperties": false
     },
-    "Hook": {
+    "JvmHook": {
       "type": "object",
       "properties": {
         "match": {
-          "$ref": "#/definitions/Match"
+          "$ref": "#/definitions/JvmMatch"
         },
         "result": {
-          "$ref": "#/definitions/Result"
+          "$ref": "#/definitions/JvmResult"
         }
       },
       "required": [
@@ -260,7 +261,7 @@
       ],
       "additionalProperties": false
     },
-    "Tag": {
+    "JvmTag": {
       "type": "object",
       "properties": {
         "name": {
@@ -272,7 +273,7 @@
       ],
       "additionalProperties": false
     },
-    "LocationTag": {
+    "JvmLocationTag": {
       "type": "object",
       "properties": {
         "name": {
@@ -282,7 +283,7 @@
           "type": "string"
         },
         "location": {
-          "$ref": "#/definitions/Location"
+          "$ref": "#/definitions/JvmLocation"
         }
       },
       "required": [
@@ -292,7 +293,7 @@
       ],
       "additionalProperties": false
     },
-    "Location": {
+    "JvmLocation": {
       "type": "object",
       "properties": {
         "line": {
