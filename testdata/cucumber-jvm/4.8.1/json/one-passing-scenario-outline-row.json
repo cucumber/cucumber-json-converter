@@ -1,0 +1,36 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "one-passing-scenario-outline-row;s1;;2",
+        "keyword": "Scenario Outline",
+        "line": 7,
+        "name": "S1",
+        "start_timestamp": "2022-03-23T10:01:10.372Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 535026,
+              "status": "passed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-passing-scenario-outline-row",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-passing-scenario-outline-row",
+    "tags": [],
+    "uri": "file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/one-passing-scenario-outline-row.feature"
+  }
+]

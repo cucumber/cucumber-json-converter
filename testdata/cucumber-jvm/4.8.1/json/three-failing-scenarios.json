@@ -1,0 +1,121 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "three-failing-scenarios;s1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "S1",
+        "start_timestamp": "2022-03-23T10:02:25.768Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Stepdefs.failing_step()"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 1146675,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/three-failing-scenarios.feature:3)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "three-failing-scenarios;s2",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "S2",
+        "start_timestamp": "2022-03-23T10:02:25.801Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 54167,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "Stepdefs.failing_step()"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 120895,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/three-failing-scenarios.feature:7)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "three-failing-scenarios;s3",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "S3",
+        "start_timestamp": "2022-03-23T10:02:25.802Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 41444,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 11,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 23264,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "location": "Stepdefs.failing_step()"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 196387,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/three-failing-scenarios.feature:12)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "three-failing-scenarios",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "three-failing-scenarios",
+    "tags": [],
+    "uri": "file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/three-failing-scenarios.feature"
+  }
+]

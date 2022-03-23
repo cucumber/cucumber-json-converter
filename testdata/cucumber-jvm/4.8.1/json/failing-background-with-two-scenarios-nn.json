@@ -1,0 +1,103 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "Stepdefs.failing_step()"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 932024,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/failing-background-with-two-scenarios-nn.feature:5)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "",
+        "start_timestamp": "2022-03-23T10:00:07.223Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 33395,
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "Stepdefs.failing_step()"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 145535,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/failing-background-with-two-scenarios-nn.feature:5)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "",
+        "start_timestamp": "2022-03-23T10:00:07.246Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 11,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 10703,
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/failing-background-with-two-scenarios-nn.feature"
+  }
+]

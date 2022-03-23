@@ -1,0 +1,89 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {},
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "undefined-background-with-two-scenarios;s1",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "S1",
+        "start_timestamp": "2022-03-23T10:02:35.786Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 7,
+            "match": {},
+            "name": "this step is also undfined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 4,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {},
+            "name": "this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "undefined-background-with-two-scenarios;s2",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "S2",
+        "start_timestamp": "2022-03-23T10:02:35.814Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 9,
+            "match": {},
+            "name": "even this step is undefined",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "undefined-background-with-two-scenarios",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "undefined-background-with-two-scenarios",
+    "tags": [],
+    "uri": "file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/undefined-background-with-two-scenarios.feature"
+  }
+]

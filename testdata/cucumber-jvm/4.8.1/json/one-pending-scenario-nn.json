@@ -1,0 +1,37 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "start_timestamp": "2022-03-23T10:01:20.523Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Stepdefs.pending_step()"
+            },
+            "name": "this step is pending",
+            "result": {
+              "duration": 2926114,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat io.cucumber.jsonschema.Stepdefs.pending_step(Stepdefs.java:27)\n\tat ✽.this step is pending(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/one-pending-scenario-nn.feature:3)\n",
+              "status": "pending"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/one-pending-scenario-nn.feature"
+  }
+]

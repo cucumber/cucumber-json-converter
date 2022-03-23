@@ -1,0 +1,33 @@
+[
+  {
+    "description": "  Here is a description",
+    "elements": [
+      {
+        "description": "",
+        "id": "flaky-scenario;s1",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "S1",
+        "start_timestamp": "2022-03-23T09:39:47.429Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 5,
+            "match": {},
+            "name": "this step is flaky",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "flaky-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "flaky-scenario",
+    "tags": [],
+    "uri": "file:///Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/6.11.0/../../features/flaky-scenario.feature"
+  }
+]

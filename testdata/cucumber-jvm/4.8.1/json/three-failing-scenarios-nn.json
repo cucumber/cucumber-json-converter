@@ -1,0 +1,121 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "",
+        "start_timestamp": "2022-03-23T10:02:20.820Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Stepdefs.failing_step()"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 976872,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/three-failing-scenarios-nn.feature:3)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "",
+        "start_timestamp": "2022-03-23T10:02:20.853Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 59470,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "location": "Stepdefs.failing_step()"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 143642,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/three-failing-scenarios-nn.feature:7)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": ";",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "",
+        "start_timestamp": "2022-03-23T10:02:20.854Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 59097,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 11,
+            "match": {
+              "location": "Stepdefs.passing_step()"
+            },
+            "name": "this step passes",
+            "result": {
+              "duration": 21892,
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "match": {
+              "location": "Stepdefs.failing_step()"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 281981,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/three-failing-scenarios-nn.feature:12)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "",
+    "tags": [],
+    "uri": "file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/three-failing-scenarios-nn.feature"
+  }
+]

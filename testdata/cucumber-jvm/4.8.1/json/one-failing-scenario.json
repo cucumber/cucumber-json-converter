@@ -1,0 +1,37 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "one-failing-scenario;s1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "S1",
+        "start_timestamp": "2022-03-23T10:00:55.182Z",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "Stepdefs.failing_step()"
+            },
+            "name": "this step fails",
+            "result": {
+              "duration": 1500916,
+              "error_message": "java.lang.RuntimeException: this step failed\n\tat io.cucumber.jsonschema.Stepdefs.failing_step(Stepdefs.java:32)\n\tat ✽.this step fails(file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/one-failing-scenario.feature:3)\n",
+              "status": "failed"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-failing-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-failing-scenario",
+    "tags": [],
+    "uri": "file:/Users/Aslak.Hellesoy/git/cucumber/cucumber-json-testdata-generator/testdata/cucumber-jvm/4.8.1/../../features/one-failing-scenario.feature"
+  }
+]
