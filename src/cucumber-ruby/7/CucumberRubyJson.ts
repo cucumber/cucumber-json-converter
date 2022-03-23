@@ -34,7 +34,7 @@ export type RubyExamples = Readonly<{
   keyword: string
   name: string
   description: string
-  rows: readonly RubyExamplesTableRow[],
+  rows: readonly RubyExamplesTableRow[]
   tags?: readonly RubyTag[]
 }>
 

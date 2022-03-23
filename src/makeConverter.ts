@@ -61,7 +61,11 @@ export async function makeConverter(): Promise<MultiConverter<never>> {
       if (validator(data)) {
         return true
       } else {
-        const error = `Errors from ${schemaFile} validation: ${JSON.stringify(validator.errors, null, 2)}`
+        const error = `Errors from ${schemaFile} validation: ${JSON.stringify(
+          validator.errors,
+          null,
+          2
+        )}`
         // console.log(error)
         errors.push(error)
       }

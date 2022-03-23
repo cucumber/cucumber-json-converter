@@ -48,7 +48,7 @@ function rubyElementToElement(rubyElement: RubyElement): Element {
     name: rubyElement.name,
     tags: rubyElement.tags,
     description: rubyElement.description,
-    start_timestamp: rubyElement.start_timestamp
+    start_timestamp: rubyElement.start_timestamp,
   }
 }
 

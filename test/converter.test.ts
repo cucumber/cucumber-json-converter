@@ -1,7 +1,7 @@
 import assert from 'assert'
 import fs from 'fs'
-import path from 'path'
 import glob from 'glob'
+import path from 'path'
 import { promisify } from 'util'
 
 import { CucumberJson } from '../src/CucumberJson'
@@ -20,11 +20,25 @@ describe('converter', async () => {
     if (!convert) convert = await makeConverter()
   })
 
+  let singleMatchCount: number
+  let multiMatchCount: number
+
+  before(() => {
+    singleMatchCount = 0
+    multiMatchCount = 0
+  })
+
+  after(() => {
+    console.log("** Single schema matches:   %d", singleMatchCount)
+    console.log("** Multiple schema matches: %d", multiMatchCount)
+  })
+
   for (const jsonFile of jsonFiles) {
     it(`converts ${jsonFile}`, async () => {
       const ob = await readFile(jsonFile, 'utf-8')
       const cucumberJsons = convert(JSON.parse(ob) as never)
       if (cucumberJsons.length > 1) {
+        multiMatchCount++
         for (let n = 1; n < cucumberJsons.length; n++) {
           const cucumberJson1 = cucumberJsons[n - 1]
           const cucumberJson2 = cucumberJsons[n]
@@ -35,6 +49,7 @@ describe('converter', async () => {
           )
         }
       } else {
+        singleMatchCount++
         const implementation = cucumberJsons[0].implementation
         const dirname = path.basename(path.join(jsonFile, '../../..'))
         assert.strictEqual(implementation, dirname)
