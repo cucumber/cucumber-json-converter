@@ -29,8 +29,8 @@ describe('converter', async () => {
   })
 
   after(() => {
-    console.log("** Single schema matches:   %d", singleMatchCount)
-    console.log("** Multiple schema matches: %d", multiMatchCount)
+    console.log('** Single schema matches:   %d', singleMatchCount)
+    console.log('** Multiple schema matches: %d', multiMatchCount)
   })
 
   for (const jsonFile of jsonFiles) {

@@ -3,17 +3,19 @@ import fs from "fs"
 import path from "path"
 import glob from 'glob'
 
-for (const ts of glob.sync("src/**/*Json.ts")) {
-  const type = path.basename(ts, '.ts')
+for (const typesPath of glob.sync("src/**/*Json.ts")) {
+  const type = path.basename(typesPath, '.ts')
 
   const config = {
-    path: ts,
+    path: typesPath,
     type,
     tsconfig: "tsconfig.json"
   };
 
   const schema = tsj.createGenerator(config).createSchema(config.type)
   const schemaString = JSON.stringify(schema, null, 2)
-  const json = ts.replace(/\.ts$/, '.json')
-  fs.writeFileSync(json, schemaString)
+  const typeScriptSource = `import { SchemaObject } from 'ajv'
+export default ${schemaString} as SchemaObject`
+  const schemaPath = typesPath.replace(/Json\.ts$/, 'Schema.ts')
+  fs.writeFileSync(schemaPath, typeScriptSource)
 }

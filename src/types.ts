@@ -1,4 +1,4 @@
-import { ValidateFunction } from 'ajv'
+import { SchemaObject, ValidateFunction } from 'ajv'
 
 import { CucumberJson } from './CucumberJson.js'
 
@@ -7,5 +7,5 @@ export type Converter<T> = (obj: T) => CucumberJson
 export type Convalidator = {
   implementationValidator: ValidateFunction
   converter: Converter<never>
-  schemaFile: string
+  schema: SchemaObject
 }
