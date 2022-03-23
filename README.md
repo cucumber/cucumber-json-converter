@@ -6,6 +6,8 @@ a strict schema.
 ## Usage
 
 ```typescript
+import { convert } from '@cucumber/cucumber-json-converter'
+
 const ob = JSON.parse(jsonFromAnyCucumberImplementation)
 const cucumberJsonObject = convert(ob)
 ```
