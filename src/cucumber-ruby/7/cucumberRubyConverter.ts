@@ -1,4 +1,4 @@
-import { Element, Feature, Hook, Match, Step } from '../../CucumberJson.js'
+import { Element, ElementType, Feature, Hook, Match, Result, Step } from '../../CucumberJson.js'
 import { Converter } from '../../types'
 import {
   CucumberRubyJson,
@@ -35,14 +35,20 @@ function rubyElementToElement(rubyElement: RubyElement): Element {
   const before: readonly Hook[] = (rubyElement.before || []).map(rubyHookToHook)
   const steps: readonly Step[] = rubyElement.steps.map(rubyStepToStep)
   const after: readonly Hook[] = (rubyElement.after || []).map(rubyHookToHook)
+  const type: ElementType = rubyElement.type === 'scenario_outline' ? 'scenario' : rubyElement.type
 
   return {
-    ...rubyElement,
-    ...{
-      before,
-      steps,
-      after,
-    },
+    type,
+    before,
+    steps,
+    after,
+    id: rubyElement.id,
+    keyword: rubyElement.keyword,
+    line: rubyElement.line,
+    name: rubyElement.name,
+    tags: rubyElement.tags,
+    description: rubyElement.description,
+    start_timestamp: rubyElement.start_timestamp
   }
 }
 
@@ -60,12 +66,15 @@ function rubyMatchToMatch(rubyMatch: RubyMatch): Match {
 }
 
 function rubyStepToStep(rubyStep: RubyStep): Step {
+  const result: Result = rubyStep.result || {
+    status: 'unknown',
+  }
   return {
     name: rubyStep.name,
     line: rubyStep.line,
     keyword: rubyStep.keyword,
     match: rubyStep.match ? rubyMatchToMatch(rubyStep.match) : undefined,
-    result: rubyStep.result,
+    result: result,
     doc_string: rubyStep.doc_string,
     rows: rubyStep.rows,
   }

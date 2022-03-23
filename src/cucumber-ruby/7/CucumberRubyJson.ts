@@ -15,7 +15,8 @@ export type RubyElement = Readonly<{
   start_timestamp?: string
   line: number
   id?: string
-  type: 'background' | 'scenario'
+  // The scenario_outline type is only used in 2.0.0
+  type: 'background' | 'scenario' | 'scenario_outline'
   keyword: string
   name: string
   description: string
@@ -23,6 +24,24 @@ export type RubyElement = Readonly<{
   before?: readonly RubyHook[]
   after?: readonly RubyHook[]
   tags?: readonly RubyTag[]
+  // Version 2.0.0 allows examples
+  examples?: RubyExamples[]
+}>
+
+export type RubyExamples = Readonly<{
+  id: string
+  line: number
+  keyword: string
+  name: string
+  description: string
+  rows: readonly RubyExamplesTableRow[],
+  tags?: readonly RubyTag[]
+}>
+
+export type RubyExamplesTableRow = Readonly<{
+  cells: readonly string[]
+  id: string
+  line: number
 }>
 
 export type RubyHook = Readonly<{
@@ -35,7 +54,8 @@ export type RubyStep = Readonly<{
   line: number
   match?: RubyMatch
   name: string
-  result: RubyResult
+  // Version 2.0.0 completely omits results from Scenario Outline steps
+  result?: RubyResult
   doc_string?: RubyDocString
   rows?: readonly RubyDataTableRow[]
   after?: RubyHook[]

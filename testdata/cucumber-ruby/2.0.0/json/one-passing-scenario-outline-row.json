@@ -1,0 +1,55 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "examples": [
+          {
+            "description": "",
+            "id": "one-passing-scenario-outline-row;s1;",
+            "keyword": "Examples",
+            "line": 5,
+            "name": "",
+            "rows": [
+              {
+                "cells": [
+                  "status"
+                ],
+                "id": "one-passing-scenario-outline-row;s1;;1",
+                "line": 6
+              },
+              {
+                "cells": [
+                  "passes"
+                ],
+                "id": "one-passing-scenario-outline-row;s1;;2",
+                "line": 7
+              }
+            ]
+          }
+        ],
+        "id": "one-passing-scenario-outline-row;s1",
+        "keyword": "Scenario Outline",
+        "line": 2,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "../../features/one-passing-scenario-outline-row.feature:3"
+            },
+            "name": "this step <status>"
+          }
+        ],
+        "type": "scenario_outline"
+      }
+    ],
+    "id": "one-passing-scenario-outline-row",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-passing-scenario-outline-row",
+    "uri": "../../features/one-passing-scenario-outline-row.feature"
+  }
+]

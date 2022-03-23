@@ -1,0 +1,80 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "examples": [
+          {
+            "description": "",
+            "id": "foo;bar;",
+            "keyword": "Examples",
+            "line": 9,
+            "name": "",
+            "rows": [
+              {
+                "cells": [
+                  "name"
+                ],
+                "id": "foo;bar;;1",
+                "line": 10
+              },
+              {
+                "cells": [
+                  "passing"
+                ],
+                "id": "foo;bar;;2",
+                "line": 11
+              },
+              {
+                "cells": [
+                  "failing"
+                ],
+                "id": "foo;bar;;3",
+                "line": 12
+              }
+            ],
+            "tags": [
+              {
+                "line": 8,
+                "name": "@examples-tag"
+              }
+            ]
+          }
+        ],
+        "id": "foo;bar",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "Bar",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "location": "../../features/tagged-feature.feature:6"
+            },
+            "name": "<name>"
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@scenario-outline-tag"
+          }
+        ],
+        "type": "scenario_outline"
+      }
+    ],
+    "id": "foo",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Foo",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@feature-tag"
+      }
+    ],
+    "uri": "../../features/tagged-feature.feature"
+  }
+]

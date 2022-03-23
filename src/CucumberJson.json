@@ -76,11 +76,7 @@
           "type": "string"
         },
         "type": {
-          "type": "string",
-          "enum": [
-            "background",
-            "scenario"
-          ]
+          "$ref": "#/definitions/ElementType"
         },
         "keyword": {
           "type": "string"
@@ -125,6 +121,13 @@
         "steps"
       ],
       "additionalProperties": false
+    },
+    "ElementType": {
+      "type": "string",
+      "enum": [
+        "background",
+        "scenario"
+      ]
     },
     "Hook": {
       "type": "object",
@@ -197,7 +200,8 @@
         "failed",
         "skipped",
         "undefined",
-        "pending"
+        "pending",
+        "unknown"
       ]
     },
     "Step": {

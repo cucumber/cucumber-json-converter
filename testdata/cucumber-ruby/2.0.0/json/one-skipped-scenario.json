@@ -1,0 +1,34 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "one-skipped-scenario;s1",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "S1",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 3,
+            "match": {
+              "location": "UNKNOWN:-1"
+            },
+            "name": "this scenario is skipped",
+            "result": {
+              "duration": 158000,
+              "status": "skipped"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "one-skipped-scenario",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "one-skipped-scenario",
+    "uri": "../../features/one-skipped-scenario.feature"
+  }
+]

@@ -18,7 +18,7 @@ export type Element = Readonly<{
   start_timestamp?: string
   line: number
   id?: string
-  type: 'background' | 'scenario'
+  type: ElementType
   keyword: string
   name: string
   description: string
@@ -27,6 +27,8 @@ export type Element = Readonly<{
   after?: readonly Hook[]
   tags?: readonly Tag[]
 }>
+
+export type ElementType = 'background' | 'scenario'
 
 export type Hook = Readonly<{
   match?: Match
@@ -69,7 +71,9 @@ export type Result = Readonly<{
   error_message?: string
 }>
 
-export type Status = 'passed' | 'failed' | 'skipped' | 'undefined' | 'pending'
+// The unknown value is used if the original result was missing. This is the case for e.g.
+// Scenario Outline steps on Cucumber-Ruby 2.0.0
+export type Status = 'passed' | 'failed' | 'skipped' | 'undefined' | 'pending' | 'unknown'
 
 export type Tag = Readonly<{
   name: string

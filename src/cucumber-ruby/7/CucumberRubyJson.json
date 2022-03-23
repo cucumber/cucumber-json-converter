@@ -69,7 +69,8 @@
           "type": "string",
           "enum": [
             "background",
-            "scenario"
+            "scenario",
+            "scenario_outline"
           ]
         },
         "keyword": {
@@ -103,6 +104,12 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/RubyTag"
+          }
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RubyExamples"
           }
         }
       },
@@ -153,8 +160,7 @@
       "required": [
         "keyword",
         "line",
-        "name",
-        "result"
+        "name"
       ],
       "additionalProperties": false
     },
@@ -258,6 +264,70 @@
       "required": [
         "line",
         "name"
+      ],
+      "additionalProperties": false
+    },
+    "RubyExamples": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "line": {
+          "type": "number"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RubyExamplesTableRow"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RubyTag"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "line",
+        "keyword",
+        "name",
+        "description",
+        "rows"
+      ],
+      "additionalProperties": false
+    },
+    "RubyExamplesTableRow": {
+      "type": "object",
+      "properties": {
+        "cells": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "line": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "cells",
+        "id",
+        "line"
       ],
       "additionalProperties": false
     }
