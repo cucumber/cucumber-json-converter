@@ -1,28 +1,15 @@
 import { SchemaObject } from 'ajv'
 export default {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$ref": "#/definitions/CucumberJson",
+  "$ref": "#/definitions/CucumberJsJson",
   "definitions": {
-    "CucumberJson": {
-      "type": "object",
-      "properties": {
-        "implementation": {
-          "type": "string"
-        },
-        "features": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Feature"
-          }
-        }
-      },
-      "required": [
-        "implementation",
-        "features"
-      ],
-      "additionalProperties": false
+    "CucumberJsJson": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/JsFeature"
+      }
     },
-    "Feature": {
+    "JsFeature": {
       "type": "object",
       "properties": {
         "uri": {
@@ -46,38 +33,39 @@ export default {
         "elements": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Element"
+            "$ref": "#/definitions/JsElement"
           }
         },
         "tags": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Tag"
+            "$ref": "#/definitions/JsTag"
           }
         }
       },
       "required": [
         "uri",
+        "id",
+        "line",
         "keyword",
         "name",
-        "elements"
+        "elements",
+        "tags"
       ],
       "additionalProperties": false
     },
-    "Element": {
+    "JsElement": {
       "type": "object",
       "properties": {
-        "start_timestamp": {
+        "id": {
           "type": "string"
         },
         "line": {
           "type": "number"
         },
-        "id": {
-          "type": "string"
-        },
         "type": {
-          "$ref": "#/definitions/ElementType"
+          "type": "string",
+          "const": "scenario"
         },
         "keyword": {
           "type": "string"
@@ -88,126 +76,48 @@ export default {
         "description": {
           "type": "string"
         },
-        "before": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Hook"
-          }
-        },
         "steps": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Step"
-          }
-        },
-        "after": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Hook"
+            "$ref": "#/definitions/JsStepOrHook"
           }
         },
         "tags": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Tag"
+            "$ref": "#/definitions/JsTag"
           }
         }
       },
       "required": [
+        "id",
         "line",
-        "type",
         "keyword",
         "name",
-        "description",
-        "steps"
+        "steps",
+        "tags"
       ],
       "additionalProperties": false
     },
-    "ElementType": {
-      "type": "string",
-      "enum": [
-        "background",
-        "scenario"
+    "JsStepOrHook": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/JsStep"
+        },
+        {
+          "$ref": "#/definitions/JsHookStep"
+        }
       ]
     },
-    "Hook": {
+    "JsStep": {
       "type": "object",
       "properties": {
-        "match": {
-          "$ref": "#/definitions/Match"
-        },
-        "result": {
-          "$ref": "#/definitions/Result"
-        }
-      },
-      "required": [
-        "result"
-      ],
-      "additionalProperties": false
-    },
-    "Match": {
-      "type": "object",
-      "properties": {
-        "location": {
-          "type": "string"
-        },
         "arguments": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Argument"
+            "$ref": "#/definitions/JsArgument"
           }
-        }
-      },
-      "additionalProperties": false
-    },
-    "Argument": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "string"
         },
-        "offset": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "value",
-        "offset"
-      ],
-      "additionalProperties": false
-    },
-    "Result": {
-      "type": "object",
-      "properties": {
-        "duration": {
-          "type": "number"
-        },
-        "status": {
-          "$ref": "#/definitions/Status"
-        },
-        "error_message": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "status"
-      ],
-      "additionalProperties": false
-    },
-    "Status": {
-      "type": "string",
-      "enum": [
-        "passed",
-        "failed",
-        "skipped",
-        "undefined",
-        "pending",
-        "unknown"
-      ]
-    },
-    "Step": {
-      "type": "object",
-      "properties": {
         "keyword": {
           "type": "string"
         },
@@ -215,25 +125,20 @@ export default {
           "type": "number"
         },
         "match": {
-          "$ref": "#/definitions/Match"
+          "$ref": "#/definitions/JsMatch"
         },
         "name": {
           "type": "string"
         },
+        "isBackground": {
+          "type": "boolean"
+        },
         "result": {
-          "$ref": "#/definitions/Result"
-        },
-        "doc_string": {
-          "$ref": "#/definitions/DocString"
-        },
-        "rows": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/DataTableRow"
-          }
+          "$ref": "#/definitions/JsResult"
         }
       },
       "required": [
+        "arguments",
         "keyword",
         "line",
         "name",
@@ -241,26 +146,48 @@ export default {
       ],
       "additionalProperties": false
     },
-    "DocString": {
+    "JsArgument": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/JsDocString"
+        },
+        {
+          "$ref": "#/definitions/JsDataTable"
+        }
+      ]
+    },
+    "JsDocString": {
       "type": "object",
       "properties": {
+        "content": {
+          "type": "string"
+        },
         "line": {
           "type": "number"
-        },
-        "value": {
-          "type": "string"
-        },
-        "content_type": {
-          "type": "string"
         }
       },
       "required": [
-        "line",
-        "value"
+        "content",
+        "line"
       ],
       "additionalProperties": false
     },
-    "DataTableRow": {
+    "JsDataTable": {
+      "type": "object",
+      "properties": {
+        "rows": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/JsRow"
+          }
+        }
+      },
+      "required": [
+        "rows"
+      ],
+      "additionalProperties": false
+    },
+    "JsRow": {
       "type": "object",
       "properties": {
         "cells": {
@@ -275,17 +202,87 @@ export default {
       ],
       "additionalProperties": false
     },
-    "Tag": {
+    "JsMatch": {
       "type": "object",
       "properties": {
-        "name": {
+        "location": {
           "type": "string"
-        },
-        "line": {
-          "type": "number"
         }
       },
       "required": [
+        "location"
+      ],
+      "additionalProperties": false
+    },
+    "JsResult": {
+      "type": "object",
+      "properties": {
+        "duration": {
+          "type": "number"
+        },
+        "status": {
+          "$ref": "#/definitions/JsStatus"
+        },
+        "error_message": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "JsStatus": {
+      "type": "string",
+      "enum": [
+        "passed",
+        "failed",
+        "skipped",
+        "undefined",
+        "pending"
+      ]
+    },
+    "JsHookStep": {
+      "type": "object",
+      "properties": {
+        "arguments": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 0
+        },
+        "hidden": {
+          "type": "boolean",
+          "const": true
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "match": {
+          "$ref": "#/definitions/JsMatch"
+        },
+        "result": {
+          "$ref": "#/definitions/JsResult"
+        }
+      },
+      "required": [
+        "hidden",
+        "keyword",
+        "result"
+      ],
+      "additionalProperties": false
+    },
+    "JsTag": {
+      "type": "object",
+      "properties": {
+        "line": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "line",
         "name"
       ],
       "additionalProperties": false

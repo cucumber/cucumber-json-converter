@@ -1,5 +1,5 @@
-import { Element, Feature, Hook, Step } from '../../CucumberJson.js'
-import { Converter } from '../../types.js'
+import { Element, Feature, Hook, Step } from '../CucumberJson.js'
+import { Converter } from '../types.js'
 import {
   CucumberJsJson,
   JsArgument,

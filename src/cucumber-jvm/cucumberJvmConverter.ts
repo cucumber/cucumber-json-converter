@@ -1,5 +1,5 @@
-import { Element, Feature, Hook, Match, Step, Tag } from '../../CucumberJson.js'
-import { Converter } from '../../types'
+import { Element, Feature, Hook, Match, Step, Tag } from '../CucumberJson.js'
+import { Converter } from '../types'
 import {
   CucumberJvmJson,
   JvmElement,

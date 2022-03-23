@@ -1,5 +1,5 @@
-import { Element, Feature, Result, Step, Tag } from '../../CucumberJson.js'
-import { Converter } from '../../types.js'
+import { Element, Feature, Result, Step, Tag } from '../CucumberJson.js'
+import { Converter } from '../types.js'
 import {
   BehaveJson,
   Element as BehaveElement,

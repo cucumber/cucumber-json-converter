@@ -1,5 +1,5 @@
-import { Element, ElementType, Feature, Hook, Match, Result, Step } from '../../CucumberJson.js'
-import { Converter } from '../../types'
+import { Element, ElementType, Feature, Hook, Match, Result, Step } from '../CucumberJson.js'
+import { Converter } from '../types'
 import {
   CucumberRubyJson,
   RubyElement,

@@ -1,28 +1,15 @@
 import { SchemaObject } from 'ajv'
 export default {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$ref": "#/definitions/CucumberJson",
+  "$ref": "#/definitions/CucumberJvmJson",
   "definitions": {
-    "CucumberJson": {
-      "type": "object",
-      "properties": {
-        "implementation": {
-          "type": "string"
-        },
-        "features": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Feature"
-          }
-        }
-      },
-      "required": [
-        "implementation",
-        "features"
-      ],
-      "additionalProperties": false
+    "CucumberJvmJson": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/JvmFeature"
+      }
     },
-    "Feature": {
+    "JvmFeature": {
       "type": "object",
       "properties": {
         "uri": {
@@ -46,25 +33,28 @@ export default {
         "elements": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Element"
+            "$ref": "#/definitions/JvmElement"
           }
         },
         "tags": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Tag"
+            "$ref": "#/definitions/JvmLocationTag"
           }
         }
       },
       "required": [
         "uri",
+        "id",
+        "line",
         "keyword",
         "name",
+        "description",
         "elements"
       ],
       "additionalProperties": false
     },
-    "Element": {
+    "JvmElement": {
       "type": "object",
       "properties": {
         "start_timestamp": {
@@ -77,7 +67,11 @@ export default {
           "type": "string"
         },
         "type": {
-          "$ref": "#/definitions/ElementType"
+          "type": "string",
+          "enum": [
+            "background",
+            "scenario"
+          ]
         },
         "keyword": {
           "type": "string"
@@ -88,28 +82,28 @@ export default {
         "description": {
           "type": "string"
         },
-        "before": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Hook"
-          }
-        },
         "steps": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Step"
+            "$ref": "#/definitions/JvmStep"
+          }
+        },
+        "before": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/JvmHook"
           }
         },
         "after": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Hook"
+            "$ref": "#/definitions/JvmHook"
           }
         },
         "tags": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Tag"
+            "$ref": "#/definitions/JvmTag"
           }
         }
       },
@@ -123,89 +117,7 @@ export default {
       ],
       "additionalProperties": false
     },
-    "ElementType": {
-      "type": "string",
-      "enum": [
-        "background",
-        "scenario"
-      ]
-    },
-    "Hook": {
-      "type": "object",
-      "properties": {
-        "match": {
-          "$ref": "#/definitions/Match"
-        },
-        "result": {
-          "$ref": "#/definitions/Result"
-        }
-      },
-      "required": [
-        "result"
-      ],
-      "additionalProperties": false
-    },
-    "Match": {
-      "type": "object",
-      "properties": {
-        "location": {
-          "type": "string"
-        },
-        "arguments": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Argument"
-          }
-        }
-      },
-      "additionalProperties": false
-    },
-    "Argument": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": "string"
-        },
-        "offset": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "value",
-        "offset"
-      ],
-      "additionalProperties": false
-    },
-    "Result": {
-      "type": "object",
-      "properties": {
-        "duration": {
-          "type": "number"
-        },
-        "status": {
-          "$ref": "#/definitions/Status"
-        },
-        "error_message": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "status"
-      ],
-      "additionalProperties": false
-    },
-    "Status": {
-      "type": "string",
-      "enum": [
-        "passed",
-        "failed",
-        "skipped",
-        "undefined",
-        "pending",
-        "unknown"
-      ]
-    },
-    "Step": {
+    "JvmStep": {
       "type": "object",
       "properties": {
         "keyword": {
@@ -215,21 +127,21 @@ export default {
           "type": "number"
         },
         "match": {
-          "$ref": "#/definitions/Match"
+          "$ref": "#/definitions/JvmMatch"
         },
         "name": {
           "type": "string"
         },
         "result": {
-          "$ref": "#/definitions/Result"
+          "$ref": "#/definitions/JvmResult"
         },
         "doc_string": {
-          "$ref": "#/definitions/DocString"
+          "$ref": "#/definitions/JvmDocString"
         },
         "rows": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/DataTableRow"
+            "$ref": "#/definitions/JvmDataTableRow"
           }
         }
       },
@@ -241,7 +153,66 @@ export default {
       ],
       "additionalProperties": false
     },
-    "DocString": {
+    "JvmMatch": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "arguments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/JvmArgument"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "JvmArgument": {
+      "type": "object",
+      "properties": {
+        "val": {
+          "type": "string"
+        },
+        "offset": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "val",
+        "offset"
+      ],
+      "additionalProperties": false
+    },
+    "JvmResult": {
+      "type": "object",
+      "properties": {
+        "duration": {
+          "type": "number"
+        },
+        "status": {
+          "$ref": "#/definitions/JvmStatus"
+        },
+        "error_message": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "JvmStatus": {
+      "type": "string",
+      "enum": [
+        "passed",
+        "failed",
+        "skipped",
+        "undefined",
+        "pending"
+      ]
+    },
+    "JvmDocString": {
       "type": "object",
       "properties": {
         "line": {
@@ -260,7 +231,7 @@ export default {
       ],
       "additionalProperties": false
     },
-    "DataTableRow": {
+    "JvmDataTableRow": {
       "type": "object",
       "properties": {
         "cells": {
@@ -275,18 +246,67 @@ export default {
       ],
       "additionalProperties": false
     },
-    "Tag": {
+    "JvmHook": {
+      "type": "object",
+      "properties": {
+        "match": {
+          "$ref": "#/definitions/JvmMatch"
+        },
+        "result": {
+          "$ref": "#/definitions/JvmResult"
+        }
+      },
+      "required": [
+        "match",
+        "result"
+      ],
+      "additionalProperties": false
+    },
+    "JvmTag": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "JvmLocationTag": {
       "type": "object",
       "properties": {
         "name": {
           "type": "string"
         },
+        "type": {
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/definitions/JvmLocation"
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "location"
+      ],
+      "additionalProperties": false
+    },
+    "JvmLocation": {
+      "type": "object",
+      "properties": {
         "line": {
+          "type": "number"
+        },
+        "column": {
           "type": "number"
         }
       },
       "required": [
-        "name"
+        "line",
+        "column"
       ],
       "additionalProperties": false
     }
