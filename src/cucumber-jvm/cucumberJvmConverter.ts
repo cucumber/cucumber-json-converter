@@ -1,4 +1,11 @@
-import { Element, Feature, Hook, Match, Step, Tag } from '../CucumberJson.js'
+import {
+  CucumberJsonElement,
+  CucumberJsonFeature,
+  CucumberJsonHook,
+  CucumberJsonMatch,
+  CucumberJsonStep,
+  CucumberJsonTag,
+} from '../CucumberJson.js'
 import { Converter } from '../types'
 import {
   CucumberJvmJson,
@@ -17,9 +24,9 @@ export const cucumberJvmConverter: Converter = (json: CucumberJvmJson) => {
   }
 }
 
-function jvmFeatureToFeature(feature: JvmFeature): Feature {
-  const tags: readonly Tag[] = (feature.tags || []).map(locationTagToTag)
-  const elements: readonly Element[] = feature.elements.map(jvmElementToElement)
+function jvmFeatureToFeature(feature: JvmFeature): CucumberJsonFeature {
+  const tags: readonly CucumberJsonTag[] = (feature.tags || []).map(locationTagToTag)
+  const elements: readonly CucumberJsonElement[] = feature.elements.map(jvmElementToElement)
 
   return {
     description: feature.description,
@@ -33,17 +40,17 @@ function jvmFeatureToFeature(feature: JvmFeature): Feature {
   }
 }
 
-function locationTagToTag(locationTag: JvmLocationTag): Tag {
+function locationTagToTag(locationTag: JvmLocationTag): CucumberJsonTag {
   return {
     name: locationTag.name,
     line: locationTag.location.line,
   }
 }
 
-function jvmElementToElement(jvmElement: JvmElement): Element {
-  const before: readonly Hook[] = (jvmElement.before || []).map(jvmHookToHook)
-  const steps: readonly Step[] = jvmElement.steps.map(jvmStepToStep)
-  const after: readonly Hook[] = (jvmElement.after || []).map(jvmHookToHook)
+function jvmElementToElement(jvmElement: JvmElement): CucumberJsonElement {
+  const before: readonly CucumberJsonHook[] = (jvmElement.before || []).map(jvmHookToHook)
+  const steps: readonly CucumberJsonStep[] = jvmElement.steps.map(jvmStepToStep)
+  const after: readonly CucumberJsonHook[] = (jvmElement.after || []).map(jvmHookToHook)
 
   return {
     ...jvmElement,
@@ -55,14 +62,14 @@ function jvmElementToElement(jvmElement: JvmElement): Element {
   }
 }
 
-function jvmHookToHook(jvmHook: JvmHook): Hook {
+function jvmHookToHook(jvmHook: JvmHook): CucumberJsonHook {
   return {
     result: jvmHook.result,
     match: jvmMatchToMatch(jvmHook.match),
   }
 }
 
-function jvmMatchToMatch(jvmMatch: JvmMatch): Match {
+function jvmMatchToMatch(jvmMatch: JvmMatch): CucumberJsonMatch {
   return {
     location: jvmMatch.location,
   }
@@ -77,7 +84,7 @@ function jvmMatchToMatch(jvmMatch: JvmMatch): Match {
   // }
 }
 
-function jvmStepToStep(jvmStep: JvmStep): Step {
+function jvmStepToStep(jvmStep: JvmStep): CucumberJsonStep {
   return {
     ...jvmStep,
     ...{

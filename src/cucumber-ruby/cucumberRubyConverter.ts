@@ -1,4 +1,12 @@
-import { Element, ElementType, Feature, Hook, Match, Result, Step } from '../CucumberJson.js'
+import {
+  CucumberJsonElement,
+  CucumberJsonElementType,
+  CucumberJsonFeature,
+  CucumberJsonHook,
+  CucumberJsonMatch,
+  CucumberJsonResult,
+  CucumberJsonStep,
+} from '../CucumberJson.js'
 import { Converter } from '../types'
 import {
   CucumberRubyJson,
@@ -16,8 +24,8 @@ export const cucumberRubyConverter: Converter = (json: CucumberRubyJson) => {
   }
 }
 
-function rubyFeatureToFeature(feature: RubyFeature): Feature {
-  const elements: readonly Element[] = feature.elements.map(rubyElementToElement)
+function rubyFeatureToFeature(feature: RubyFeature): CucumberJsonFeature {
+  const elements: readonly CucumberJsonElement[] = feature.elements.map(rubyElementToElement)
 
   return {
     description: feature.description,
@@ -31,11 +39,12 @@ function rubyFeatureToFeature(feature: RubyFeature): Feature {
   }
 }
 
-function rubyElementToElement(rubyElement: RubyElement): Element {
-  const before: readonly Hook[] = (rubyElement.before || []).map(rubyHookToHook)
-  const steps: readonly Step[] = rubyElement.steps.map(rubyStepToStep)
-  const after: readonly Hook[] = (rubyElement.after || []).map(rubyHookToHook)
-  const type: ElementType = rubyElement.type === 'scenario_outline' ? 'scenario' : rubyElement.type
+function rubyElementToElement(rubyElement: RubyElement): CucumberJsonElement {
+  const before: readonly CucumberJsonHook[] = (rubyElement.before || []).map(rubyHookToHook)
+  const steps: readonly CucumberJsonStep[] = rubyElement.steps.map(rubyStepToStep)
+  const after: readonly CucumberJsonHook[] = (rubyElement.after || []).map(rubyHookToHook)
+  const type: CucumberJsonElementType =
+    rubyElement.type === 'scenario_outline' ? 'scenario' : rubyElement.type
 
   return {
     type,
@@ -52,21 +61,21 @@ function rubyElementToElement(rubyElement: RubyElement): Element {
   }
 }
 
-function rubyHookToHook(rubyHook: RubyHook): Hook {
+function rubyHookToHook(rubyHook: RubyHook): CucumberJsonHook {
   return {
     result: rubyHook.result,
     match: rubyMatchToMatch(rubyHook.match),
   }
 }
 
-function rubyMatchToMatch(rubyMatch: RubyMatch): Match {
+function rubyMatchToMatch(rubyMatch: RubyMatch): CucumberJsonMatch {
   return {
     location: rubyMatch.location,
   }
 }
 
-function rubyStepToStep(rubyStep: RubyStep): Step {
-  const result: Result = rubyStep.result || {
+function rubyStepToStep(rubyStep: RubyStep): CucumberJsonStep {
+  const result: CucumberJsonResult = rubyStep.result || {
     status: 'unknown',
   }
   return {

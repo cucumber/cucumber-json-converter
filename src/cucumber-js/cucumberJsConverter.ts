@@ -1,4 +1,9 @@
-import { Element, Feature, Hook, Step } from '../CucumberJson.js'
+import {
+  CucumberJsonElement,
+  CucumberJsonFeature,
+  CucumberJsonHook,
+  CucumberJsonStep,
+} from '../CucumberJson.js'
 import { Converter } from '../types.js'
 import {
   CucumberJsJson,
@@ -19,7 +24,7 @@ export const cucumberJsConverter: Converter = (json: CucumberJsJson) => {
   }
 }
 
-function jsFeatureToFeature(jsFeature: JsFeature): Feature {
+function jsFeatureToFeature(jsFeature: JsFeature): CucumberJsonFeature {
   return {
     ...jsFeature,
     ...{
@@ -28,7 +33,7 @@ function jsFeatureToFeature(jsFeature: JsFeature): Feature {
   }
 }
 
-function jsElementToElement(jsElement: JsElement): Element {
+function jsElementToElement(jsElement: JsElement): CucumberJsonElement {
   const before = jsElement.steps.filter(isBeforeHook).map(hookStepToHook)
   const steps = jsElement.steps.filter(isStep).map(jsStepToStep)
   const after = jsElement.steps.filter(isAfterHook).map(hookStepToHook)
@@ -47,7 +52,7 @@ function jsElementToElement(jsElement: JsElement): Element {
   }
 }
 
-function jsStepToStep(jsStep: JsStep): Step {
+function jsStepToStep(jsStep: JsStep): CucumberJsonStep {
   const docStrings = (jsStep.arguments || []).filter(isDocstring).map((docString) => ({
     line: docString.line,
     value: docString.content,
@@ -65,7 +70,7 @@ function jsStepToStep(jsStep: JsStep): Step {
   }
 }
 
-function hookStepToHook(jsHook: JsHookStep): Hook {
+function hookStepToHook(jsHook: JsHookStep): CucumberJsonHook {
   return {
     result: jsHook.result,
   }

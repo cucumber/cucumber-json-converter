@@ -1,4 +1,10 @@
-import { Element, Feature, Result, Step, Tag } from '../CucumberJson.js'
+import {
+  CucumberJsonElement,
+  CucumberJsonFeature,
+  CucumberJsonResult,
+  CucumberJsonStep,
+  CucumberJsonTag,
+} from '../CucumberJson.js'
 import { Converter } from '../types.js'
 import { BehaveElement, BehaveFeature, BehaveJson, BehaveResult, BehaveStep } from './BehaveJson.js'
 
@@ -9,7 +15,7 @@ export const behaveConverter: Converter = (json: BehaveJson) => {
   }
 }
 
-function behaveFeatureToFeature(behaveFeature: BehaveFeature): Feature {
+function behaveFeatureToFeature(behaveFeature: BehaveFeature): CucumberJsonFeature {
   return {
     uri: getPath(behaveFeature.location),
     keyword: behaveFeature.keyword,
@@ -20,11 +26,11 @@ function behaveFeatureToFeature(behaveFeature: BehaveFeature): Feature {
   }
 }
 
-function behaveTagToTag(behaveTag: string): Tag {
+function behaveTagToTag(behaveTag: string): CucumberJsonTag {
   return { name: behaveTag }
 }
 
-function behaveElementToElement(behaveElement: BehaveElement): Element {
+function behaveElementToElement(behaveElement: BehaveElement): CucumberJsonElement {
   return {
     line: getLine(behaveElement.location),
     type: behaveElement.type,
@@ -35,7 +41,7 @@ function behaveElementToElement(behaveElement: BehaveElement): Element {
   }
 }
 
-function behaveStepToStep(behaveStep: BehaveStep): Step {
+function behaveStepToStep(behaveStep: BehaveStep): CucumberJsonStep {
   return {
     keyword: behaveStep.keyword,
     name: behaveStep.name,
@@ -44,7 +50,7 @@ function behaveStepToStep(behaveStep: BehaveStep): Step {
   }
 }
 
-function behaveResultToResult(behaveResult: BehaveResult | undefined): Result {
+function behaveResultToResult(behaveResult: BehaveResult | undefined): CucumberJsonResult {
   if (!behaveResult) return { status: 'undefined' }
 
   return {
