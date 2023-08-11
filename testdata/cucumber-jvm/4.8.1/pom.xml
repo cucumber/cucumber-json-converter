@@ -17,7 +17,7 @@
         <project.Automatic-Module-Name>io.cucumber.jsonschema</project.Automatic-Module-Name>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <cucumber.version>4.8.1</cucumber.version>
+        <cucumber.version>7.13.0</cucumber.version>
     </properties>
 
     <dependencies>
