@@ -3,6 +3,6 @@
   "private": true,
   "version": "0.0.1",
   "dependencies": {
-    "cucumber": "2.1.0"
+    "cucumber": "6.0.7"
   }
 }
