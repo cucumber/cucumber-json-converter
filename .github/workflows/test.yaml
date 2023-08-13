@@ -15,8 +15,7 @@ jobs:
         os:
           - macos-latest
           - ubuntu-latest
-        # 16.12.0 has broken ESM support
-        node-version: ['14.x', '16.11.x', '17.x']
+        node-version: ['18.x', '20.x']
 
     steps:
       - name: set git core.autocrlf to 'input'
