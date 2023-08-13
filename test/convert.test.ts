@@ -1,6 +1,6 @@
 import assert from 'assert'
 import fs from 'fs'
-import glob from 'glob'
+import { glob } from 'glob'
 import path from 'path'
 import { promisify } from 'util'
 
