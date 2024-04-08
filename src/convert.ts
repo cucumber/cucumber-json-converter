@@ -1,17 +1,17 @@
 import Ajv, { SchemaObject } from 'ajv'
 import assert from 'assert'
 
-import { behaveConverter } from './behave/behaveConverter.js'
-import behaveSchema from './behave/BehaveSchema.js'
-import { cucumberJsConverter } from './cucumber-js/cucumberJsConverter.js'
-import cucumberJsSchema from './cucumber-js/CucumberJsSchema.js'
-import { cucumberJvmConverter } from './cucumber-jvm/cucumberJvmConverter.js'
-import cucumberJvmSchema from './cucumber-jvm/CucumberJvmSchema.js'
-import { cucumberRubyConverter } from './cucumber-ruby/cucumberRubyConverter.js'
-import cucumberRubySchema from './cucumber-ruby/CucumberRubySchema.js'
-import { CucumberJson } from './CucumberJson.js'
-import resultSchema from './CucumberSchema.js'
-import { Convalidator, Converter } from './types.js'
+import { behaveConverter } from './behave/behaveConverter'
+import behaveSchema from './behave/BehaveSchema'
+import { cucumberJsConverter } from './cucumber-js/cucumberJsConverter'
+import cucumberJsSchema from './cucumber-js/CucumberJsSchema'
+import { cucumberJvmConverter } from './cucumber-jvm/cucumberJvmConverter'
+import cucumberJvmSchema from './cucumber-jvm/CucumberJvmSchema'
+import { cucumberRubyConverter } from './cucumber-ruby/cucumberRubyConverter'
+import cucumberRubySchema from './cucumber-ruby/CucumberRubySchema'
+import { CucumberJson } from './CucumberJson'
+import resultSchema from './CucumberSchema'
+import { Convalidator, Converter } from './types'
 
 const implementationConverterBySchema = new Map<SchemaObject, Converter>()
 implementationConverterBySchema.set(behaveSchema, behaveConverter)

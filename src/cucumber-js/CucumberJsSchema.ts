@@ -1,9 +1,5 @@
-import { readFileSync } from 'node:fs'
-
 import { SchemaObject } from 'ajv'
 
-const schema = JSON.parse(
-  readFileSync('../../schemas/cucumber-js.json', { encoding: 'utf8' }).toString()
-)
+import schema from '../../schemas/cucumber-js.json'
 
 export default schema satisfies SchemaObject
