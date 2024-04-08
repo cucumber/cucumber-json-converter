@@ -61,7 +61,7 @@
     "npm-check-updates": "16.14.18",
     "prettier": "3.2.5",
     "pretty-quick": "4.0.0",
-    "ts-json-schema-generator": "1.5.0",
+    "ts-json-schema-generator": "1.5.1",
     "ts-node": "10.9.2",
     "typescript": "5.4.4"
   },
