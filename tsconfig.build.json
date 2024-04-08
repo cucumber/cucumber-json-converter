@@ -9,6 +9,7 @@
     "noEmit": false
   },
   "include": [
+    "schemas/*.json",
     "src",
     "test"
   ],
