@@ -6,9 +6,11 @@
     "declarationMap": true,
     "sourceMap": true,
     "rootDir": ".",
+    "outDir": "dist",
     "noEmit": false
   },
   "include": [
+    "schemas/*.json",
     "src",
     "test"
   ],

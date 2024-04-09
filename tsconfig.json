@@ -12,12 +12,12 @@
     "strictNullChecks": true,
     "experimentalDecorators": true,
     "suppressExcessPropertyErrors": false,
-    "module": "ESNext",
     "lib": [
       "ES6",
       "dom"
     ],
-    "target": "ES6",
+    "target": "es2022",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "noEmit": true,

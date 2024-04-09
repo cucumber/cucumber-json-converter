@@ -4,7 +4,7 @@ import { glob } from 'glob'
 import path from 'path'
 import { promisify } from 'util'
 
-import { convert, convertMulti } from '../src/index.js'
+import { convert, convertMulti } from '../src'
 
 const readFile = promisify(fs.readFile)
 

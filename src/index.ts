@@ -1,2 +1,2 @@
-export * from './convert.js'
-export * from './CucumberJson.js'
+export * from './convert'
+export * from './CucumberJson'

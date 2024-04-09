@@ -2,27 +2,14 @@
   "name": "@cucumber/cucumber-json-converter",
   "version": "0.0.3",
   "description": "Validates and converts Cucumber JSON for different Cucumber implementations and versions",
-  "type": "module",
-  "main": "dist/cjs/src/index.js",
-  "types": "dist/cjs/src/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "files": [
-    "dist/cjs",
-    "dist/esm"
+    "dist"
   ],
-  "module": "dist/esm/src/index.js",
-  "jsnext:main": "dist/esm/src/index.js",
-  "exports": {
-    ".": {
-      "import": "./dist/esm/src/index.js",
-      "require": "./dist/cjs/src/index.js"
-    }
-  },
   "scripts": {
-    "build:cjs": "tsc --build tsconfig.build-cjs.json && cp package.cjs.json dist/cjs/package.json",
-    "build:esm": "tsc --build tsconfig.build-esm.json",
-    "build": "npm run build:cjs && npm run build:esm",
-    "test": "mocha && npm run test:cjs",
-    "test:cjs": "npm run build:cjs && mocha --no-config dist/cjs/test",
+    "build": "tsc --build tsconfig.build.json",
+    "test": "mocha",
     "prepublishOnly": "npm run build",
     "eslint-fix": "eslint --ext ts --max-warnings 0 --fix src test",
     "eslint": "eslint --ext ts --max-warnings 0 src test",
