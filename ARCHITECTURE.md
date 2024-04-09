@@ -1,13 +1,9 @@
 # Architecture
 
-Each supported Cucumber version has a JSON Schema in `src/{implementation}/{version}/{Implementation}Json.json`.
-These JSON Schemas are generated from a `.ts` file in the same directory with the following command:
-
-    node scripts/generate.js
-    npm run eslint-fix
+Each supported Cucumber version has a JSON Schema in `schemas/{Implementation}.json`.
 
 A Cucumber JSON document originating from a supported version can then be converted to a new JSON document that conforms
-with the [canonical Cucumber JSON schema](src/CucumberJson.json).
+with the [canonical Cucumber JSON schema](schemas/canonical.json).
 
 This is done by iterating over each of the _implementation_ JSON schemas and attempting to validate the document.
 As soon as the document passes validation of an implementation, it is converted to canonical Cucumber JSON with a
