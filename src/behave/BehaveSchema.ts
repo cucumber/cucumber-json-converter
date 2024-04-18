@@ -1,5 +1,4 @@
+import schema from '@cucumber/json-schema/schemas/behave.json'
 import { SchemaObject } from 'ajv'
-
-import schema from '../../schemas/behave.json'
 
 export default schema satisfies SchemaObject

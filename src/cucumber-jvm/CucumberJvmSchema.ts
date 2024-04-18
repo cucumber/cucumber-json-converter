@@ -1,5 +1,4 @@
+import schema from '@cucumber/json-schema/schemas/cucumber-jvm.json'
 import { SchemaObject } from 'ajv'
-
-import schema from '../../schemas/cucumber-jvm.json'
 
 export default schema satisfies SchemaObject
