@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@cucumber/json-schema": "^0.1.0",
-    "ajv": "8.14.0"
+    "ajv": "8.15.0"
   },
   "directories": {
     "test": "test"
