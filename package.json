@@ -12,8 +12,7 @@
     "test": "mocha",
     "prepublishOnly": "npm run build",
     "eslint-fix": "eslint --ext ts --max-warnings 0 --fix src test",
-    "eslint": "eslint --ext ts --max-warnings 0 src test",
-    "upgrade": "npm-check-updates --upgrade"
+    "eslint": "eslint --ext ts --max-warnings 0 src test"
   },
   "repository": {
     "type": "git",
