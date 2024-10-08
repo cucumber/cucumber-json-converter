@@ -32,7 +32,7 @@
   "homepage": "https://github.com/cucumber/cucumber-json-converter#readme",
   "devDependencies": {
     "@types/glob": "8.1.0",
-    "@types/mocha": "10.0.8",
+    "@types/mocha": "10.0.9",
     "@types/node": "20.16.10",
     "@typescript-eslint/eslint-plugin": "8.8.1",
     "@typescript-eslint/parser": "8.8.1",
