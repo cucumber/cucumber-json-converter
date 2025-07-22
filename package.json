@@ -53,7 +53,7 @@
     "typescript": "5.8.3"
   },
   "dependencies": {
-    "@cucumber/json-schema": "^0.1.0",
+    "@cucumber/json-schema": "^0.2.0",
     "ajv": "8.17.1"
   },
   "directories": {
