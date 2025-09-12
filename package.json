@@ -37,8 +37,8 @@
     "@types/glob": "9.0.0",
     "@types/mocha": "10.0.10",
     "@types/node": "22.18.1",
-    "@typescript-eslint/eslint-plugin": "^8.35.1 ",
-    "@typescript-eslint/parser": "^8.35.1",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
     "eslint": "^9.21.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-n": "^17.15.1",
@@ -50,7 +50,7 @@
     "pretty-quick": "4.2.2",
     "ts-json-schema-generator": "2.4.0",
     "ts-node": "10.9.2",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "dependencies": {
     "@cucumber/json-schema": "^0.2.0",
