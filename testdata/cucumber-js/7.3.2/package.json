@@ -3,6 +3,6 @@
   "private": true,
   "version": "0.0.1",
   "dependencies": {
-    "@cucumber/cucumber": "12.4.0"
+    "@cucumber/cucumber": "12.5.0"
   }
 }
