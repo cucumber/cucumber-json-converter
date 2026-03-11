@@ -1,5 +1,7 @@
 name: test
 
+permissions: {}
+
 on:
   push:
     branches:
@@ -8,8 +10,6 @@ on:
   pull_request:
     branches:
       - main
-  workflow_call:
-
 
 jobs:
   test-javascript:
