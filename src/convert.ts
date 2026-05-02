@@ -1,17 +1,16 @@
-import Ajv, { SchemaObject } from 'ajv'
-import assert from 'assert'
-
-import { behaveConverter } from './behave/behaveConverter'
+import assert from 'node:assert'
+import Ajv, { type SchemaObject } from 'ajv'
 import behaveSchema from './behave/BehaveSchema'
-import { cucumberJsConverter } from './cucumber-js/cucumberJsConverter'
-import cucumberJsSchema from './cucumber-js/CucumberJsSchema'
-import { cucumberJvmConverter } from './cucumber-jvm/cucumberJvmConverter'
-import cucumberJvmSchema from './cucumber-jvm/CucumberJvmSchema'
-import { cucumberRubyConverter } from './cucumber-ruby/cucumberRubyConverter'
-import cucumberRubySchema from './cucumber-ruby/CucumberRubySchema'
-import { CucumberJson } from './CucumberJson'
+import { behaveConverter } from './behave/behaveConverter'
+import type { CucumberJson } from './CucumberJson'
 import resultSchema from './CucumberSchema'
-import { Convalidator, Converter } from './types'
+import cucumberJsSchema from './cucumber-js/CucumberJsSchema'
+import { cucumberJsConverter } from './cucumber-js/cucumberJsConverter'
+import cucumberJvmSchema from './cucumber-jvm/CucumberJvmSchema'
+import { cucumberJvmConverter } from './cucumber-jvm/cucumberJvmConverter'
+import cucumberRubySchema from './cucumber-ruby/CucumberRubySchema'
+import { cucumberRubyConverter } from './cucumber-ruby/cucumberRubyConverter'
+import type { Convalidator, Converter } from './types'
 
 const implementationConverterBySchema = new Map<SchemaObject, Converter>()
 implementationConverterBySchema.set(behaveSchema, behaveConverter)
@@ -56,15 +55,14 @@ export function convertMulti(data: unknown): readonly CucumberJson[] {
     const schema = convalidator.schema
     if (validator(data)) {
       return true
-    } else {
-      const error = `Errors from ${schema.$ref} validation: ${JSON.stringify(
-        validator.errors,
-        null,
-        2
-      )}`
-      // console.log(error)
-      errors.push(error)
     }
+    const error = `Errors from ${schema.$ref} validation: ${JSON.stringify(
+      validator.errors,
+      null,
+      2
+    )}`
+    errors.push(error)
+    return false
   })
   if (candidateConvalidators.length === 0) {
     throw new Error(`Could not validate Cucumber JSON.\n${errors.join('\n')}`)

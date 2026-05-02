@@ -1,6 +1,6 @@
-import { SchemaObject, ValidateFunction } from 'ajv'
+import type { SchemaObject, ValidateFunction } from 'ajv'
 
-import { CucumberJson } from './CucumberJson.js'
+import type { CucumberJson } from './CucumberJson.js'
 
 export type Converter = (obj: unknown) => CucumberJson
 

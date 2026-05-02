@@ -1,36 +1,29 @@
 const { defineSupportCode } = require('cucumber')
-defineSupportCode(function({After, Before, Given}) {
+defineSupportCode(({ After, Before, Given }) => {
+  Before({ tags: '@failing_before' }, () => {
+    throw new Error('failing before hook')
+  })
 
-Before({ tags: "@failing_before" }, function () {
-  throw new Error("failing before hook")
-})
+  After({ tags: '@failing_after' }, () => {
+    throw new Error('failing after hook')
+  })
 
-After({ tags: "@failing_after" }, function () {
-  throw new Error("failing after hook")
-})
+  Given(/pass/, () => {})
 
-Given(/pass/, function () {
-})
+  Given(/pending/, () => 'pending')
 
-Given(/pending/, function () {
-  return 'pending'
-})
+  Given(/fail/, () => {
+    throw new Error('this step failed')
+  })
 
-Given(/fail/, function () {
-  throw new Error("this step failed")
-})
+  let decay = 0
+  Given(/decaying/, () => {
+    const failing = decay > 0
+    decay++
+    if (failing) throw new Error('Decayed')
+  })
 
-let decay = 0
-Given(/decaying/, function () {
-  const failing = decay > 0
-  decay++
-  if(failing) throw new Error("Decayed")
-})
+  Given(/skip/, () => 'skipped')
 
-Given(/skip/, function () {
-  return 'skipped'
-})
-
-Given(/I have (\d+) cukes in my (.*)/, function(count, something) {})
-
+  Given(/I have (\d+) cukes in my (.*)/, (_count, _something) => {})
 })

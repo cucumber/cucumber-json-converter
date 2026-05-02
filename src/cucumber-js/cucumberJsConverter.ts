@@ -1,11 +1,11 @@
-import {
+import type {
   CucumberJsonElement,
   CucumberJsonFeature,
   CucumberJsonHook,
   CucumberJsonStep,
 } from '../CucumberJson.js'
-import { Converter } from '../types.js'
-import {
+import type { Converter } from '../types.js'
+import type {
   CucumberJsJson,
   JsArgument,
   JsDataTable,

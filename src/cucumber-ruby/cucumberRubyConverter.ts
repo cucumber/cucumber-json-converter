@@ -1,4 +1,4 @@
-import {
+import type {
   CucumberJsonElement,
   CucumberJsonElementType,
   CucumberJsonFeature,
@@ -7,8 +7,8 @@ import {
   CucumberJsonResult,
   CucumberJsonStep,
 } from '../CucumberJson.js'
-import { Converter } from '../types'
-import {
+import type { Converter } from '../types'
+import type {
   CucumberRubyJson,
   RubyElement,
   RubyFeature,

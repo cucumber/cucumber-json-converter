@@ -13,16 +13,12 @@
             "name": "",
             "rows": [
               {
-                "cells": [
-                  "status"
-                ],
+                "cells": ["status"],
                 "id": "one-passing-scenario-outline-row;s1;;1",
                 "line": 6
               },
               {
-                "cells": [
-                  "passes"
-                ],
+                "cells": ["passes"],
                 "id": "one-passing-scenario-outline-row;s1;;2",
                 "line": 7
               }

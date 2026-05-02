@@ -34,23 +34,17 @@
             "name": "",
             "rows": [
               {
-                "cells": [
-                  "something"
-                ],
+                "cells": ["something"],
                 "id": "scenario-outline;;;1",
                 "line": 9
               },
               {
-                "cells": [
-                  "passing"
-                ],
+                "cells": ["passing"],
                 "id": "scenario-outline;;;2",
                 "line": 10
               },
               {
-                "cells": [
-                  "passing"
-                ],
+                "cells": ["passing"],
                 "id": "scenario-outline;;;3",
                 "line": 11
               }
