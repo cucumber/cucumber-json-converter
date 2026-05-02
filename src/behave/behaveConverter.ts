@@ -1,12 +1,18 @@
-import {
+import type {
   CucumberJsonElement,
   CucumberJsonFeature,
   CucumberJsonResult,
   CucumberJsonStep,
   CucumberJsonTag,
 } from '../CucumberJson.js'
-import { Converter } from '../types.js'
-import { BehaveElement, BehaveFeature, BehaveJson, BehaveResult, BehaveStep } from './BehaveJson.js'
+import type { Converter } from '../types.js'
+import type {
+  BehaveElement,
+  BehaveFeature,
+  BehaveJson,
+  BehaveResult,
+  BehaveStep,
+} from './BehaveJson.js'
 
 export const behaveConverter: Converter = (json: BehaveJson) => {
   return {
@@ -63,7 +69,7 @@ function behaveResultToResult(behaveResult: BehaveResult | undefined): CucumberJ
 function getLine(location: string): number {
   const match = /\w+:(\d+)/.exec(location)
   if (!match) throw new Error(`Location ${location} does not follow <path>:<line> pattern`)
-  return parseInt(match[1])
+  return parseInt(match[1], 10)
 }
 
 function getPath(location: string): string {

@@ -12,10 +12,7 @@
     "strictNullChecks": true,
     "experimentalDecorators": true,
     "suppressExcessPropertyErrors": false,
-    "lib": [
-      "ES6",
-      "dom"
-    ],
+    "lib": ["ES6", "dom"],
     "target": "es2022",
     "module": "CommonJS",
     "moduleResolution": "node",

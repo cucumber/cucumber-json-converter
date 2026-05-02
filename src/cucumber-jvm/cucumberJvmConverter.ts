@@ -1,4 +1,4 @@
-import {
+import type {
   CucumberJsonElement,
   CucumberJsonFeature,
   CucumberJsonHook,
@@ -6,8 +6,8 @@ import {
   CucumberJsonStep,
   CucumberJsonTag,
 } from '../CucumberJson.js'
-import { Converter } from '../types'
-import {
+import type { Converter } from '../types'
+import type {
   CucumberJvmJson,
   JvmElement,
   JvmFeature,

@@ -13,23 +13,17 @@
             "name": "",
             "rows": [
               {
-                "cells": [
-                  "name"
-                ],
+                "cells": ["name"],
                 "id": "foo;bar;;1",
                 "line": 10
               },
               {
-                "cells": [
-                  "passing"
-                ],
+                "cells": ["passing"],
                 "id": "foo;bar;;2",
                 "line": 11
               },
               {
-                "cells": [
-                  "failing"
-                ],
+                "cells": ["failing"],
                 "id": "foo;bar;;3",
                 "line": 12
               }
