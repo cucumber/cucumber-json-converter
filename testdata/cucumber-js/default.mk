@@ -1,7 +1,7 @@
 include $(dir $(lastword $(MAKEFILE_LIST)))/../default.mk
 
 package-lock.json: package.json
-	npm install
+	npm ci
 	touch $@
 
 json/%.json: ../../features/%.feature stepdefs.js package-lock.json
