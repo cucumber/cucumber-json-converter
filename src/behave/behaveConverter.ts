@@ -14,10 +14,10 @@ import type {
   BehaveStep,
 } from './BehaveJson.js'
 
-export const behaveConverter: Converter = (json: BehaveJson) => {
+export const behaveConverter: Converter = (json) => {
   return {
     implementation: 'behave',
-    features: json.map(behaveFeatureToFeature),
+    features: (json as BehaveJson).map(behaveFeatureToFeature),
   }
 }
 

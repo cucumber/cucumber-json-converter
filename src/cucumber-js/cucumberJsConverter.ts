@@ -17,10 +17,10 @@ import type {
   JsStepOrHook,
 } from './CucumberJsJson.js'
 
-export const cucumberJsConverter: Converter = (json: CucumberJsJson) => {
+export const cucumberJsConverter: Converter = (json) => {
   return {
     implementation: 'cucumber-js',
-    features: json.map(jsFeatureToFeature),
+    features: (json as CucumberJsJson).map(jsFeatureToFeature),
   }
 }
 
