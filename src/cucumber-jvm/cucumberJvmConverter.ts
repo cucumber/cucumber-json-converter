@@ -17,10 +17,10 @@ import type {
   JvmStep,
 } from './CucumberJvmJson.js'
 
-export const cucumberJvmConverter: Converter = (json: CucumberJvmJson) => {
+export const cucumberJvmConverter: Converter = (json) => {
   return {
     implementation: 'cucumber-jvm',
-    features: json.map(jvmFeatureToFeature),
+    features: (json as CucumberJvmJson).map(jvmFeatureToFeature),
   }
 }
 

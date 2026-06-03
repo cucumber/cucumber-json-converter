@@ -24,7 +24,7 @@ const convalidators: Convalidator[] = []
 for (const [implementationSchema, converter] of implementationConverterBySchema.entries()) {
   const implementationValidator = new Ajv().compile(implementationSchema)
 
-  const resultValidatingConverter: Converter = (obj: never) => {
+  const resultValidatingConverter: Converter = (obj) => {
     const converted = converter(obj)
     if (resultValidator(converted)) {
       return converted

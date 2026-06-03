@@ -17,10 +17,10 @@ import type {
   RubyStep,
 } from './CucumberRubyJson.js'
 
-export const cucumberRubyConverter: Converter = (json: CucumberRubyJson) => {
+export const cucumberRubyConverter: Converter = (json) => {
   return {
     implementation: 'cucumber-ruby',
-    features: json.map(rubyFeatureToFeature),
+    features: (json as CucumberRubyJson).map(rubyFeatureToFeature),
   }
 }
 

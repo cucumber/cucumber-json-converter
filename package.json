@@ -2,13 +2,14 @@
   "name": "@cucumber/cucumber-json-converter",
   "version": "0.1.0",
   "description": "Validates and converts Cucumber JSON for different Cucumber implementations and versions",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --build tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json",
     "test": "mocha",
     "prepublishOnly": "npm run build",
     "fix": "biome check --fix --error-on-warnings",
@@ -33,6 +34,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.4.14",
     "@cucumber/biome-config": "github:cucumber/biome-config#v0.1.0",
+    "@tsconfig/recommended": "^1.0.13",
     "@types/glob": "9.0.0",
     "@types/mocha": "10.0.10",
     "@types/node": "22.19.19",
@@ -41,7 +43,7 @@
     "pretty-quick": "4.2.2",
     "ts-json-schema-generator": "2.9.0",
     "ts-node": "10.9.2",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "dependencies": {
     "@cucumber/json-schema": "^0.2.0",
