@@ -20,7 +20,9 @@ defineSupportCode(({ After, Before, Given }) => {
   Given(/decaying/, () => {
     const failing = decay > 0
     decay++
-    if (failing) throw new Error('Decayed')
+    if (failing) {
+      throw new Error('Decayed')
+    }
   })
 
   Given(/skip/, () => 'skipped')

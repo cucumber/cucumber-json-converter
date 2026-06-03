@@ -57,7 +57,9 @@ function behaveStepToStep(behaveStep: BehaveStep): CucumberJsonStep {
 }
 
 function behaveResultToResult(behaveResult: BehaveResult | undefined): CucumberJsonResult {
-  if (!behaveResult) return { status: 'undefined' }
+  if (!behaveResult) {
+    return { status: 'undefined' }
+  }
 
   return {
     status: behaveResult.status,
@@ -68,12 +70,16 @@ function behaveResultToResult(behaveResult: BehaveResult | undefined): CucumberJ
 
 function getLine(location: string): number {
   const match = /\w+:(\d+)/.exec(location)
-  if (!match) throw new Error(`Location ${location} does not follow <path>:<line> pattern`)
+  if (!match) {
+    throw new Error(`Location ${location} does not follow <path>:<line> pattern`)
+  }
   return parseInt(match[1], 10)
 }
 
 function getPath(location: string): string {
   const match = /(\w+):\d+/.exec(location)
-  if (!match) throw new Error(`Location ${location} does not follow <path>:<line> pattern`)
+  if (!match) {
+    throw new Error(`Location ${location} does not follow <path>:<line> pattern`)
+  }
   return match[1]
 }
