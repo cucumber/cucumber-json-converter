@@ -20,7 +20,9 @@ let decay = 0
 Given(/decaying/, () => {
   const failing = decay > 0
   decay++
-  if (failing) throw new Error('Decayed')
+  if (failing) {
+    throw new Error('Decayed')
+  }
 })
 
 Given(/skip/, () => 'skipped')
