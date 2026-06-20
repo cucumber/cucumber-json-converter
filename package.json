@@ -37,7 +37,7 @@
     "@tsconfig/recommended": "^1.0.13",
     "@types/glob": "9.0.0",
     "@types/mocha": "10.0.10",
-    "@types/node": "22.19.21",
+    "@types/node": "22.20.0",
     "glob": "13.0.6",
     "mocha": "11.7.6",
     "pretty-quick": "4.2.2",
