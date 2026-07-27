@@ -20,3 +20,8 @@ The "Cucumber JSON" format was created several years before the [JSON Schema](ht
 
 This library contains JSON Schemas for multiple implementations and versions of Cucumber.
 These schemas have been retrofitted to match the actual output of these implementations.
+
+## Maintenance mode
+
+The Cucumber JSON format, formatter and converter are in maintenance mode. For the new
+unified message format, see [cucumber-messages](https://github.com/cucumber/messages).
