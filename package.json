@@ -1,6 +1,6 @@
 {
   "name": "@cucumber/cucumber-json-converter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Validates and converts Cucumber JSON for different Cucumber implementations and versions",
   "type": "commonjs",
   "main": "dist/index.js",
