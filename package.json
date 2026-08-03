@@ -42,7 +42,7 @@
     "mocha": "11.8.0",
     "pretty-quick": "4.2.2",
     "ts-json-schema-generator": "2.9.0",
-    "ts-node": "10.9.2",
+    "tsx": "^4.23.5",
     "typescript": "7.0.2"
   },
   "dependencies": {
