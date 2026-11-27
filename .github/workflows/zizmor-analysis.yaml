@@ -4,14 +4,14 @@ on:
   push:
     branches:
       - main
-      - 'releases/**'
+      - "releases/**"
     paths:
-      - '.github/**'
+      - ".github/**"
   pull_request:
     branches:
       - main
     paths:
-      - '.github/**'
+      - ".github/**"
 
 permissions: {}
 
